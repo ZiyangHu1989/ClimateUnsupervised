@@ -1,0 +1,39 @@
+{
+  "alignment_method": "sample K\u00f6ppen raster at each ERA5-Land cell-center coordinate",
+  "area_weights": "cosine(latitude), inherited from processed climate dataset",
+  "climate_grid": {
+    "coordinate_count": 94206,
+    "crs": "EPSG:4326",
+    "latitude_range": [
+      -89.69999694824219,
+      83.30000305175781
+    ],
+    "longitude_convention": "[-180, 180)",
+    "longitude_range": [
+      -179.8000030517578,
+      179.6999969482422
+    ],
+    "nominal_resolution_degrees": 0.5
+  },
+  "invalid_or_missing_cells": 8348,
+  "koppen_raster": {
+    "band_count": 1,
+    "bounds": [
+      -180.0,
+      -90.0,
+      180.0,
+      90.0
+    ],
+    "classification_confidence_available": false,
+    "crs": "EPSG:4326",
+    "height": 21600,
+    "nodata": 0.0,
+    "resolution_degrees": [
+      0.008333333333333333,
+      0.008333333333333333
+    ],
+    "width": 43200
+  },
+  "valid_overlap_cells": 85858,
+  "valid_overlap_fraction": 0.9113856866866229
+}

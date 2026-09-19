@@ -7,7 +7,7 @@ from .config import PROJECT_ROOT, load_config
 
 
 COMMANDS = ("download-era5", "preprocess", "fit", "visualize", "freeze",
-            "download-koppen", "evaluate", "all")
+            "download-koppen", "evaluate", "evaluate-full", "all")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -48,6 +48,10 @@ def main(argv: list[str] | None = None) -> None:
         if args.command == "all":
             from .visualize import visualize
             visualize(config)
+    if args.command == "evaluate-full":
+        from .comprehensive import run_comprehensive_evaluation
+        path = run_comprehensive_evaluation(config)
+        print(f"comprehensive_evaluation_complete report={path}")
 
 
 if __name__ == "__main__":

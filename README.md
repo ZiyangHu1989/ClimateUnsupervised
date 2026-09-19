@@ -61,6 +61,7 @@ climate-unsupervised freeze
 climate-unsupervised download-koppen
 climate-unsupervised evaluate
 climate-unsupervised visualize
+climate-unsupervised evaluate-full
 ```
 
 Or run the complete workflow:
@@ -98,6 +99,9 @@ tracked; manifests store project-relative paths and content hashes.
 - `results/manifests/frozen-model.json`: immutable pre-evaluation boundary.
 - `results/metrics/external.json`: weighted and unweighted external metrics.
 - `results/figures/`: PCA, model-selection, profile, global, and disagreement plots.
+- `results/evaluation-report.md`: comprehensive five-stage evaluation report.
+- `results/metrics/evaluation-summary.json`: machine-readable evaluation index.
+- `results/figures/evaluation/`: comprehensive evaluation figures.
 
 ## Testing
 
