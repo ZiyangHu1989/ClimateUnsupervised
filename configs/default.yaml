@@ -1,0 +1,27 @@
+project:
+  random_seed: 42
+
+era5:
+  dataset: reanalysis-era5-land-monthly-means
+  years: [1991, 2020]
+  variables: [2m_temperature, total_precipitation]
+  source_resolution_degrees: 0.1
+  target_resolution_degrees: 0.5
+  delete_native_after_aggregation: true
+  download_workers: 3
+
+features:
+  pca_variance_target: 0.95
+  training_sample_max: 50000
+  metric_sample_max: 10000
+
+clustering:
+  k_min: 2
+  k_max: 15
+  seeds: [42, 43, 44, 45, 46]
+  minimum_stability_ari: 0.80
+  minimum_cluster_area_fraction: 0.01
+  gmm_covariance_type: diag
+
+koppen:
+  url: https://data.naturalcapitalalliance.stanford.edu/download/global/koppen_geiger_climatezones/koppen_geiger_climatezones_1991_2020_1km.tif
