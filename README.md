@@ -10,15 +10,27 @@ unsupervised choices, and only then evaluates against Köppen–Geiger classes.
 
 Each retained 0.5° land cell has twelve monthly mean temperatures in °C and
 twelve monthly precipitation totals in mm/month. The model applies `log1p` to
-precipitation, standardizes the features, and retains enough PCA components to
-explain at least 95% of variance. Latitude and longitude are metadata only;
-cosine-latitude weights correct for unequal grid-cell area.
+precipitation, standardizes with exact cell-area weights, and retains enough
+PCA components to explain at least 99% of variance. PCA and GMM use
+area-proportional bootstrap samples because those estimators do not accept
+sample weights. Latitude and longitude are metadata only; cosine-latitude
+weights correct for unequal grid-cell area.
 
-K-means is fitted with area weights. GMM candidates are fitted on a fixed
-area-proportional sample and then applied to all cells. Both evaluate
-`K=2,...,15` over five seeds and must pass stability and minimum-cluster-area
-safeguards. Köppen–Geiger data is inaccessible to model selection and is read
+K-means is fitted with area weights. GMM candidates compare diagonal and full
+covariance on a fixed area-proportional bootstrap and are then applied to all
+cells. Both algorithms evaluate `K=2,...,15`; stability is measured across
+independent area-weighted bootstrap samples rather than initialization alone.
+Candidates must pass stability and minimum-cluster-area safeguards. GMM is
+selected by silhouette after those safeguards, while BIC/AIC remain density-fit
+diagnostics. Köppen–Geiger data is inaccessible to model selection and is read
 only after a frozen artifact manifest has been created.
+
+External evaluation is deliberately descriptive. It reports both the original
+30 Köppen subclasses and the fixed five primary groups (A--E), including ARI,
+AMI/NMI, homogeneity, completeness, V-measure, and area-weighted counterparts.
+No external metric is used to choose PCA dimension, covariance type, or K.
+The development/confirmation boundary and anti-reward-hacking rules are recorded
+in [`research_protocol.md`](research_protocol.md).
 
 ## Setup
 

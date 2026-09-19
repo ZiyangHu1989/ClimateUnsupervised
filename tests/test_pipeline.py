@@ -54,6 +54,10 @@ def test_offline_fit_freeze_evaluate_and_visualize(tmp_path, monkeypatch):
     external = evaluate(config)
     payload = json.loads(external.read_text())
     assert set(payload) == {"kmeans", "gmm"}
+    for method in payload.values():
+        assert set(("subclasses_30", "primary_groups_5")) <= set(method)
+        assert "homogeneity" in method["primary_groups_5"]["unweighted"]
+        assert "completeness" in method["primary_groups_5"]["area_weighted"]
     figures = visualize(config)
     assert len(figures) >= 9
     assert all(path.exists() and path.stat().st_size > 0 for path in figures)

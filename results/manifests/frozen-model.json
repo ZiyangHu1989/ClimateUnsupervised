@@ -1,24 +1,32 @@
 {
-  "config_sha256": "967294dc2b827d3952b94d93eb10a773cab8220414c40f23405bfffa0727e23e",
-  "created_at": "2026-09-19T07:33:25.311376+00:00",
+  "config_sha256": "dc8ca2f99707f284af578511b1030d2a7cea18bf072b1acfdd5ead10c5ec001b",
+  "created_at": "2026-09-19T08:37:56.380676+00:00",
   "inputs": {
     "data/processed/climate_features.npz": "1336c3b96d80cad7938fb2db79722dc9e64f397ffe2e780e0127e433d7c9aecc",
-    "results/metrics/internal.json": "ece3371e618b313eb65a91c12b71ae6fe9cc4722af2d6a90931b92007e8f9dfa",
-    "results/models/gmm.joblib": "f281964c231bba67bb559deeff7d12913015f5e0054a6de1b5c60bf790578113",
-    "results/models/gmm_confidence.npy": "1eb4bfdc76fe9461fcd083a5cb337ea633cef870cc9dc82fcaf43b50618fb0a8",
-    "results/models/gmm_labels.npy": "9f02f0239e66abd0db7d31ea34c0d895073b2759158054a134132b20930942be",
-    "results/models/kmeans.joblib": "aeecd09cecc88c807e09acc37765ed719d25ba01e2c7811a33bd598cd8cf4987",
-    "results/models/kmeans_labels.npy": "1f0a990d15e5121de0b7bd3b400c559b3452e81bf7bdf93eaf11ad8a4f0adb98",
-    "results/models/pca.joblib": "b1f71a56fa29bf3bff33c08734a35139f10d71ac5bab6f316f62bdfe841e2c9e",
-    "results/models/pca_features.npy": "4aa2d1ac750aa73ed6c6313eda17e4d6dca1099ae0f12df63adefdc5bf765011",
-    "results/models/scaler.joblib": "1751201679cf2bcdc7e08af4e23eb737783311ad7fe035f56a73ba2c020c869a"
+    "results/metrics/internal.json": "ace193aae74bcd23cae92acc19a642d043a8876dfd0d75e3c8bbfee42b3a3a74",
+    "results/models/gmm.joblib": "3adcc5b94453155b9d410e04c3e4fe7a778133380c50d5593c8c58660557add7",
+    "results/models/gmm_confidence.npy": "e4d4cbfef24d2e6c3060bdfb118ca6072e56dd0afd4a78a3b73093b434bc5a78",
+    "results/models/gmm_labels.npy": "b20f140e8b5be6ba4db3fc172ea742a88d9d134aae83c6631cc04490602d7a4e",
+    "results/models/kmeans.joblib": "2162d2e20855d486f3de400c6084987e41c7ce50c4d6e5f03a5550f6d2b50b78",
+    "results/models/kmeans_labels.npy": "fadbea2f68c92f3696ca21f4edf83034cc610d9a053a9e155b4c43e3ff9bf65e",
+    "results/models/pca.joblib": "1f80dd551463c42db0f05c5353b871c74689a3ba1d5a0876c901d552479d3c6e",
+    "results/models/pca_features.npy": "10a5846fc510a2a5106f100246065d558c53dd44aebe241b254a2fa38f908944",
+    "results/models/scaler.joblib": "6f76b9463d438419637660f136538f4ee75da1d30876dc918bdf1f97a6ada172"
   },
   "preprocessing": {
-    "pca_variance_target": 0.95,
+    "pca_sampling": "area_bootstrap_with_replacement",
+    "pca_variance_target": 0.99,
     "precipitation_transform": "log1p",
-    "scaling": "standard"
+    "scaling": "standard",
+    "scaling_weights": "exact_cell_area"
   },
-  "selected_gmm_k": 11,
-  "selected_kmeans_k": 5,
+  "selected_gmm_covariance": "diag",
+  "selected_gmm_k": 6,
+  "selected_kmeans_k": 4,
+  "selection_policy": {
+    "external_labels_used": false,
+    "gmm_primary_metric": "silhouette_after_stability_and_minimum_area_safeguards",
+    "stability": "area_bootstrap"
+  },
   "stage": "freeze"
 }

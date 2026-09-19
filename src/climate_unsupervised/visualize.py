@@ -71,23 +71,31 @@ def visualize(config: dict) -> list[Path]:
         axes[1].legend(title="Cluster", ncol=2, fontsize="small")
         outputs.append(output_dir / f"{method}-profiles.png"); _save(fig, outputs[-1])
 
-    fig, axes = plt.subplots(1, 2, figsize=(11, 4))
-    for ax, method in zip(axes, ("kmeans", "gmm")):
-        candidates = metrics[method]["candidates"]
-        ax.plot([row["k"] for row in candidates], [row["silhouette"] for row in candidates], marker="o", label="Silhouette")
-        ax.plot([row["k"] for row in candidates], [row["stability_ari"] for row in candidates], marker="s", label="Stability ARI")
-        ax.set(title=method.upper(), xlabel="K", ylim=(-0.05, 1.05))
-        ax.legend()
+    fig, axes = plt.subplots(1, 2, figsize=(12, 4))
+    candidates = metrics["kmeans"]["candidates"]
+    axes[0].plot([row["k"] for row in candidates], [row["silhouette"] for row in candidates], marker="o", label="Silhouette")
+    axes[0].plot([row["k"] for row in candidates], [row["stability_ari"] for row in candidates], marker="s", label="Bootstrap stability")
+    axes[0].set(title="K-means", xlabel="K", ylim=(-0.05, 1.05)); axes[0].legend()
+    candidates = metrics["gmm"]["candidates"]
+    covariance_types = sorted({row.get("covariance_type", "diag") for row in candidates})
+    for covariance_type in covariance_types:
+        rows = [row for row in candidates if row.get("covariance_type", "diag") == covariance_type]
+        axes[1].plot([row["k"] for row in rows], [row["silhouette"] for row in rows], marker="o",
+                     label=f"{covariance_type} silhouette")
+        axes[1].plot([row["k"] for row in rows], [row["stability_ari"] for row in rows], marker="s", linestyle="--",
+                     label=f"{covariance_type} stability")
+    axes[1].set(title="GMM", xlabel="K", ylim=(-0.05, 1.05)); axes[1].legend(fontsize="small")
     outputs.append(output_dir / "model-selection.png"); _save(fig, outputs[-1])
 
     external_data = project_path("results", "metrics", "external-map-data.npz")
     if external_data.exists():
         with np.load(external_data) as data:
             for method in ("kmeans", "gmm"):
-                disagreement = data[f"{method}_disagreement"]
+                key = f"{method}_primary_disagreement"
+                disagreement = data[key] if key in data else data[f"{method}_disagreement"]
                 valid = disagreement != 255
                 fig, ax = plt.subplots(figsize=(10, 4.8))
                 ax.scatter(longitude[valid], latitude[valid], c=disagreement[valid], s=1, cmap="coolwarm", vmin=0, vmax=1, rasterized=True)
-                ax.set(xlabel="Longitude", ylabel="Latitude", title=f"{method.upper()} majority-class disagreement", xlim=(-180, 180), ylim=(-90, 90))
+                ax.set(xlabel="Longitude", ylabel="Latitude", title=f"{method.upper()} vs Köppen primary-group disagreement", xlim=(-180, 180), ylim=(-90, 90))
                 outputs.append(output_dir / f"{method}-koppen-disagreement.png"); _save(fig, outputs[-1])
     return outputs

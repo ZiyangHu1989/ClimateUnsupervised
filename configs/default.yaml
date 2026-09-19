@@ -11,7 +11,8 @@ era5:
   download_workers: 3
 
 features:
-  pca_variance_target: 0.95
+  # Clustering can depend on low-variance seasonal contrasts, especially GMM.
+  pca_variance_target: 0.99
   training_sample_max: 50000
   metric_sample_max: 10000
 
@@ -19,9 +20,13 @@ clustering:
   k_min: 2
   k_max: 15
   seeds: [42, 43, 44, 45, 46]
-  minimum_stability_ari: 0.80
+  minimum_stability_ari: 0.75
   minimum_cluster_area_fraction: 0.01
-  gmm_covariance_type: diag
+  stability_sample_max: 30000
+  spatial_stability_folds: 5
+  spatial_block_degrees: 10
+  final_n_init: 5
+  gmm_covariance_types: [diag, full]
 
 koppen:
   url: https://data.naturalcapitalalliance.stanford.edu/download/global/koppen_geiger_climatezones/koppen_geiger_climatezones_1991_2020_1km.tif
