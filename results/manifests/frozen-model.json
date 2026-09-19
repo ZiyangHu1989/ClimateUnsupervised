@@ -1,0 +1,24 @@
+{
+  "config_sha256": "967294dc2b827d3952b94d93eb10a773cab8220414c40f23405bfffa0727e23e",
+  "created_at": "2026-09-19T07:33:25.311376+00:00",
+  "inputs": {
+    "data/processed/climate_features.npz": "1336c3b96d80cad7938fb2db79722dc9e64f397ffe2e780e0127e433d7c9aecc",
+    "results/metrics/internal.json": "ece3371e618b313eb65a91c12b71ae6fe9cc4722af2d6a90931b92007e8f9dfa",
+    "results/models/gmm.joblib": "f281964c231bba67bb559deeff7d12913015f5e0054a6de1b5c60bf790578113",
+    "results/models/gmm_confidence.npy": "1eb4bfdc76fe9461fcd083a5cb337ea633cef870cc9dc82fcaf43b50618fb0a8",
+    "results/models/gmm_labels.npy": "9f02f0239e66abd0db7d31ea34c0d895073b2759158054a134132b20930942be",
+    "results/models/kmeans.joblib": "aeecd09cecc88c807e09acc37765ed719d25ba01e2c7811a33bd598cd8cf4987",
+    "results/models/kmeans_labels.npy": "1f0a990d15e5121de0b7bd3b400c559b3452e81bf7bdf93eaf11ad8a4f0adb98",
+    "results/models/pca.joblib": "b1f71a56fa29bf3bff33c08734a35139f10d71ac5bab6f316f62bdfe841e2c9e",
+    "results/models/pca_features.npy": "4aa2d1ac750aa73ed6c6313eda17e4d6dca1099ae0f12df63adefdc5bf765011",
+    "results/models/scaler.joblib": "1751201679cf2bcdc7e08af4e23eb737783311ad7fe035f56a73ba2c020c869a"
+  },
+  "preprocessing": {
+    "pca_variance_target": 0.95,
+    "precipitation_transform": "log1p",
+    "scaling": "standard"
+  },
+  "selected_gmm_k": 11,
+  "selected_kmeans_k": 5,
+  "stage": "freeze"
+}

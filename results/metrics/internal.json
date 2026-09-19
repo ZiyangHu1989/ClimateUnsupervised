@@ -1,0 +1,349 @@
+{
+  "gmm": {
+    "candidates": [
+      {
+        "aic": 807650.0430908203,
+        "best_seed": 43,
+        "bic": 807799.9793216552,
+        "davies_bouldin": 1.6929857426820414,
+        "eligible": true,
+        "k": 2,
+        "minimum_cluster_area_fraction": 0.39350317438410853,
+        "silhouette": 0.24228276312351227,
+        "stability_ari": 0.997674969983307
+      },
+      {
+        "aic": 736674.142791748,
+        "best_seed": 43,
+        "bic": 736903.4570271428,
+        "davies_bouldin": 1.1273555074286434,
+        "eligible": true,
+        "k": 3,
+        "minimum_cluster_area_fraction": 0.08556161954585513,
+        "silhouette": 0.24212080240249634,
+        "stability_ari": 0.8035512219786132
+      },
+      {
+        "aic": 713490.0096130371,
+        "best_seed": 42,
+        "bic": 713798.7018529915,
+        "davies_bouldin": 0.9545779607850734,
+        "eligible": true,
+        "k": 4,
+        "minimum_cluster_area_fraction": 0.09010334952334852,
+        "silhouette": 0.35025447607040405,
+        "stability_ari": 0.9921950321866536
+      },
+      {
+        "aic": 702429.0797119141,
+        "best_seed": 46,
+        "bic": 702817.1499564281,
+        "davies_bouldin": 0.9394133175599094,
+        "eligible": true,
+        "k": 5,
+        "minimum_cluster_area_fraction": 0.0904889758289256,
+        "silhouette": 0.3608775734901428,
+        "stability_ari": 0.9996642581951521
+      },
+      {
+        "aic": 687611.3882598877,
+        "best_seed": 45,
+        "bic": 688078.8365089614,
+        "davies_bouldin": 0.8590346683340754,
+        "eligible": true,
+        "k": 6,
+        "minimum_cluster_area_fraction": 0.07283640399865524,
+        "silhouette": 0.38777852058410645,
+        "stability_ari": 0.8192298007084549
+      },
+      {
+        "aic": 674525.7601013184,
+        "best_seed": 43,
+        "bic": 675072.5863549518,
+        "davies_bouldin": 0.9784366087408161,
+        "eligible": false,
+        "k": 7,
+        "minimum_cluster_area_fraction": 0.0724734500227111,
+        "silhouette": 0.3005809783935547,
+        "stability_ari": 0.7950280978873984
+      },
+      {
+        "aic": 663657.7585144043,
+        "best_seed": 44,
+        "bic": 664283.9627725974,
+        "davies_bouldin": 0.9298016796078286,
+        "eligible": true,
+        "k": 8,
+        "minimum_cluster_area_fraction": 0.03459114698908011,
+        "silhouette": 0.30720338225364685,
+        "stability_ari": 0.8687220617695175
+      },
+      {
+        "aic": 656428.1198120117,
+        "best_seed": 42,
+        "bic": 657133.7020747645,
+        "davies_bouldin": 0.9088607056237348,
+        "eligible": true,
+        "k": 9,
+        "minimum_cluster_area_fraction": 0.03084913903323372,
+        "silhouette": 0.3030602037906647,
+        "stability_ari": 0.85154283094764
+      },
+      {
+        "aic": 648839.2319946289,
+        "best_seed": 45,
+        "bic": 649624.1922619414,
+        "davies_bouldin": 1.1263569763903314,
+        "eligible": false,
+        "k": 10,
+        "minimum_cluster_area_fraction": 0.034394429754865743,
+        "silhouette": 0.28433719277381897,
+        "stability_ari": 0.7959179064560541
+      },
+      {
+        "aic": 643787.4993286133,
+        "best_seed": 45,
+        "bic": 644651.8376004855,
+        "davies_bouldin": 1.205527213298575,
+        "eligible": true,
+        "k": 11,
+        "minimum_cluster_area_fraction": 0.03423509407270069,
+        "silhouette": 0.23862844705581665,
+        "stability_ari": 0.8130558573300142
+      },
+      {
+        "aic": 636699.481262207,
+        "best_seed": 45,
+        "bic": 637643.197538639,
+        "davies_bouldin": 0.9974514732579237,
+        "eligible": false,
+        "k": 12,
+        "minimum_cluster_area_fraction": 0.033492120432819,
+        "silhouette": 0.2947041988372803,
+        "stability_ari": 0.7497849482596022
+      },
+      {
+        "aic": 628501.3862915039,
+        "best_seed": 42,
+        "bic": 629524.4805724955,
+        "davies_bouldin": 1.0654276948747552,
+        "eligible": false,
+        "k": 13,
+        "minimum_cluster_area_fraction": 0.03389333550557144,
+        "silhouette": 0.2941592037677765,
+        "stability_ari": 0.7937121159738588
+      },
+      {
+        "aic": 624525.3028869629,
+        "best_seed": 46,
+        "bic": 625627.7751725141,
+        "davies_bouldin": 1.037270343874769,
+        "eligible": false,
+        "k": 14,
+        "minimum_cluster_area_fraction": 0.022733755247652702,
+        "silhouette": 0.2982875108718872,
+        "stability_ari": 0.7898028596169524
+      },
+      {
+        "aic": 621263.4261779785,
+        "best_seed": 42,
+        "bic": 622445.2764680895,
+        "davies_bouldin": 1.0198432294427044,
+        "eligible": false,
+        "k": 15,
+        "minimum_cluster_area_fraction": 0.03433761958506685,
+        "silhouette": 0.2870010733604431,
+        "stability_ari": 0.7168540894844767
+      }
+    ],
+    "label_mapping": {
+      "0": 9,
+      "1": 5,
+      "2": 3,
+      "3": 4,
+      "4": 0,
+      "5": 6,
+      "6": 8,
+      "7": 10,
+      "8": 1,
+      "9": 7,
+      "10": 2
+    },
+    "selected": {
+      "aic": 643787.4993286133,
+      "best_seed": 45,
+      "bic": 644651.8376004855,
+      "davies_bouldin": 1.205527213298575,
+      "eligible": true,
+      "k": 11,
+      "minimum_cluster_area_fraction": 0.03423509407270069,
+      "silhouette": 0.23862844705581665,
+      "stability_ari": 0.8130558573300142
+    }
+  },
+  "kmeans": {
+    "candidates": [
+      {
+        "best_seed": 44,
+        "davies_bouldin": 1.259287409471264,
+        "eligible": false,
+        "inertia": 809819.125,
+        "k": 2,
+        "minimum_cluster_area_fraction": 0.3248358163397139,
+        "silhouette": 0.3102012574672699,
+        "stability_ari": 0.7459420943442936
+      },
+      {
+        "best_seed": 46,
+        "davies_bouldin": 1.0079042375362528,
+        "eligible": true,
+        "inertia": 542187.9375,
+        "k": 3,
+        "minimum_cluster_area_fraction": 0.2340666196537731,
+        "silhouette": 0.3554306626319885,
+        "stability_ari": 0.9868775152906508
+      },
+      {
+        "best_seed": 43,
+        "davies_bouldin": 0.8675538069191421,
+        "eligible": false,
+        "inertia": 388918.09375,
+        "k": 4,
+        "minimum_cluster_area_fraction": 0.07897516080799599,
+        "silhouette": 0.3842166066169739,
+        "stability_ari": 0.7608743963265484
+      },
+      {
+        "best_seed": 42,
+        "davies_bouldin": 0.8837255384959286,
+        "eligible": true,
+        "inertia": 298561.0625,
+        "k": 5,
+        "minimum_cluster_area_fraction": 0.0788433190731321,
+        "silhouette": 0.4027397334575653,
+        "stability_ari": 0.8674498730645513
+      },
+      {
+        "best_seed": 45,
+        "davies_bouldin": 0.8097721500838119,
+        "eligible": false,
+        "inertia": 249893.53125,
+        "k": 6,
+        "minimum_cluster_area_fraction": 0.07872721133101314,
+        "silhouette": 0.40922242403030396,
+        "stability_ari": 0.7585411378931104
+      },
+      {
+        "best_seed": 42,
+        "davies_bouldin": 0.8774491779968329,
+        "eligible": true,
+        "inertia": 218051.46875,
+        "k": 7,
+        "minimum_cluster_area_fraction": 0.07231663992287203,
+        "silhouette": 0.3634284734725952,
+        "stability_ari": 0.853417695483973
+      },
+      {
+        "best_seed": 45,
+        "davies_bouldin": 0.8537697971206729,
+        "eligible": false,
+        "inertia": 197745.703125,
+        "k": 8,
+        "minimum_cluster_area_fraction": 0.04397674871095278,
+        "silhouette": 0.36616697907447815,
+        "stability_ari": 0.7957517123569386
+      },
+      {
+        "best_seed": 43,
+        "davies_bouldin": 0.9572664347774135,
+        "eligible": false,
+        "inertia": 178032.171875,
+        "k": 9,
+        "minimum_cluster_area_fraction": 0.04423262533270945,
+        "silhouette": 0.3532661199569702,
+        "stability_ari": 0.7882731762066625
+      },
+      {
+        "best_seed": 45,
+        "davies_bouldin": 0.9274760808556,
+        "eligible": true,
+        "inertia": 160676.5625,
+        "k": 10,
+        "minimum_cluster_area_fraction": 0.034642959611495355,
+        "silhouette": 0.35507628321647644,
+        "stability_ari": 0.9054173877352266
+      },
+      {
+        "best_seed": 44,
+        "davies_bouldin": 0.9347874609102291,
+        "eligible": true,
+        "inertia": 149730.234375,
+        "k": 11,
+        "minimum_cluster_area_fraction": 0.03400472338914816,
+        "silhouette": 0.3532455563545227,
+        "stability_ari": 0.8421418604806152
+      },
+      {
+        "best_seed": 43,
+        "davies_bouldin": 0.9811823035028979,
+        "eligible": true,
+        "inertia": 138891.640625,
+        "k": 12,
+        "minimum_cluster_area_fraction": 0.033713582694703356,
+        "silhouette": 0.3365589380264282,
+        "stability_ari": 0.829308981109733
+      },
+      {
+        "best_seed": 45,
+        "davies_bouldin": 0.9472784098856322,
+        "eligible": false,
+        "inertia": 128620.359375,
+        "k": 13,
+        "minimum_cluster_area_fraction": 0.03336442895869255,
+        "silhouette": 0.33201444149017334,
+        "stability_ari": 0.7579070428435002
+      },
+      {
+        "best_seed": 46,
+        "davies_bouldin": 0.8961785197653912,
+        "eligible": false,
+        "inertia": 119763.1796875,
+        "k": 14,
+        "minimum_cluster_area_fraction": 0.033577796242007255,
+        "silhouette": 0.34160953760147095,
+        "stability_ari": 0.7470828253364024
+      },
+      {
+        "best_seed": 45,
+        "davies_bouldin": 0.8902791276537525,
+        "eligible": true,
+        "inertia": 112321.40625,
+        "k": 15,
+        "minimum_cluster_area_fraction": 0.025996004616323953,
+        "silhouette": 0.34351298213005066,
+        "stability_ari": 0.8093262253352733
+      }
+    ],
+    "label_mapping": {
+      "0": 3,
+      "1": 2,
+      "2": 0,
+      "3": 4,
+      "4": 1
+    },
+    "selected": {
+      "best_seed": 42,
+      "davies_bouldin": 0.8837255384959286,
+      "eligible": true,
+      "inertia": 298561.0625,
+      "k": 5,
+      "minimum_cluster_area_fraction": 0.0788433190731321,
+      "silhouette": 0.4027397334575653,
+      "stability_ari": 0.8674498730645513
+    }
+  },
+  "metric_sample_size": 10000,
+  "pca_components": 4,
+  "pca_explained_variance": 0.971248636013066,
+  "training_sample_size": 50000
+}

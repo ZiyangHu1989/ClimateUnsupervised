@@ -1,0 +1,11 @@
+{
+  "config_sha256": "967294dc2b827d3952b94d93eb10a773cab8220414c40f23405bfffa0727e23e",
+  "created_at": "2026-09-19T07:33:52.120159+00:00",
+  "inputs": {
+    "data/external/koppen_geiger_1991_2020.tif": "3b5a7ddda98e501d7045a7dc35951d22b486630aee4ac015dde04e0d1216a9d0",
+    "results/manifests/frozen-model.json": "cad13cf09bc86fd239c129a83bbdc1beaa5ab28be2d2bfca1c67342a8c93f07a"
+  },
+  "metrics": "/home/sichenghe/Projects/TheAleph/ClimateUnsupervised/results/metrics/external.json",
+  "stage": "evaluate",
+  "valid_cells": 85858
+}

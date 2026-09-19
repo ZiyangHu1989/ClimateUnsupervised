@@ -1,0 +1,7 @@
+{
+  "config_sha256": "967294dc2b827d3952b94d93eb10a773cab8220414c40f23405bfffa0727e23e",
+  "file": "/home/sichenghe/Projects/TheAleph/ClimateUnsupervised/data/external/koppen_geiger_1991_2020.tif",
+  "sha256": "3b5a7ddda98e501d7045a7dc35951d22b486630aee4ac015dde04e0d1216a9d0",
+  "stage": "download-koppen",
+  "url": "https://data.naturalcapitalalliance.stanford.edu/download/global/koppen_geiger_climatezones/koppen_geiger_climatezones_1991_2020_1km.tif"
+}

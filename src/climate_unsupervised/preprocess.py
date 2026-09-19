@@ -33,6 +33,11 @@ def area_weights(latitude: np.ndarray) -> np.ndarray:
     return weights.astype(np.float32)
 
 
+def normalize_longitude(longitude: np.ndarray) -> np.ndarray:
+    """Convert longitudes to the conventional [-180, 180) interval."""
+    return (((np.asarray(longitude, dtype=np.float64) + 180.0) % 360.0) - 180.0).astype(np.float32)
+
+
 def _coordinate_name(dataset: xr.Dataset, candidates: tuple[str, ...]) -> str:
     for name in candidates:
         if name in dataset.coords:
@@ -91,8 +96,8 @@ def preprocess(config: dict, force: bool = False) -> Path:
     yearly_paths: list[Path] = []
     for year in range(first_year, last_year + 1):
         interim_path = interim_dir / f"era5_land_{year}_0p5.npz"
-        if not interim_path.exists() or force:
-            candidates = sorted(raw_dir.glob(f"era5_land_{year}.*"))
+        candidates = sorted(raw_dir.glob(f"era5_land_{year}.*"))
+        if not interim_path.exists() or (force and candidates):
             if not candidates:
                 raise FileNotFoundError(f"Missing downloaded ERA5-Land year {year} in {raw_dir}")
             arrays = aggregate_year(
@@ -135,7 +140,7 @@ def preprocess(config: dict, force: bool = False) -> Path:
     valid = (temp_count == len(yearly_paths)).all(axis=0) & (precip_count == len(yearly_paths)).all(axis=0)
     lat_grid, lon_grid = np.meshgrid(latitude, longitude, indexing="ij")
     lat = lat_grid[valid]
-    lon = lon_grid[valid]
+    lon = normalize_longitude(lon_grid[valid])
     features = np.concatenate([temperature[:, valid].T, precipitation[:, valid].T], axis=1).astype(np.float32)
     names = np.asarray([f"temp_{month}_c" for month in MONTHS] + [f"precip_{month}_mm" for month in MONTHS])
     cell_ids = np.asarray([f"{a:.3f}_{b:.3f}" for a, b in zip(lat, lon)])

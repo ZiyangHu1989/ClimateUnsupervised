@@ -4,6 +4,7 @@ import xarray as xr
 from climate_unsupervised.preprocess import (
     area_weights,
     kelvin_to_celsius,
+    normalize_longitude,
     precipitation_m_per_day_to_mm_month,
     aggregate_year,
 )
@@ -25,6 +26,11 @@ def test_precipitation_conversion_handles_leap_year():
 def test_area_weights():
     weights = area_weights(np.array([-60.0, 0.0, 60.0]))
     np.testing.assert_allclose(weights, [0.5, 1.0, 0.5], atol=1e-6)
+
+
+def test_longitudes_are_normalized_for_maps_and_reference_rasters():
+    values = normalize_longitude(np.array([0.0, 90.0, 180.0, 270.0, 359.5]))
+    np.testing.assert_allclose(values, [0.0, 90.0, -180.0, -90.0, -0.5])
 
 
 def test_aggregate_year_coarsens_and_converts_units(tmp_path):

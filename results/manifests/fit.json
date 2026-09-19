@@ -1,0 +1,19 @@
+{
+  "config_sha256": "967294dc2b827d3952b94d93eb10a773cab8220414c40f23405bfffa0727e23e",
+  "created_at": "2026-09-19T07:33:00.786443+00:00",
+  "inputs": {
+    "data/processed/climate_features.npz": "1336c3b96d80cad7938fb2db79722dc9e64f397ffe2e780e0127e433d7c9aecc"
+  },
+  "metrics": "/home/sichenghe/Projects/TheAleph/ClimateUnsupervised/results/metrics/internal.json",
+  "pca_components": 4,
+  "random_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "selected_gmm_k": 11,
+  "selected_kmeans_k": 5,
+  "stage": "fit"
+}
