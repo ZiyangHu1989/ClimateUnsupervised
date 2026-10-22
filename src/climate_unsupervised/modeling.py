@@ -12,7 +12,7 @@ from sklearn.mixture import GaussianMixture
 from sklearn.preprocessing import StandardScaler
 
 from .artifacts import manifest, write_json
-from .config import config_hash, project_path
+from .config import config_hash, run_path
 
 
 def area_sample(weights: np.ndarray, size: int, seed: int) -> np.ndarray:
@@ -97,7 +97,7 @@ def _spatial_stability(
 
 
 def fit_models(config: dict, force: bool = False) -> Path:
-    feature_path = project_path("data", "processed", "climate_features.npz")
+    feature_path = run_path(config, "data", "processed", "climate_features.npz")
     if not feature_path.exists():
         raise FileNotFoundError("Run preprocess before fit")
     with np.load(feature_path) as data:
@@ -124,7 +124,7 @@ def fit_models(config: dict, force: bool = False) -> Path:
     pca = PCA(n_components=components, random_state=seed).fit(scaled[train_idx])
     reduced = pca.transform(scaled).astype(np.float32)
 
-    models_dir = project_path("results", "models")
+    models_dir = run_path(config, "results", "models")
     models_dir.mkdir(parents=True, exist_ok=True)
     joblib.dump(scaler, models_dir / "scaler.joblib")
     joblib.dump(pca, models_dir / "pca.joblib")
@@ -233,7 +233,7 @@ def fit_models(config: dict, force: bool = False) -> Path:
     np.save(models_dir / "gmm_labels.npy", gmm_labels)
     np.save(models_dir / "gmm_confidence.npy", gmm_probabilities.astype(np.float32))
 
-    metrics_path = project_path("results", "metrics", "internal.json")
+    metrics_path = run_path(config, "results", "metrics", "internal.json")
     write_json(metrics_path, {
         "pca_components": components,
         "pca_explained_variance": float(pca.explained_variance_ratio_.sum()),
@@ -242,7 +242,7 @@ def fit_models(config: dict, force: bool = False) -> Path:
         "kmeans": {"selected": selected_kmeans, "candidates": kmeans_rows, "label_mapping": kmeans_mapping},
         "gmm": {"selected": selected_gmm, "candidates": gmm_rows, "label_mapping": gmm_mapping},
     })
-    write_json(project_path("results", "manifests", "fit.json"), manifest(
+    write_json(run_path(config, "results", "manifests", "fit.json"), manifest(
         "fit", config_hash(config), [feature_path], metrics=str(metrics_path),
         pca_components=components, selected_kmeans_k=selected_kmeans["k"], selected_gmm_k=selected_gmm["k"],
         random_seeds=seeds, stability_kind="area_bootstrap",

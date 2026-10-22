@@ -70,6 +70,36 @@ Or run the complete workflow:
 climate-unsupervised all
 ```
 
+### Australia-only run
+
+The repository also includes an isolated regional configuration for mainland
+Australia and Tasmania. It reuses the completed global ERA5-Land feature file,
+filters cell centers with a pinned Natural Earth country boundary, and writes
+all derived artifacts beneath `runs/australia/` so the global run is preserved.
+New Zealand, Indonesia, Papua New Guinea, and smaller offshore components are
+excluded.
+
+```bash
+climate-unsupervised regional-all --config configs/australia.yaml
+```
+
+The regional workflow fits PCA, K-means, and GMM only on Australian cells,
+freezes the selected models, evaluates against the Australian part of the
+Köppen–Geiger raster, and creates an Australia-specific report. Run
+`prepare-region` by itself to rebuild only the regional feature subset.
+
+The initial maximum-silhouette rule produced an overly coarse two-cluster
+Australian baseline. The multiscale workflow instead searches K=3 through 12
+with K-means, diagonal/full GMM, BIRCH, and Ward clustering, then reports every
+resolution supported by internal stability and separation safeguards:
+
+```bash
+climate-unsupervised multiscale-all --config configs/australia-multiscale.yaml
+```
+
+Köppen labels are read only after the internally supported resolutions and
+representative algorithms have been frozen.
+
 Every command accepts `--config`; destructive recreation requires `--force`.
 The `freeze` command refuses to overwrite a frozen manifest without that flag.
 The evaluation stage verifies that every frozen input still matches its stored
@@ -102,6 +132,38 @@ tracked; manifests store project-relative paths and content hashes.
 - `results/evaluation-report.md`: comprehensive five-stage evaluation report.
 - `results/metrics/evaluation-summary.json`: machine-readable evaluation index.
 - `results/figures/evaluation/`: comprehensive evaluation figures.
+- `runs/australia/`: isolated Australian data, models, metrics, figures, manifests, and report.
+- `runs/australia-multiscale/`: multi-algorithm Australian benchmark and supported-resolution report.
+
+## Australian climate feature expansion
+
+The existing-data feature experiment uses the 30 yearly monthly files to derive
+110 named columns across four representations: the original monthly baseline,
+separated climate level/seasonal profiles, physical summaries, and summaries
+plus variability/persistence. It compares direct geometry with area-weighted
+99%-variance PCA using the same five algorithm variants and K=3–12.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
+  climate-unsupervised feature-all --config configs/australia-features.yaml
+```
+
+`feature-prepare` builds the regional time series and feature registry;
+`feature-fit` runs restartable comparisons, family ablations, and freezes results;
+`feature-evaluate` renders the report and evaluates the frozen labels against
+the local Köppen raster. No new climate data are downloaded. `--force` explicitly
+recomputes the stages; otherwise incompatible checkpoints require a new run
+directory or explicit recomputation.
+
+Preprocessing is refitted within each bootstrap/spatial sample. Five-year
+temporal block resamples recompute features and exclude artificial time joins.
+Correlation pruning and equal family-variance weighting apply to engineered
+representations; the refreshed monthly baseline provides a controlled comparator.
+
+- [Research feature catalogue](docs/climate-feature-catalogue.md)
+- [Targeted new-data acquisition specification](docs/climate-data-acquisition.md)
+- [Experiment report](runs/australia-features/results/feature-expansion-report.md)
+- [Exact feature metadata](runs/australia-features/results/metrics/feature-catalogue.json)
 
 ## Testing
 

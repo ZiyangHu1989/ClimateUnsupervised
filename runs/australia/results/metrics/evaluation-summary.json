@@ -1,0 +1,331 @@
+{
+  "alignment": {
+    "alignment_method": "sample K\u00f6ppen raster at each ERA5-Land cell-center coordinate",
+    "area_weights": "cosine(latitude), inherited from processed climate dataset",
+    "climate_grid": {
+      "coordinate_count": 2770,
+      "crs": "EPSG:4326",
+      "latitude_range": [
+        -43.20000076293945,
+        -11.199999809265137
+      ],
+      "longitude_convention": "[-180, 180)",
+      "longitude_range": [
+        113.19999694824219,
+        153.1999969482422
+      ],
+      "nominal_resolution_degrees": 0.5
+    },
+    "invalid_or_missing_cells": 17,
+    "koppen_raster": {
+      "band_count": 1,
+      "bounds": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+      ],
+      "classification_confidence_available": false,
+      "crs": "EPSG:4326",
+      "height": 21600,
+      "nodata": 0.0,
+      "resolution_degrees": [
+        0.008333333333333333,
+        0.008333333333333333
+      ],
+      "width": 43200
+    },
+    "valid_overlap_cells": 2753,
+    "valid_overlap_fraction": 0.9938628158844766
+  },
+  "external": {
+    "gmm": {
+      "nmi_convention": "arithmetic mean normalization; sklearn default",
+      "primary_groups_5": {
+        "area_weighted": {
+          "ari": 0.18247860182523154,
+          "completeness": 0.22881191243977564,
+          "homogeneity": 0.20817276821685882,
+          "nmi": 0.21800493848895036,
+          "v_measure": 0.2180049384889504
+        },
+        "cluster_count": 2,
+        "contingency": [
+          [
+            22.931833028793335,
+            1578.1036812067032,
+            228.95661264657974
+          ],
+          [
+            227.61834931373596,
+            407.87269139289856,
+            0.0
+          ]
+        ],
+        "reference_class_count": 3,
+        "strongest_jaccard_match_by_cluster": {
+          "0": 1,
+          "1": 0
+        },
+        "unweighted": {
+          "ami": 0.2156474152851014,
+          "ari": 0.17715839596817295,
+          "completeness": 0.23012184061710192,
+          "homogeneity": 0.20374447227581619,
+          "nmi": 0.21613133623141093,
+          "v_measure": 0.21613133623141093
+        }
+      },
+      "subclasses_30": {
+        "area_weighted": {
+          "ari": 0.1614756668436487,
+          "completeness": 0.3696725126798561,
+          "homogeneity": 0.13812332596079824,
+          "nmi": 0.20110600789606067,
+          "v_measure": 0.20110600789606067
+        },
+        "cluster_count": 2,
+        "contingency": [
+          [
+            1.9075039625167847,
+            21.02432906627655,
+            1080.8306856155396,
+            64.68367999792099,
+            295.44295597076416,
+            137.14635962247849,
+            18.777162432670593,
+            22.89143866300583,
+            16.981625497341156,
+            74.69421947002411,
+            95.61216658353806
+          ],
+          [
+            0.0,
+            227.61834931373596,
+            133.26258844137192,
+            0.0,
+            274.61010295152664,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "reference_class_count": 11,
+        "strongest_jaccard_match_by_cluster": {
+          "0": 4,
+          "1": 3
+        },
+        "unweighted": {
+          "ami": 0.19494190083932159,
+          "ari": 0.151421494651267,
+          "completeness": 0.3715009423562889,
+          "homogeneity": 0.13347117497161087,
+          "nmi": 0.1963857630070182,
+          "v_measure": 0.19638576300701818
+        }
+      },
+      "v_measure_note": "NMI and V-measure are algebraically equivalent under this convention"
+    },
+    "kmeans": {
+      "nmi_convention": "arithmetic mean normalization; sklearn default",
+      "primary_groups_5": {
+        "area_weighted": {
+          "ari": 0.03404844565343976,
+          "completeness": 0.16302839921222487,
+          "homogeneity": 0.17996923437494647,
+          "nmi": 0.1710804583737198,
+          "v_measure": 0.17108045837371982
+        },
+        "cluster_count": 2,
+        "contingency": [
+          [
+            245.82687377929688,
+            1025.9996537566185,
+            6.627060234546661
+          ],
+          [
+            4.723308563232422,
+            959.9767188429832,
+            222.32955241203308
+          ]
+        ],
+        "reference_class_count": 3,
+        "strongest_jaccard_match_by_cluster": {
+          "0": 1,
+          "1": 1
+        },
+        "unweighted": {
+          "ami": 0.17178905368297517,
+          "ari": 0.03408506750286035,
+          "completeness": 0.16394232607580958,
+          "homogeneity": 0.18143555380091428,
+          "nmi": 0.17224592804606648,
+          "v_measure": 0.17224592804606645
+        }
+      },
+      "subclasses_30": {
+        "area_weighted": {
+          "ari": 0.04431680742521925,
+          "completeness": 0.27841270332069756,
+          "homogeneity": 0.12622013309812447,
+          "nmi": 0.17369469457972264,
+          "v_measure": 0.17369469457972267
+        },
+        "cluster_count": 2,
+        "contingency": [
+          [
+            0.0,
+            245.82687377929688,
+            652.1046934723854,
+            0.0,
+            373.8949602842331,
+            0.0,
+            0.0,
+            0.0,
+            6.627060234546661,
+            0.0,
+            0.0
+          ],
+          [
+            1.9075039625167847,
+            2.815804600715637,
+            561.9885805845261,
+            64.68367999792099,
+            196.1580986380577,
+            137.14635962247849,
+            18.777162432670593,
+            22.89143866300583,
+            10.354565262794495,
+            74.69421947002411,
+            95.61216658353806
+          ]
+        ],
+        "reference_class_count": 11,
+        "strongest_jaccard_match_by_cluster": {
+          "0": 4,
+          "1": 4
+        },
+        "unweighted": {
+          "ami": 0.17311665403430235,
+          "ari": 0.040592159856380004,
+          "completeness": 0.2815722285363364,
+          "homogeneity": 0.12645053995598005,
+          "nmi": 0.17452437993395378,
+          "v_measure": 0.17452437993395378
+        }
+      },
+      "v_measure_note": "NMI and V-measure are algebraically equivalent under this convention"
+    }
+  },
+  "gmm_uncertainty": {
+    "fraction_maximum_posterior_below_0.6": 0.01263537906137184,
+    "fraction_maximum_posterior_below_0.8": 0.04837545126353791,
+    "maximum_posterior_quantiles": {
+      "0": 0.502668559551239,
+      "0.1": 0.9148961305618286,
+      "0.25": 0.9898005127906799,
+      "0.5": 1.0,
+      "0.75": 1.0,
+      "0.9": 1.0,
+      "1": 1.0
+    },
+    "normalization": "entropy divided by log(number of mixture components)",
+    "normalized_entropy_quantiles": {
+      "0": -0.0,
+      "0.1": 2.9755592306591678e-36,
+      "0.25": 4.256607445905195e-19,
+      "0.5": 4.460764284986996e-08,
+      "0.75": 0.0821119229112779,
+      "0.9": 0.41991203841437147,
+      "1": 0.9999794913232665
+    }
+  },
+  "internal_quality": [
+    {
+      "calinski_harabasz": 2314.4874089078203,
+      "cluster_count": 2,
+      "davies_bouldin": 1.0021642591147355,
+      "method": "kmeans",
+      "representation": "saved PCA coordinates",
+      "sample_size": 2770,
+      "sampling": "area-proportional without replacement, seed=random_seed+1",
+      "silhouette": 0.38481858372688293
+    },
+    {
+      "calinski_harabasz": 1561.6026351623127,
+      "cluster_count": 2,
+      "davies_bouldin": 0.9456749473055275,
+      "method": "gmm",
+      "representation": "saved PCA coordinates",
+      "sample_size": 2770,
+      "sampling": "area-proportional without replacement, seed=random_seed+1",
+      "silhouette": 0.35847151279449463
+    }
+  ],
+  "methodology": {
+    "common_internal_representation": "saved PCA coordinates",
+    "common_internal_sample_size": 2770,
+    "external_labels_used_for_model_selection": false
+  },
+  "stability": {
+    "gmm": {
+      "area_bootstrap": {
+        "maximum": 0.9937872137580143,
+        "mean": 0.9719352909914829,
+        "minimum": 0.9236460109011889,
+        "pair_count": 45,
+        "standard_deviation": 0.016833685516871054
+      },
+      "evaluation_sample_size": 2770,
+      "random_seed": {
+        "maximum": 1.0,
+        "mean": 0.9942387567415425,
+        "minimum": 0.987654478731877,
+        "pair_count": 45,
+        "standard_deviation": 0.00622862385989583
+      },
+      "run_count": 10,
+      "spatial_block_degrees": 2.0,
+      "spatial_block_holdout": {
+        "maximum": 0.9843617680298286,
+        "mean": 0.9575934135193528,
+        "minimum": 0.9221980334532289,
+        "pair_count": 10,
+        "standard_deviation": 0.019187805519168138
+      },
+      "spatial_folds": 5,
+      "training_sample_size": 2770
+    },
+    "kmeans": {
+      "area_bootstrap": {
+        "maximum": 0.9971129545633194,
+        "mean": 0.9295339296498141,
+        "minimum": 0.7950477562814626,
+        "pair_count": 45,
+        "standard_deviation": 0.051183547060947805
+      },
+      "evaluation_sample_size": 2770,
+      "random_seed": {
+        "maximum": 1.0,
+        "mean": 0.99389046944316,
+        "minimum": 0.9841728873044137,
+        "pair_count": 45,
+        "standard_deviation": 0.007109574262309112
+      },
+      "run_count": 10,
+      "spatial_block_degrees": 2.0,
+      "spatial_block_holdout": {
+        "maximum": 0.9784487877440896,
+        "mean": 0.8928853353561129,
+        "minimum": 0.7937601088277237,
+        "pair_count": 10,
+        "standard_deviation": 0.06351361281098905
+      },
+      "spatial_folds": 5,
+      "training_sample_size": 2770
+    }
+  }
+}

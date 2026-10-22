@@ -1,0 +1,35 @@
+{
+  "config_sha256": "b1ef353834820653a0097992cb9863cfcbb67f711205a10edf85fffe70996140",
+  "created_at": "2026-09-20T12:32:54.105452+00:00",
+  "inputs": {
+    "data/external/ne_50m_admin_0_countries_v5.1.2.geojson": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+    "runs/australia/data/processed/climate_features.npz": "ebde5ac9db856a0a7466f928bc2b47aaf7318fc9c8ec5ebfb5d15346a3c3bd86",
+    "runs/australia/results/manifests/prepare-region.json": "d5d75d82747795b7435a6982f8764dc687cf84ad913367f3a14e95048a1fcc98",
+    "runs/australia/results/metrics/internal.json": "4166e4b10905d2419ad7ad5887ebce5a55f4ac3e2339e5402b8bc83e4dddd462",
+    "runs/australia/results/models/gmm.joblib": "97cf83b7d6bf0df63cf3467d9d161635bc26ea733b039909cddcfab40b8dc108",
+    "runs/australia/results/models/gmm_confidence.npy": "a12e6bde78e4b568c2df30919e758fc5b4bad4b437233e680224efc1ae24064d",
+    "runs/australia/results/models/gmm_labels.npy": "77a2668b51c546b027ed0f3913819d0d3c4afcfc43016dbfde821f9cf44e7d42",
+    "runs/australia/results/models/kmeans.joblib": "920a91424b4d5fdf95fbfbb2c4443b24d074def75c7e6d1219271cbec3dd188b",
+    "runs/australia/results/models/kmeans_labels.npy": "82e82c74e49f4a6bca22adc0c5f096bf1cd7c418d2b6a0eea474c9edcfa1f5f0",
+    "runs/australia/results/models/pca.joblib": "43783ce35f99d41d74a98da04f3aec733bcf0ca3e273a043c9a8ff2985b43635",
+    "runs/australia/results/models/pca_features.npy": "779f80c8c76d6f33ca8ff5d1ec825bfd6032fe5c05f0f3cd01dc915674db6ddf",
+    "runs/australia/results/models/scaler.joblib": "397fd3462789afaf8f11d1b27c42649d4d43286c0a8209454e388721043b23ee"
+  },
+  "preprocessing": {
+    "pca_sampling": "area_bootstrap_with_replacement",
+    "pca_variance_target": 0.99,
+    "precipitation_transform": "log1p",
+    "scaling": "standard",
+    "scaling_weights": "exact_cell_area"
+  },
+  "region": "Australia",
+  "selected_gmm_covariance": "diag",
+  "selected_gmm_k": 2,
+  "selected_kmeans_k": 2,
+  "selection_policy": {
+    "external_labels_used": false,
+    "gmm_primary_metric": "silhouette_after_stability_and_minimum_area_safeguards",
+    "stability": "area_bootstrap"
+  },
+  "stage": "freeze"
+}

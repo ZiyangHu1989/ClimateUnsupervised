@@ -1,0 +1,60 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.3464982922305499,
+      0.29236716383539935,
+      0.1874208913889096,
+      0.17371365254514118
+    ],
+    "ari_to_full": 0.8540071924770639,
+    "bootstrap_stability": {
+      "maximum": 0.9842727265576066,
+      "mean": 0.8536868362183316,
+      "minimum": 0.532824833018866,
+      "pair_count": 45,
+      "standard_deviation": 0.13252552308570628
+    },
+    "davies_bouldin": 1.2742603541584019,
+    "eligible": true,
+    "family": "kmeans",
+    "k": 4,
+    "label_mapping": {
+      "0": 3,
+      "1": 2,
+      "2": 1,
+      "3": 0
+    },
+    "method": "kmeans",
+    "minimum_cluster_area_fraction": 0.17371365254514118,
+    "omitted_family": "thermal_seasonality",
+    "reference_status": "temporally_confirmed",
+    "representation": "variability-direct",
+    "retained_features": 38,
+    "silhouette": 0.2504455440490578,
+    "spatial_stability": {
+      "maximum": 0.9743549673142771,
+      "mean": 0.954818281870758,
+      "minimum": 0.9245140953026011,
+      "pair_count": 10,
+      "standard_deviation": 0.018263449606958453
+    },
+    "temporal_stability": {
+      "maximum": 0.8983103384037829,
+      "mean": 0.821858265609509,
+      "minimum": 0.7684649431622683,
+      "pair_count": 10,
+      "standard_deviation": 0.05100593411751299
+    },
+    "warnings": []
+  }
+}

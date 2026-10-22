@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import BoundaryNorm, ListedColormap
 import numpy as np
 
-from .config import project_path
+from .config import run_path
 from .preprocess import MONTHS
 
 
@@ -32,9 +32,13 @@ def _categorical_map(
     scatter = ax.scatter(longitude[valid], latitude[valid], c=normalized, s=1.1, cmap=cmap,
                          vmin=-.5, vmax=len(ids)-.5, rasterized=True)
     colorbar = fig.colorbar(scatter, ax=ax, ticks=np.arange(len(ids)), fraction=.025, pad=.02)
-    colorbar.ax.set_yticklabels(labels if labels is not None else [str(int(value)) for value in ids])
+    tick_labels = ([labels[int(value)] for value in ids] if labels is not None
+                   else [str(int(value)) for value in ids])
+    colorbar.ax.set_yticklabels(tick_labels)
+    lon_values, lat_values = longitude[valid], latitude[valid]
     ax.set(title=title, xlabel="Longitude (degrees)", ylabel="Latitude (degrees)",
-           xlim=(-180, 180), ylim=(-90, 90), aspect="auto")
+           xlim=(float(lon_values.min()) - 1, float(lon_values.max()) + 1),
+           ylim=(float(lat_values.min()) - 1, float(lat_values.max()) + 1), aspect="auto")
     ax.grid(alpha=.18, linewidth=.5)
     _save(fig, path)
 
@@ -55,7 +59,7 @@ def create_evaluation_figures(
     references: dict[str, np.ndarray], valid: np.ndarray, overlap_rows: list[dict[str, Any]],
     profile_rows: list[dict[str, Any]],
 ) -> list[Path]:
-    output = project_path("results", "figures", "evaluation")
+    output = run_path(config, "results", "figures", "evaluation")
     outputs: list[Path] = []
 
     fig, axes = plt.subplots(1, 3, figsize=(12, 3.8))
@@ -80,7 +84,8 @@ def create_evaluation_figures(
     scatter = ax.scatter(longitude, latitude, c=entropy, s=1.1, cmap="magma", vmin=0, vmax=1, rasterized=True)
     fig.colorbar(scatter, ax=ax, label="Normalized predictive entropy", fraction=.025, pad=.02)
     ax.set(title="GMM assignment uncertainty", xlabel="Longitude (degrees)", ylabel="Latitude (degrees)",
-           xlim=(-180, 180), ylim=(-90, 90)); ax.grid(alpha=.18, linewidth=.5)
+           xlim=(float(longitude.min()) - 1, float(longitude.max()) + 1),
+           ylim=(float(latitude.min()) - 1, float(latitude.max()) + 1)); ax.grid(alpha=.18, linewidth=.5)
     outputs.append(output / "gmm-uncertainty-map.png"); _save(fig, outputs[-1])
 
     for method in ("kmeans", "gmm"):
@@ -113,7 +118,9 @@ def create_evaluation_figures(
         colorbar = fig.colorbar(scatter, ax=ax, ticks=[0, 1], fraction=.025, pad=.02)
         colorbar.ax.set_yticklabels(["Different structure", "Strongest-match group"])
         ax.set(title=f"{method.upper()} correspondence with Köppen primary groups",
-               xlabel="Longitude (degrees)", ylabel="Latitude (degrees)", xlim=(-180, 180), ylim=(-90, 90))
+               xlabel="Longitude (degrees)", ylabel="Latitude (degrees)",
+               xlim=(float(longitude[valid].min()) - 1, float(longitude[valid].max()) + 1),
+               ylim=(float(latitude[valid].min()) - 1, float(latitude[valid].max()) + 1))
         ax.grid(alpha=.18, linewidth=.5)
         outputs.append(output / f"{method}-primary-correspondence.png"); _save(fig, outputs[-1])
 

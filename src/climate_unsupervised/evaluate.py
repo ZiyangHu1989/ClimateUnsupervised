@@ -14,7 +14,7 @@ from sklearn.metrics import (
 )
 
 from .artifacts import manifest, verify_manifest_inputs, write_json
-from .config import config_hash, project_path
+from .config import config_hash, project_path, run_path
 
 
 def weighted_contingency(left: np.ndarray, right: np.ndarray, weights: np.ndarray) -> np.ndarray:
@@ -120,12 +120,12 @@ def _majority_disagreement(clusters: np.ndarray, reference: np.ndarray, weights:
 
 
 def evaluate(config: dict) -> Path:
-    frozen_path = project_path("results", "manifests", "frozen-model.json")
+    frozen_path = run_path(config, "results", "manifests", "frozen-model.json")
     if not frozen_path.exists():
         raise FileNotFoundError("Run freeze before evaluate")
     frozen = json.loads(frozen_path.read_text(encoding="utf-8"))
     verify_manifest_inputs(frozen)
-    feature_path = project_path("data", "processed", "climate_features.npz")
+    feature_path = run_path(config, "data", "processed", "climate_features.npz")
     reference_path = project_path("data", "external", "koppen_geiger_1991_2020.tif")
     if not reference_path.exists():
         raise FileNotFoundError("Run download-koppen before evaluate")
@@ -140,7 +140,7 @@ def evaluate(config: dict) -> Path:
     saved = {"reference": reference, "primary_reference": primary, "valid": valid,
              "latitude": latitude, "longitude": longitude}
     for method in ("kmeans", "gmm"):
-        labels = np.load(project_path("results", "models", f"{method}_labels.npy"))
+        labels = np.load(run_path(config, "results", "models", f"{method}_labels.npy"))
         left, right, selected_weights = labels[valid], reference[valid], weights[valid]
         primary_right = primary[valid]
         subclasses = _scores(left, right, selected_weights)
@@ -164,10 +164,10 @@ def evaluate(config: dict) -> Path:
         saved[f"{method}_subclass_disagreement"] = subclass_disagreement
         saved[f"{method}_primary_disagreement"] = primary_disagreement
         saved[f"{method}_disagreement"] = primary_disagreement
-    metrics_path = project_path("results", "metrics", "external.json")
+    metrics_path = run_path(config, "results", "metrics", "external.json")
     write_json(metrics_path, results)
-    np.savez_compressed(project_path("results", "metrics", "external-map-data.npz"), **saved)
-    write_json(project_path("results", "manifests", "evaluate.json"), manifest(
+    np.savez_compressed(run_path(config, "results", "metrics", "external-map-data.npz"), **saved)
+    write_json(run_path(config, "results", "manifests", "evaluate.json"), manifest(
         "evaluate", config_hash(config), [frozen_path, reference_path], metrics=str(metrics_path),
         valid_cells=int(valid.sum()),
     ))

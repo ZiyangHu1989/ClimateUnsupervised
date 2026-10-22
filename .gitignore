@@ -1,3 +1,10 @@
+# Keep all dataset contents local; only empty directory placeholders are tracked.
+data/**
+!data/raw/
+!data/interim/
+!data/processed/
+!data/external/
+**/raw/**
 data/raw/*
 data/interim/*
 data/processed/*
@@ -26,5 +33,19 @@ __pycache__/
 .coverage
 .venv/
 .conda-env/
+.env
+.env.*
+!.env.example
+.cdsapirc
+*.pem
+*.key
 *.egg-info/
 .DS_Store
+
+runs/*/data/
+runs/*/results/models/
+runs/*/results/figures/
+runs/*/results/metrics/*
+!runs/*/results/metrics/*.json
+runs/*/results/manifests/*
+!runs/*/results/manifests/*.json

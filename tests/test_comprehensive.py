@@ -10,6 +10,7 @@ from climate_unsupervised.comprehensive import (
     weighted_quantile,
 )
 from climate_unsupervised.evaluate import sample_raster
+from climate_unsupervised.evaluation_plots import _categorical_map
 
 
 def test_predictive_entropy_has_expected_bounds():
@@ -62,3 +63,13 @@ def test_spatial_alignment_reports_and_masks_nodata(tmp_path):
     assert audit["koppen_raster"]["crs"] == "EPSG:4326"
     assert audit["valid_overlap_cells"] == 1
     assert audit["invalid_or_missing_cells"] == 1
+
+
+def test_categorical_map_accepts_subset_of_named_classes(tmp_path):
+    path = tmp_path / "map.png"
+    _categorical_map(
+        np.array([115.0, 130.0, 150.0]), np.array([-35.0, -25.0, -15.0]),
+        np.array([0, 1, 2]), np.ones(3, dtype=bool), "Australian groups", path,
+        ["A Tropical", "B Arid", "C Temperate", "D Continental", "E Polar"],
+    )
+    assert path.exists() and path.stat().st_size > 0

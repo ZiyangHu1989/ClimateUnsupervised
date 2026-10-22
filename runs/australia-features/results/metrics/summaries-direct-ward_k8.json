@@ -1,0 +1,63 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.1759431840948029,
+      0.1613033327983861,
+      0.15777439611385397,
+      0.13207779115177018,
+      0.12977132995311771,
+      0.10089131131346499,
+      0.09584810420663886,
+      0.0463905503679653
+    ],
+    "bootstrap_stability": {
+      "maximum": 0.8165087103554053,
+      "mean": 0.5716512517359743,
+      "minimum": 0.4340336614121151,
+      "pair_count": 45,
+      "standard_deviation": 0.08842545422768394
+    },
+    "davies_bouldin": 1.1969965610335631,
+    "eligible": false,
+    "family": "ward",
+    "k": 8,
+    "label_mapping": {
+      "0": 5,
+      "1": 0,
+      "2": 4,
+      "3": 1,
+      "4": 6,
+      "5": 2,
+      "6": 7,
+      "7": 3
+    },
+    "method": "ward",
+    "minimum_cluster_area_fraction": 0.0463905503679653,
+    "silhouette": 0.2455672378664003,
+    "spatial_stability": {
+      "maximum": 0.6861037408519748,
+      "mean": 0.5335729293502354,
+      "minimum": 0.4385891177112321,
+      "pair_count": 10,
+      "standard_deviation": 0.07791822112593343
+    },
+    "temporal_stability": {
+      "maximum": 0.722346369575229,
+      "mean": 0.5527124961751424,
+      "minimum": 0.4222605729956893,
+      "pair_count": 10,
+      "standard_deviation": 0.09097969047609364
+    },
+    "warnings": []
+  }
+}

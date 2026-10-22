@@ -1,0 +1,61 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.24937329631601973,
+      0.16533247366780282,
+      0.1586570413991451,
+      0.15094771537589283,
+      0.10599783673992048,
+      0.10211526305025156,
+      0.06757637345096745
+    ],
+    "bootstrap_stability": {
+      "maximum": 0.9539098701673187,
+      "mean": 0.7680751966987894,
+      "minimum": 0.6393103365097996,
+      "pair_count": 45,
+      "standard_deviation": 0.08923894194103157
+    },
+    "davies_bouldin": 0.9849393755432165,
+    "eligible": false,
+    "family": "kmeans",
+    "k": 7,
+    "label_mapping": {
+      "0": 4,
+      "1": 5,
+      "2": 0,
+      "3": 3,
+      "4": 6,
+      "5": 1,
+      "6": 2
+    },
+    "method": "kmeans",
+    "minimum_cluster_area_fraction": 0.06757637345096745,
+    "silhouette": 0.32521062599524325,
+    "spatial_stability": {
+      "maximum": 0.9331504247899393,
+      "mean": 0.7458021699402969,
+      "minimum": 0.625314593159766,
+      "pair_count": 10,
+      "standard_deviation": 0.11115020479664744
+    },
+    "temporal_stability": {
+      "maximum": 0.9011803163583902,
+      "mean": 0.7318982554771595,
+      "minimum": 0.6462909026762251,
+      "pair_count": 10,
+      "standard_deviation": 0.0823141772889554
+    },
+    "warnings": []
+  }
+}

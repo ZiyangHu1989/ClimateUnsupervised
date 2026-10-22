@@ -1,0 +1,108 @@
+{
+  "representatives": [
+    {
+      "bootstrap": 0.8944601913525586,
+      "dimensions": 24,
+      "features": 24,
+      "k": 6,
+      "method": "kmeans",
+      "minimum_area": 0.06895187032957546,
+      "name": "baseline-direct",
+      "spatial": 0.9212963939382754,
+      "status": "temporally_confirmed",
+      "subclass_ari": 0.3541004367763627,
+      "temporal": 0.8857723202852691
+    },
+    {
+      "bootstrap": 0.9046084651409892,
+      "dimensions": 8,
+      "features": 24,
+      "k": 4,
+      "method": "kmeans",
+      "minimum_area": 0.137020334471799,
+      "name": "baseline-pca",
+      "spatial": 0.9542126652556483,
+      "status": "temporally_confirmed",
+      "subclass_ari": 0.3139754071441465,
+      "temporal": 0.9047859094274255
+    },
+    {
+      "bootstrap": 0.8824003560782417,
+      "dimensions": 22,
+      "features": 22,
+      "k": 4,
+      "method": "kmeans",
+      "minimum_area": 0.1774736155050497,
+      "name": "profiles-direct",
+      "spatial": 0.9172464524272581,
+      "status": "temporally_confirmed",
+      "subclass_ari": 0.39354782573418756,
+      "temporal": 0.8774033057514344
+    },
+    {
+      "bootstrap": 0.8861343780310237,
+      "dimensions": 10,
+      "features": 22,
+      "k": 4,
+      "method": "kmeans",
+      "minimum_area": 0.17519712959499686,
+      "name": "profiles-pca",
+      "spatial": 0.9194496483768226,
+      "status": "temporally_confirmed",
+      "subclass_ari": 0.3993795695014266,
+      "temporal": 0.877768124267812
+    },
+    {
+      "bootstrap": 0.8699010745098039,
+      "dimensions": 23,
+      "features": 23,
+      "k": 5,
+      "method": "kmeans",
+      "minimum_area": 0.1288575559651053,
+      "name": "summaries-direct",
+      "spatial": 0.9566553895671216,
+      "status": "temporally_confirmed",
+      "subclass_ari": 0.3981479612975105,
+      "temporal": 0.8030810504852471
+    },
+    {
+      "bootstrap": 0.9061830755041457,
+      "dimensions": 11,
+      "features": 23,
+      "k": 5,
+      "method": "kmeans",
+      "minimum_area": 0.12829733510761349,
+      "name": "summaries-pca",
+      "spatial": 0.8652788745280432,
+      "status": "temporally_confirmed",
+      "subclass_ari": 0.3993711991546134,
+      "temporal": 0.8023025791855364
+    },
+    {
+      "bootstrap": 0.9289857905870872,
+      "dimensions": 42,
+      "features": 42,
+      "k": 4,
+      "method": "kmeans",
+      "minimum_area": 0.169128580364558,
+      "name": "variability-direct",
+      "spatial": 0.9395725878991719,
+      "status": "temporally_confirmed",
+      "subclass_ari": 0.33058971349726923,
+      "temporal": 0.8362048909361682
+    },
+    {
+      "bootstrap": 0.9112405289838774,
+      "dimensions": 21,
+      "features": 42,
+      "k": 4,
+      "method": "kmeans",
+      "minimum_area": 0.169128580364558,
+      "name": "variability-pca",
+      "spatial": 0.9369116441965193,
+      "status": "temporally_confirmed",
+      "subclass_ari": 0.3297113563424794,
+      "temporal": 0.8465342854187288
+    }
+  ]
+}

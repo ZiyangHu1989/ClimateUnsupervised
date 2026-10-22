@@ -1,0 +1,3446 @@
+{
+  "area_sensitivity": {
+    "0.0": [
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": true,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.7217427764095846,
+        "k": 3,
+        "representative_method": "gmm_diag",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": true,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.808266701079471,
+        "k": 4,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": null,
+        "k": 6,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      }
+    ],
+    "0.005": [
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": true,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.7217427764095846,
+        "k": 3,
+        "representative_method": "gmm_diag",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": true,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.808266701079471,
+        "k": 4,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": null,
+        "k": 6,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      }
+    ],
+    "0.01": [
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": true,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.7217427764095846,
+        "k": 3,
+        "representative_method": "gmm_diag",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": true,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.808266701079471,
+        "k": 4,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": null,
+        "k": 6,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      }
+    ],
+    "0.02": [
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": true,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.7217427764095846,
+        "k": 3,
+        "representative_method": "gmm_diag",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": true,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.808266701079471,
+        "k": 4,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": null,
+        "k": 6,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "area_shares": [
+        0.47121570966296306,
+        0.2766283534653414,
+        0.2521559368716955
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9806853181451869,
+        "mean": 0.8013316443298657,
+        "minimum": 0.5989429941042416,
+        "pair_count": 45,
+        "standard_deviation": 0.11704462673974313
+      },
+      "davies_bouldin": 0.9666991808419843,
+      "eligible": true,
+      "family": "kmeans",
+      "k": 3,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.2521559368716955,
+      "silhouette": 0.3517954741701188,
+      "spatial_stability": {
+        "maximum": 1.0,
+        "mean": 0.893137290967662,
+        "minimum": 0.8137355286556541,
+        "pair_count": 10,
+        "standard_deviation": 0.07084464511240317
+      },
+      "temporal_stability": {
+        "maximum": 0.9381471761402344,
+        "mean": 0.8483333427538453,
+        "minimum": 0.7334174425812731,
+        "pair_count": 10,
+        "standard_deviation": 0.06030660305327354
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.404313513769637,
+        0.31952787994086707,
+        0.27615860628949596
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9810819750211344,
+        "mean": 0.901525456498274,
+        "minimum": 0.7739214389785041,
+        "pair_count": 45,
+        "standard_deviation": 0.05450607119838967
+      },
+      "davies_bouldin": 1.0435056910858531,
+      "eligible": true,
+      "family": "gmm",
+      "k": 3,
+      "label_mapping": {
+        "0": 1,
+        "1": 2,
+        "2": 0
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.27615860628949596,
+      "silhouette": 0.3300623630017806,
+      "spatial_stability": {
+        "maximum": 0.9671659924377226,
+        "mean": 0.9150428499184675,
+        "minimum": 0.8261354798421385,
+        "pair_count": 10,
+        "standard_deviation": 0.04093520845949338
+      },
+      "temporal_stability": {
+        "maximum": 0.9444855486852323,
+        "mean": 0.8887165877566406,
+        "minimum": 0.8308292117661434,
+        "pair_count": 10,
+        "standard_deviation": 0.039159815403410445
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.39818170251238616,
+        0.3118127935983007,
+        0.29000550388931307
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9128772505941692,
+        "mean": 0.7882485221545423,
+        "minimum": 0.6420105847938075,
+        "pair_count": 45,
+        "standard_deviation": 0.06741469444385857
+      },
+      "davies_bouldin": 1.0488913524615662,
+      "eligible": false,
+      "family": "gmm",
+      "k": 3,
+      "label_mapping": {
+        "0": 2,
+        "1": 1,
+        "2": 0
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.29000550388931307,
+      "silhouette": 0.3137142068486943,
+      "spatial_stability": {
+        "maximum": 0.8995536846978612,
+        "mean": 0.8414900634453149,
+        "minimum": 0.7756198692343997,
+        "pair_count": 10,
+        "standard_deviation": 0.038810140003835154
+      },
+      "temporal_stability": {
+        "maximum": 0.8092046929427198,
+        "mean": 0.7171385399508965,
+        "minimum": 0.6013863602000538,
+        "pair_count": 10,
+        "standard_deviation": 0.06251050201381485
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.4226902623383336,
+        0.30598390095922945,
+        0.27132583670243693
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7209053643929699,
+        "mean": 0.4661992182534162,
+        "minimum": 0.15553411093757347,
+        "pair_count": 45,
+        "standard_deviation": 0.16662864430598862
+      },
+      "davies_bouldin": 1.0576416837701261,
+      "eligible": false,
+      "family": "birch",
+      "k": 3,
+      "label_mapping": {
+        "0": 2,
+        "1": 1,
+        "2": 0
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.27132583670243693,
+      "silhouette": 0.3211654685010125,
+      "spatial_stability": {
+        "maximum": 0.6657143885064396,
+        "mean": 0.42015279431013397,
+        "minimum": 0.167097446798182,
+        "pair_count": 10,
+        "standard_deviation": 0.16871742061833964
+      },
+      "temporal_stability": {
+        "maximum": 0.5841608807550792,
+        "mean": 0.37830848120130556,
+        "minimum": 0.21661214175032883,
+        "pair_count": 10,
+        "standard_deviation": 0.12838271671916202
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.4378959227857036,
+        0.40770086061182004,
+        0.15440321660247636
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9606203054921324,
+        "mean": 0.5604437159259358,
+        "minimum": 0.2789864634670781,
+        "pair_count": 45,
+        "standard_deviation": 0.22648329649738605
+      },
+      "davies_bouldin": 1.0050430316937762,
+      "eligible": false,
+      "family": "ward",
+      "k": 3,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 2
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.15440321660247636,
+      "silhouette": 0.34582338984437294,
+      "spatial_stability": {
+        "maximum": 0.9257991570271705,
+        "mean": 0.5204449106860608,
+        "minimum": 0.27023841651510727,
+        "pair_count": 10,
+        "standard_deviation": 0.21998965324460998
+      },
+      "temporal_stability": {
+        "maximum": 0.9134590528608941,
+        "mean": 0.7466012242519959,
+        "minimum": 0.597737242099854,
+        "pair_count": 10,
+        "standard_deviation": 0.09807689704144709
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.36522944867721624,
+        0.29843180680560616,
+        0.1993184100453786,
+        0.137020334471799
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9918484909790026,
+        "mean": 0.8906045813496718,
+        "minimum": 0.7179296765190637,
+        "pair_count": 45,
+        "standard_deviation": 0.06355187354362922
+      },
+      "davies_bouldin": 1.0326980755145971,
+      "eligible": true,
+      "family": "kmeans",
+      "k": 4,
+      "label_mapping": {
+        "0": 1,
+        "1": 3,
+        "2": 2,
+        "3": 0
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.137020334471799,
+      "silhouette": 0.31883149024730667,
+      "spatial_stability": {
+        "maximum": 0.9798351268212535,
+        "mean": 0.9526810940183162,
+        "minimum": 0.9134365793717505,
+        "pair_count": 10,
+        "standard_deviation": 0.02292311915615639
+      },
+      "temporal_stability": {
+        "maximum": 0.9555442600233608,
+        "mean": 0.8950472772046052,
+        "minimum": 0.8164637322993044,
+        "pair_count": 10,
+        "standard_deviation": 0.044523057247107214
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.3541932688230133,
+        0.26759882068162966,
+        0.20835995758555179,
+        0.1698479529098053
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9593006129181407,
+        "mean": 0.8634619833424121,
+        "minimum": 0.718094131271978,
+        "pair_count": 45,
+        "standard_deviation": 0.0542322014608731
+      },
+      "davies_bouldin": 1.0931043869627017,
+      "eligible": true,
+      "family": "gmm",
+      "k": 4,
+      "label_mapping": {
+        "0": 3,
+        "1": 0,
+        "2": 2,
+        "3": 1
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.1698479529098053,
+      "silhouette": 0.30442811847128126,
+      "spatial_stability": {
+        "maximum": 0.9407379431982983,
+        "mean": 0.8480217309755181,
+        "minimum": 0.772276467808893,
+        "pair_count": 10,
+        "standard_deviation": 0.059096985082647185
+      },
+      "temporal_stability": {
+        "maximum": 0.9389405433269258,
+        "mean": 0.8717603955142874,
+        "minimum": 0.8065933332710608,
+        "pair_count": 10,
+        "standard_deviation": 0.037827356500945576
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2964077355584425,
+        0.2827702041849922,
+        0.24521563500412744,
+        0.17560642525243783
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.84628617090584,
+        "mean": 0.7262375446868082,
+        "minimum": 0.5671992990303572,
+        "pair_count": 45,
+        "standard_deviation": 0.07022815774068843
+      },
+      "davies_bouldin": 1.115767942586269,
+      "eligible": false,
+      "family": "gmm",
+      "k": 4,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 2,
+        "3": 3
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.17560642525243783,
+      "silhouette": 0.26796711407802054,
+      "spatial_stability": {
+        "maximum": 0.7894611715599815,
+        "mean": 0.725553391829674,
+        "minimum": 0.6886273430598957,
+        "pair_count": 10,
+        "standard_deviation": 0.036133965922088965
+      },
+      "temporal_stability": {
+        "maximum": 0.6802007886673662,
+        "mean": 0.4499954365207087,
+        "minimum": 0.31581242078380706,
+        "pair_count": 10,
+        "standard_deviation": 0.13569551242623365
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.4226902623383336,
+        0.30598390095922945,
+        0.229710222703877,
+        0.041615613998559904
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7075837704794132,
+        "mean": 0.5034191753547267,
+        "minimum": 0.2907151005159545,
+        "pair_count": 45,
+        "standard_deviation": 0.12661191585281964
+      },
+      "davies_bouldin": 1.0706025128325953,
+      "eligible": false,
+      "family": "birch",
+      "k": 4,
+      "label_mapping": {
+        "0": 2,
+        "1": 1,
+        "2": 0,
+        "3": 3
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.041615613998559904,
+      "silhouette": 0.2994546135436995,
+      "spatial_stability": {
+        "maximum": 0.6087936504261495,
+        "mean": 0.4507727283076507,
+        "minimum": 0.31151963342832345,
+        "pair_count": 10,
+        "standard_deviation": 0.10277377178232727
+      },
+      "temporal_stability": {
+        "maximum": 0.6850187329676528,
+        "mean": 0.4463208325247566,
+        "minimum": 0.28327016497723556,
+        "pair_count": 10,
+        "standard_deviation": 0.1381175536923888
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.38717873347437104,
+        0.2621539996164904,
+        0.1962640503066622,
+        0.15440321660247636
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.932853563781437,
+        "mean": 0.6304030049321485,
+        "minimum": 0.3982738162219617,
+        "pair_count": 45,
+        "standard_deviation": 0.15101829931484856
+      },
+      "davies_bouldin": 1.0361375886338313,
+      "eligible": false,
+      "family": "ward",
+      "k": 4,
+      "label_mapping": {
+        "0": 0,
+        "1": 2,
+        "2": 3,
+        "3": 1
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.15440321660247636,
+      "silhouette": 0.3172781066382554,
+      "spatial_stability": {
+        "maximum": 0.8845854324142397,
+        "mean": 0.6334464350929643,
+        "minimum": 0.44329550032389503,
+        "pair_count": 10,
+        "standard_deviation": 0.12487187768328534
+      },
+      "temporal_stability": {
+        "maximum": 0.73958877535425,
+        "mean": 0.5937476664381988,
+        "minimum": 0.4136794633992246,
+        "pair_count": 10,
+        "standard_deviation": 0.11341746925559627
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2932840150679947,
+        0.2866621159232701,
+        0.1923738707197601,
+        0.12516397718110547,
+        0.10251602110786967
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9811185627951808,
+        "mean": 0.8258371738860841,
+        "minimum": 0.49239154037423494,
+        "pair_count": 45,
+        "standard_deviation": 0.1582189517918159
+      },
+      "davies_bouldin": 0.9816405714259862,
+      "eligible": true,
+      "family": "kmeans",
+      "k": 5,
+      "label_mapping": {
+        "0": 1,
+        "1": 3,
+        "2": 2,
+        "3": 0,
+        "4": 4
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.10251602110786967,
+      "silhouette": 0.33403285811770694,
+      "spatial_stability": {
+        "maximum": 0.9485565796886972,
+        "mean": 0.6544429279956608,
+        "minimum": 0.4832346709286691,
+        "pair_count": 10,
+        "standard_deviation": 0.18942747947192762
+      },
+      "temporal_stability": {
+        "maximum": 0.942707181963991,
+        "mean": 0.6529939558771208,
+        "minimum": 0.4701300212676831,
+        "pair_count": 10,
+        "standard_deviation": 0.2063156582727015
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2575306262401925,
+        0.22767910168830877,
+        0.2049660108610104,
+        0.19937781227815946,
+        0.11044644893232887
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9224480271882614,
+        "mean": 0.6886819430597086,
+        "minimum": 0.4382334251118426,
+        "pair_count": 45,
+        "standard_deviation": 0.1387362321322626
+      },
+      "davies_bouldin": 1.2590685434537665,
+      "eligible": false,
+      "family": "gmm",
+      "k": 5,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 2,
+        "3": 4,
+        "4": 3
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.11044644893232887,
+      "silhouette": 0.2569287118594028,
+      "spatial_stability": {
+        "maximum": 0.9102474064241344,
+        "mean": 0.7525904591110425,
+        "minimum": 0.5223685440070285,
+        "pair_count": 10,
+        "standard_deviation": 0.17222033866024583
+      },
+      "temporal_stability": {
+        "maximum": 0.7751159415873125,
+        "mean": 0.5773784567477852,
+        "minimum": 0.43411944799155466,
+        "pair_count": 10,
+        "standard_deviation": 0.11285261264560698
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2619005687036685,
+        0.2496613784492084,
+        0.20442167935400066,
+        0.148306135154498,
+        0.13571023833862442
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8511753765248244,
+        "mean": 0.7296869838492264,
+        "minimum": 0.47127027868136173,
+        "pair_count": 45,
+        "standard_deviation": 0.11732771819046224
+      },
+      "davies_bouldin": 1.0925505132244344,
+      "eligible": false,
+      "family": "gmm",
+      "k": 5,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 4,
+        "3": 2,
+        "4": 3
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.13571023833862442,
+      "silhouette": 0.2939443972839285,
+      "spatial_stability": {
+        "maximum": 0.7326175765794509,
+        "mean": 0.5632612919959827,
+        "minimum": 0.38900986509111796,
+        "pair_count": 10,
+        "standard_deviation": 0.09979394795589286
+      },
+      "temporal_stability": {
+        "maximum": 0.7743254561750683,
+        "mean": 0.6150902307181647,
+        "minimum": 0.40694760514525297,
+        "pair_count": 10,
+        "standard_deviation": 0.1550074162486568
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.4226902623383336,
+        0.30598390095922945,
+        0.14524252811321253,
+        0.08446769459066447,
+        0.041615613998559904
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7495995307832313,
+        "mean": 0.5196969135411023,
+        "minimum": 0.2554640668433581,
+        "pair_count": 45,
+        "standard_deviation": 0.12504637175069266
+      },
+      "davies_bouldin": 0.9746371753361303,
+      "eligible": false,
+      "family": "birch",
+      "k": 5,
+      "label_mapping": {
+        "0": 1,
+        "1": 3,
+        "2": 0,
+        "3": 4,
+        "4": 2
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.041615613998559904,
+      "silhouette": 0.30853554612564743,
+      "spatial_stability": {
+        "maximum": 0.6984548453889146,
+        "mean": 0.4884312493219465,
+        "minimum": 0.3670358257322422,
+        "pair_count": 10,
+        "standard_deviation": 0.09884604002940466
+      },
+      "temporal_stability": {
+        "maximum": 0.6649688676250338,
+        "mean": 0.4760713651565897,
+        "minimum": 0.3234147826186632,
+        "pair_count": 10,
+        "standard_deviation": 0.13672711086882924
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.3115503818307738,
+        0.2559216483301472,
+        0.19008178384278804,
+        0.1464600799356816,
+        0.09598610606060934
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9147913488405892,
+        "mean": 0.6114457012853239,
+        "minimum": 0.4538037536864308,
+        "pair_count": 45,
+        "standard_deviation": 0.11418128674072364
+      },
+      "davies_bouldin": 0.9820539508255607,
+      "eligible": false,
+      "family": "ward",
+      "k": 5,
+      "label_mapping": {
+        "0": 3,
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 4
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.09598610606060934,
+      "silhouette": 0.33086357393286064,
+      "spatial_stability": {
+        "maximum": 0.7661040797671279,
+        "mean": 0.5997418063437575,
+        "minimum": 0.49039905839714587,
+        "pair_count": 10,
+        "standard_deviation": 0.09071101999225407
+      },
+      "temporal_stability": {
+        "maximum": 0.8495927658539133,
+        "mean": 0.6127616083571576,
+        "minimum": 0.395817384378682,
+        "pair_count": 10,
+        "standard_deviation": 0.1527124122148441
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2543179980319289,
+        0.2329463347475263,
+        0.17452823642648577,
+        0.16249946927621844,
+        0.10675609118826512,
+        0.06895187032957546
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9762616612122749,
+        "mean": 0.8944601913525586,
+        "minimum": 0.7741512710040723,
+        "pair_count": 45,
+        "standard_deviation": 0.05226805928554632
+      },
+      "davies_bouldin": 0.981967523640204,
+      "eligible": true,
+      "family": "kmeans",
+      "k": 6,
+      "label_mapping": {
+        "0": 0,
+        "1": 5,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 1
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.06895187032957546,
+      "silhouette": 0.326109021544211,
+      "spatial_stability": {
+        "maximum": 0.9714982702106798,
+        "mean": 0.9212963939382754,
+        "minimum": 0.8521877252798495,
+        "pair_count": 10,
+        "standard_deviation": 0.03835606967133544
+      },
+      "temporal_stability": {
+        "maximum": 0.9251046941729656,
+        "mean": 0.8857723202852691,
+        "minimum": 0.8187740908076899,
+        "pair_count": 10,
+        "standard_deviation": 0.03929205065748813
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2703902719161565,
+        0.19094213452951714,
+        0.15862156479104872,
+        0.14759672982559777,
+        0.12991752838247625,
+        0.10253177055520366
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9296984911925605,
+        "mean": 0.6378755140196789,
+        "minimum": 0.46308697230994117,
+        "pair_count": 45,
+        "standard_deviation": 0.15896065048375618
+      },
+      "davies_bouldin": 1.3133899527586506,
+      "eligible": false,
+      "family": "gmm",
+      "k": 6,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 3,
+        "3": 4,
+        "4": 5,
+        "5": 2
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.10253177055520366,
+      "silhouette": 0.22333339901304736,
+      "spatial_stability": {
+        "maximum": 0.9532856643547475,
+        "mean": 0.6300475895322969,
+        "minimum": 0.49793339605505005,
+        "pair_count": 10,
+        "standard_deviation": 0.1569001766028561
+      },
+      "temporal_stability": {
+        "maximum": 0.8440901905155055,
+        "mean": 0.5745087981445828,
+        "minimum": 0.46930141667224967,
+        "pair_count": 10,
+        "standard_deviation": 0.11887181982073425
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.20705362961140794,
+        0.20581372348587348,
+        0.20139554247460037,
+        0.16564535383220355,
+        0.13929586748836803,
+        0.08079588310754662
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8826522719383174,
+        "mean": 0.6679826121662846,
+        "minimum": 0.5015994055923894,
+        "pair_count": 45,
+        "standard_deviation": 0.13806514310619558
+      },
+      "davies_bouldin": 1.0688039385564154,
+      "eligible": false,
+      "family": "gmm",
+      "k": 6,
+      "label_mapping": {
+        "0": 1,
+        "1": 3,
+        "2": 2,
+        "3": 0,
+        "4": 5,
+        "5": 4
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.08079588310754662,
+      "silhouette": 0.2783076613104113,
+      "spatial_stability": {
+        "maximum": 0.8208963272038716,
+        "mean": 0.5831297996434165,
+        "minimum": 0.41490973511414875,
+        "pair_count": 10,
+        "standard_deviation": 0.14249087798690432
+      },
+      "temporal_stability": {
+        "maximum": 0.7926867895636059,
+        "mean": 0.57201773991947,
+        "minimum": 0.42029631556273905,
+        "pair_count": 10,
+        "standard_deviation": 0.13060820223008832
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.4226902623383336,
+        0.2025766938668973,
+        0.14524252811321253,
+        0.10340720709233214,
+        0.08446769459066447,
+        0.041615613998559904
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6541741047577169,
+        "mean": 0.4650981111731158,
+        "minimum": 0.2922988298109106,
+        "pair_count": 45,
+        "standard_deviation": 0.08313473280018135
+      },
+      "davies_bouldin": 0.9836979117277483,
+      "eligible": false,
+      "family": "birch",
+      "k": 6,
+      "label_mapping": {
+        "0": 0,
+        "1": 4,
+        "2": 3,
+        "3": 5,
+        "4": 2,
+        "5": 1
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.041615613998559904,
+      "silhouette": 0.26860152210529153,
+      "spatial_stability": {
+        "maximum": 0.6593992697602269,
+        "mean": 0.49117584885117227,
+        "minimum": 0.39107449515491377,
+        "pair_count": 10,
+        "standard_deviation": 0.07556457040635176
+      },
+      "temporal_stability": {
+        "maximum": 0.6477433386855959,
+        "mean": 0.4694891800754898,
+        "minimum": 0.3356619090744643,
+        "pair_count": 10,
+        "standard_deviation": 0.09314955380720377
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.29108509165064217,
+        0.2559216483301472,
+        0.19008178384278804,
+        0.12524419165894837,
+        0.09388920581870577,
+        0.04377807869876844
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8814405732308968,
+        "mean": 0.6628012752537722,
+        "minimum": 0.5103190998200489,
+        "pair_count": 45,
+        "standard_deviation": 0.09911969546138659
+      },
+      "davies_bouldin": 0.9691326382090241,
+      "eligible": false,
+      "family": "ward",
+      "k": 6,
+      "label_mapping": {
+        "0": 0,
+        "1": 2,
+        "2": 3,
+        "3": 1,
+        "4": 4,
+        "5": 5
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.04377807869876844,
+      "silhouette": 0.3249920310672133,
+      "spatial_stability": {
+        "maximum": 0.8341592053658688,
+        "mean": 0.6484437246605272,
+        "minimum": 0.4330929127902498,
+        "pair_count": 10,
+        "standard_deviation": 0.15295004069793589
+      },
+      "temporal_stability": {
+        "maximum": 0.7745995015388509,
+        "mean": 0.6018337177366583,
+        "minimum": 0.39375350231384665,
+        "pair_count": 10,
+        "standard_deviation": 0.13949703642296885
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.24901008237218275,
+        0.16495066394552238,
+        0.1586570413991451,
+        0.15132952509817327,
+        0.10599783673992048,
+        0.10247847699408857,
+        0.06757637345096745
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9551312339987058,
+        "mean": 0.7787176358982917,
+        "minimum": 0.5874485381998055,
+        "pair_count": 45,
+        "standard_deviation": 0.1030426257852643
+      },
+      "davies_bouldin": 1.0143662473723825,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 7,
+      "label_mapping": {
+        "0": 4,
+        "1": 5,
+        "2": 0,
+        "3": 3,
+        "4": 6,
+        "5": 1,
+        "6": 2
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.06757637345096745,
+      "silhouette": 0.31503273520482833,
+      "spatial_stability": {
+        "maximum": 0.9441999419958176,
+        "mean": 0.7770198568659078,
+        "minimum": 0.6604029893152551,
+        "pair_count": 10,
+        "standard_deviation": 0.0958056738913159
+      },
+      "temporal_stability": {
+        "maximum": 0.8768578767403316,
+        "mean": 0.6899155572521728,
+        "minimum": 0.5072029543108577,
+        "pair_count": 10,
+        "standard_deviation": 0.1529023597124735
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.19627724060515173,
+        0.16280677611532907,
+        0.15662484512589364,
+        0.14899366415272303,
+        0.1482832747926986,
+        0.09673130840776958,
+        0.09028289080043435
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.944922936502187,
+        "mean": 0.7763167444696482,
+        "minimum": 0.5402458372459464,
+        "pair_count": 45,
+        "standard_deviation": 0.1120884637552322
+      },
+      "davies_bouldin": 1.1932199945113808,
+      "eligible": false,
+      "family": "gmm",
+      "k": 7,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 4,
+        "3": 5,
+        "4": 3,
+        "5": 2,
+        "6": 6
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.09028289080043435,
+      "silhouette": 0.25963644295825505,
+      "spatial_stability": {
+        "maximum": 0.8946195499249029,
+        "mean": 0.7585359891253546,
+        "minimum": 0.6431097718289498,
+        "pair_count": 10,
+        "standard_deviation": 0.08473729685384566
+      },
+      "temporal_stability": {
+        "maximum": 0.8230360346395678,
+        "mean": 0.7630674402865613,
+        "minimum": 0.6543173214672301,
+        "pair_count": 10,
+        "standard_deviation": 0.05877391480255836
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.20912672351750394,
+        0.17450675325657222,
+        0.1536136398502483,
+        0.13629739577776812,
+        0.12614929330957061,
+        0.11916193179986749,
+        0.08114426248846934
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8593704582684506,
+        "mean": 0.7346660640780978,
+        "minimum": 0.5444760359555674,
+        "pair_count": 45,
+        "standard_deviation": 0.07940958220800898
+      },
+      "davies_bouldin": 1.0568260287063838,
+      "eligible": false,
+      "family": "gmm",
+      "k": 7,
+      "label_mapping": {
+        "0": 4,
+        "1": 2,
+        "2": 0,
+        "3": 3,
+        "4": 6,
+        "5": 5,
+        "6": 1
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.08114426248846934,
+      "silhouette": 0.2745555560575587,
+      "spatial_stability": {
+        "maximum": 0.7957363924606289,
+        "mean": 0.6375796342485323,
+        "minimum": 0.49642062450885427,
+        "pair_count": 10,
+        "standard_deviation": 0.10434083081744935
+      },
+      "temporal_stability": {
+        "maximum": 0.7089575829975511,
+        "mean": 0.5407594809411134,
+        "minimum": 0.41348227706133583,
+        "pair_count": 10,
+        "standard_deviation": 0.08999813145770683
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.31574356282930355,
+        0.2025766938668973,
+        0.14524252811321253,
+        0.10694669950903006,
+        0.10340720709233214,
+        0.08446769459066447,
+        0.041615613998559904
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6042157298815697,
+        "mean": 0.4614969554180105,
+        "minimum": 0.33790042279961785,
+        "pair_count": 45,
+        "standard_deviation": 0.06968216592522679
+      },
+      "davies_bouldin": 1.0681199440477964,
+      "eligible": false,
+      "family": "birch",
+      "k": 7,
+      "label_mapping": {
+        "0": 0,
+        "1": 5,
+        "2": 4,
+        "3": 6,
+        "4": 2,
+        "5": 1,
+        "6": 3
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.041615613998559904,
+      "silhouette": 0.2620735135651043,
+      "spatial_stability": {
+        "maximum": 0.6041094264948215,
+        "mean": 0.45082195364897154,
+        "minimum": 0.3736829343921952,
+        "pair_count": 10,
+        "standard_deviation": 0.06863777487611118
+      },
+      "temporal_stability": {
+        "maximum": 0.5405799328109981,
+        "mean": 0.44475880588643585,
+        "minimum": 0.34665800219746573,
+        "pair_count": 10,
+        "standard_deviation": 0.058587541139674966
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.21615297543549322,
+        0.19357061913871929,
+        0.19008178384278804,
+        0.16356859877868965,
+        0.1014104666927761,
+        0.09143747741276528,
+        0.04377807869876844
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8346592362724529,
+        "mean": 0.6320411805783247,
+        "minimum": 0.4269351217136181,
+        "pair_count": 45,
+        "standard_deviation": 0.09531163789921784
+      },
+      "davies_bouldin": 1.1013898837139988,
+      "eligible": false,
+      "family": "ward",
+      "k": 7,
+      "label_mapping": {
+        "0": 4,
+        "1": 2,
+        "2": 1,
+        "3": 0,
+        "4": 5,
+        "5": 6,
+        "6": 3
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.04377807869876844,
+      "silhouette": 0.28355384070242456,
+      "spatial_stability": {
+        "maximum": 0.747991715589193,
+        "mean": 0.5718737427397792,
+        "minimum": 0.3904312145973494,
+        "pair_count": 10,
+        "standard_deviation": 0.13353266589899082
+      },
+      "temporal_stability": {
+        "maximum": 0.6456230106097478,
+        "mean": 0.5345218529435064,
+        "minimum": 0.42746472208574543,
+        "pair_count": 10,
+        "standard_deviation": 0.07170380775462136
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.19824228408810152,
+        0.17210422064061084,
+        0.13603679032974647,
+        0.13213657188109326,
+        0.1055922924954182,
+        0.10118952718690925,
+        0.09340518078539758,
+        0.06129313259272284
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8952807419953202,
+        "mean": 0.7658273232675111,
+        "minimum": 0.5530238008027387,
+        "pair_count": 45,
+        "standard_deviation": 0.09327555415895214
+      },
+      "davies_bouldin": 1.0590623197873161,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 8,
+      "label_mapping": {
+        "0": 5,
+        "1": 2,
+        "2": 7,
+        "3": 3,
+        "4": 1,
+        "5": 4,
+        "6": 0,
+        "7": 6
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.06129313259272284,
+      "silhouette": 0.2919498089937934,
+      "spatial_stability": {
+        "maximum": 0.9404474240367398,
+        "mean": 0.7921656646853454,
+        "minimum": 0.6007143349686527,
+        "pair_count": 10,
+        "standard_deviation": 0.10725075473573766
+      },
+      "temporal_stability": {
+        "maximum": 0.9449101473177117,
+        "mean": 0.8830730809029618,
+        "minimum": 0.8497222731789443,
+        "pair_count": 10,
+        "standard_deviation": 0.03676075504424418
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.19768147795829522,
+        0.1584490852561994,
+        0.14511778834729133,
+        0.12071269649772194,
+        0.10544638910481262,
+        0.09639595712610013,
+        0.0921718439331521,
+        0.08402476177642723
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9048841314121755,
+        "mean": 0.7225915350931146,
+        "minimum": 0.5425754969402804,
+        "pair_count": 45,
+        "standard_deviation": 0.09699887585591678
+      },
+      "davies_bouldin": 1.1250444978458471,
+      "eligible": false,
+      "family": "gmm",
+      "k": 8,
+      "label_mapping": {
+        "0": 6,
+        "1": 1,
+        "2": 5,
+        "3": 7,
+        "4": 2,
+        "5": 0,
+        "6": 4,
+        "7": 3
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.08402476177642723,
+      "silhouette": 0.26062535546568216,
+      "spatial_stability": {
+        "maximum": 0.7858929587835799,
+        "mean": 0.6059538294450222,
+        "minimum": 0.4781845956879812,
+        "pair_count": 10,
+        "standard_deviation": 0.0914684501202096
+      },
+      "temporal_stability": {
+        "maximum": 0.8393690104469823,
+        "mean": 0.7347379367929936,
+        "minimum": 0.644593760837725,
+        "pair_count": 10,
+        "standard_deviation": 0.058877339258028585
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.17272831858941587,
+        0.1590125833743669,
+        0.1271661941053705,
+        0.1267630109397225,
+        0.12437840978449129,
+        0.11888571450116808,
+        0.10379285565800907,
+        0.06727291304745575
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8533362853692275,
+        "mean": 0.7434126102649613,
+        "minimum": 0.6197705247259957,
+        "pair_count": 45,
+        "standard_deviation": 0.04697841717125769
+      },
+      "davies_bouldin": 1.1102591222129314,
+      "eligible": false,
+      "family": "gmm",
+      "k": 8,
+      "label_mapping": {
+        "0": 7,
+        "1": 1,
+        "2": 3,
+        "3": 0,
+        "4": 2,
+        "5": 6,
+        "6": 5,
+        "7": 4
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.06727291304745575,
+      "silhouette": 0.2604911149671332,
+      "spatial_stability": {
+        "maximum": 0.771346155338516,
+        "mean": 0.6006240717604232,
+        "minimum": 0.5177885717086048,
+        "pair_count": 10,
+        "standard_deviation": 0.08803738684102523
+      },
+      "temporal_stability": {
+        "maximum": 0.7071571646915933,
+        "mean": 0.6672025636458084,
+        "minimum": 0.6265218665647124,
+        "pair_count": 10,
+        "standard_deviation": 0.027121430491727824
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2025766938668973,
+        0.18960308027066186,
+        0.14524252811321253,
+        0.1261404825586417,
+        0.10694669950903006,
+        0.10340720709233214,
+        0.08446769459066447,
+        0.041615613998559904
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.5605193479327695,
+        "mean": 0.44121389768136815,
+        "minimum": 0.3649639340550782,
+        "pair_count": 45,
+        "standard_deviation": 0.05319277806450219
+      },
+      "davies_bouldin": 1.1227302829340402,
+      "eligible": false,
+      "family": "birch",
+      "k": 8,
+      "label_mapping": {
+        "0": 6,
+        "1": 2,
+        "2": 5,
+        "3": 7,
+        "4": 3,
+        "5": 0,
+        "6": 4,
+        "7": 1
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.041615613998559904,
+      "silhouette": 0.2338541755469238,
+      "spatial_stability": {
+        "maximum": 0.5150595976047194,
+        "mean": 0.43828651043767974,
+        "minimum": 0.3558153162161122,
+        "pair_count": 10,
+        "standard_deviation": 0.0508197919559985
+      },
+      "temporal_stability": {
+        "maximum": 0.5397190728726708,
+        "mean": 0.461246188065639,
+        "minimum": 0.3921830767357241,
+        "pair_count": 10,
+        "standard_deviation": 0.05015243188117797
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.21615297543549322,
+        0.19357061913871929,
+        0.19008178384278804,
+        0.15708451398936646,
+        0.08382596178156948,
+        0.07557780009288596,
+        0.04335560826360623,
+        0.04035073745557133
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8238784593207094,
+        "mean": 0.6032424305051833,
+        "minimum": 0.4560152104335597,
+        "pair_count": 45,
+        "standard_deviation": 0.08301259483891921
+      },
+      "davies_bouldin": 1.0800507027868407,
+      "eligible": false,
+      "family": "ward",
+      "k": 8,
+      "label_mapping": {
+        "0": 2,
+        "1": 0,
+        "2": 1,
+        "3": 6,
+        "4": 4,
+        "5": 7,
+        "6": 3,
+        "7": 5
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.04035073745557133,
+      "silhouette": 0.28233138784424683,
+      "spatial_stability": {
+        "maximum": 0.7140458021375539,
+        "mean": 0.5785361022046885,
+        "minimum": 0.39939494480789395,
+        "pair_count": 10,
+        "standard_deviation": 0.09839536474793263
+      },
+      "temporal_stability": {
+        "maximum": 0.6328702906297139,
+        "mean": 0.52173419170948,
+        "minimum": 0.4375270593907715,
+        "pair_count": 10,
+        "standard_deviation": 0.05967579089131832
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.18297858930179117,
+        0.13261484618144428,
+        0.13089919830766877,
+        0.12597222272666053,
+        0.1019001068084878,
+        0.09639709095906672,
+        0.08953698403623844,
+        0.0891604466901097,
+        0.05054051498853259
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8448328119522744,
+        "mean": 0.6365866394436166,
+        "minimum": 0.4958145765524083,
+        "pair_count": 45,
+        "standard_deviation": 0.09254162889679253
+      },
+      "davies_bouldin": 1.1173308325585158,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 9,
+      "label_mapping": {
+        "0": 7,
+        "1": 2,
+        "2": 8,
+        "3": 5,
+        "4": 6,
+        "5": 1,
+        "6": 3,
+        "7": 4,
+        "8": 0
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.05054051498853259,
+      "silhouette": 0.26519307318612917,
+      "spatial_stability": {
+        "maximum": 0.9071304072855388,
+        "mean": 0.6662089749659212,
+        "minimum": 0.5129256435422506,
+        "pair_count": 10,
+        "standard_deviation": 0.1614489573673695
+      },
+      "temporal_stability": {
+        "maximum": 0.9111654253917183,
+        "mean": 0.7866947571011674,
+        "minimum": 0.6344255835373892,
+        "pair_count": 10,
+        "standard_deviation": 0.08459743049775141
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1741210951045384,
+        0.16217424250883708,
+        0.15037023688966317,
+        0.12109561946272374,
+        0.09673130840776958,
+        0.09465751462554381,
+        0.07967128675198662,
+        0.07950036205694985,
+        0.04167833419198772
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8474404924449076,
+        "mean": 0.6592111127640027,
+        "minimum": 0.5272571554950952,
+        "pair_count": 45,
+        "standard_deviation": 0.08698856267524475
+      },
+      "davies_bouldin": 1.071889818284535,
+      "eligible": false,
+      "family": "gmm",
+      "k": 9,
+      "label_mapping": {
+        "0": 1,
+        "1": 2,
+        "2": 3,
+        "3": 4,
+        "4": 7,
+        "5": 0,
+        "6": 8,
+        "7": 5,
+        "8": 6
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.04167833419198772,
+      "silhouette": 0.2670347304218325,
+      "spatial_stability": {
+        "maximum": 0.8210017484634937,
+        "mean": 0.6733977020447346,
+        "minimum": 0.520512655263094,
+        "pair_count": 10,
+        "standard_deviation": 0.10960191327736023
+      },
+      "temporal_stability": {
+        "maximum": 0.8277042655730278,
+        "mean": 0.6713651880420315,
+        "minimum": 0.5807739997175788,
+        "pair_count": 10,
+        "standard_deviation": 0.09126296889235716
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1554091570930192,
+        0.1505973995989332,
+        0.1286530203976693,
+        0.12166567479314976,
+        0.11411862467298202,
+        0.11087368121608074,
+        0.08221205655616808,
+        0.07396946987459165,
+        0.06250091579740606
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8046251231246682,
+        "mean": 0.5918179181769914,
+        "minimum": 0.4593557776938473,
+        "pair_count": 45,
+        "standard_deviation": 0.06975533305724792
+      },
+      "davies_bouldin": 1.1211319740682104,
+      "eligible": false,
+      "family": "gmm",
+      "k": 9,
+      "label_mapping": {
+        "0": 4,
+        "1": 1,
+        "2": 2,
+        "3": 7,
+        "4": 0,
+        "5": 8,
+        "6": 5,
+        "7": 3,
+        "8": 6
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.06250091579740606,
+      "silhouette": 0.25541907243981876,
+      "spatial_stability": {
+        "maximum": 0.6569048919633447,
+        "mean": 0.5952578004868858,
+        "minimum": 0.5259031850730034,
+        "pair_count": 10,
+        "standard_deviation": 0.04395821291184572
+      },
+      "temporal_stability": {
+        "maximum": 0.624923830179974,
+        "mean": 0.5458528099873423,
+        "minimum": 0.44908983092858545,
+        "pair_count": 10,
+        "standard_deviation": 0.06636555365622325
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2025766938668973,
+        0.18960308027066186,
+        0.14524252811321253,
+        0.1261404825586417,
+        0.10694669950903006,
+        0.10340720709233214,
+        0.07039905823749225,
+        0.041615613998559904,
+        0.01406863635317223
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6229525368151606,
+        "mean": 0.44803271302889025,
+        "minimum": 0.3452160543905733,
+        "pair_count": 45,
+        "standard_deviation": 0.055916367344479405
+      },
+      "davies_bouldin": 1.086103195205645,
+      "eligible": false,
+      "family": "birch",
+      "k": 9,
+      "label_mapping": {
+        "0": 5,
+        "1": 2,
+        "2": 4,
+        "3": 7,
+        "4": 3,
+        "5": 0,
+        "6": 6,
+        "7": 1,
+        "8": 8
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.01406863635317223,
+      "silhouette": 0.23454887108013417,
+      "spatial_stability": {
+        "maximum": 0.5500521083953905,
+        "mean": 0.4605852057609515,
+        "minimum": 0.3593961011443169,
+        "pair_count": 10,
+        "standard_deviation": 0.05861205408439933
+      },
+      "temporal_stability": {
+        "maximum": 0.5262183610187503,
+        "mean": 0.45221325772855625,
+        "minimum": 0.3872387310073775,
+        "pair_count": 10,
+        "standard_deviation": 0.04373470660456413
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.20556229357488714,
+        0.19357061913871929,
+        0.15708451398936646,
+        0.13980276383931206,
+        0.08185476734126944,
+        0.07557780009288596,
+        0.0628408963043821,
+        0.04335560826360623,
+        0.04035073745557133
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7374185201473702,
+        "mean": 0.5777892082545967,
+        "minimum": 0.41097285057935035,
+        "pair_count": 45,
+        "standard_deviation": 0.07661742836839469
+      },
+      "davies_bouldin": 1.095584602549823,
+      "eligible": false,
+      "family": "ward",
+      "k": 9,
+      "label_mapping": {
+        "0": 0,
+        "1": 3,
+        "2": 1,
+        "3": 7,
+        "4": 4,
+        "5": 8,
+        "6": 2,
+        "7": 5,
+        "8": 6
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.04035073745557133,
+      "silhouette": 0.2643988446948298,
+      "spatial_stability": {
+        "maximum": 0.6886274924889286,
+        "mean": 0.6126961346328847,
+        "minimum": 0.5316002177226271,
+        "pair_count": 10,
+        "standard_deviation": 0.054247724627463224
+      },
+      "temporal_stability": {
+        "maximum": 0.6065659514243953,
+        "mean": 0.5384794924973744,
+        "minimum": 0.4404511436888569,
+        "pair_count": 10,
+        "standard_deviation": 0.054409798633331403
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.14692717666404564,
+        0.13843327417075307,
+        0.12164954193959267,
+        0.11988172499157136,
+        0.10116260636628524,
+        0.1007645173041874,
+        0.07437674257047232,
+        0.07254123397798395,
+        0.07234917953486228,
+        0.051914002480246066
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8734671150814352,
+        "mean": 0.6917783970506175,
+        "minimum": 0.43378257631983197,
+        "pair_count": 45,
+        "standard_deviation": 0.131761378478469
+      },
+      "davies_bouldin": 1.0745541309113977,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 10,
+      "label_mapping": {
+        "0": 3,
+        "1": 5,
+        "2": 2,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 4,
+        "7": 6,
+        "8": 0,
+        "9": 1
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.051914002480246066,
+      "silhouette": 0.27846785877033053,
+      "spatial_stability": {
+        "maximum": 0.9176793603941477,
+        "mean": 0.6542311453004082,
+        "minimum": 0.4624193906621056,
+        "pair_count": 10,
+        "standard_deviation": 0.14586592032052564
+      },
+      "temporal_stability": {
+        "maximum": 0.6746653807794832,
+        "mean": 0.5744641946208404,
+        "minimum": 0.46660709971974274,
+        "pair_count": 10,
+        "standard_deviation": 0.05984505348885055
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.15142687503276228,
+        0.14877794620810864,
+        0.12570737059462098,
+        0.12109561946272374,
+        0.09817355172566714,
+        0.09198155554203165,
+        0.07967128675198662,
+        0.07950036205694985,
+        0.06341469456658393,
+        0.04025073805856519
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8443939731053346,
+        "mean": 0.6452898023037161,
+        "minimum": 0.5189525807249855,
+        "pair_count": 45,
+        "standard_deviation": 0.07395513668158298
+      },
+      "davies_bouldin": 1.1292706089023563,
+      "eligible": false,
+      "family": "gmm",
+      "k": 10,
+      "label_mapping": {
+        "0": 7,
+        "1": 5,
+        "2": 2,
+        "3": 1,
+        "4": 9,
+        "5": 4,
+        "6": 3,
+        "7": 8,
+        "8": 6,
+        "9": 0
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.04025073805856519,
+      "silhouette": 0.24940881479296526,
+      "spatial_stability": {
+        "maximum": 0.848026665480418,
+        "mean": 0.6415244624205801,
+        "minimum": 0.4939908970444335,
+        "pair_count": 10,
+        "standard_deviation": 0.11210366893145463
+      },
+      "temporal_stability": {
+        "maximum": 0.832995277511433,
+        "mean": 0.661073789988601,
+        "minimum": 0.5157678571339044,
+        "pair_count": 10,
+        "standard_deviation": 0.09463718112562056
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1267588828478287,
+        0.11808423629889217,
+        0.11787836618564412,
+        0.11532480294373222,
+        0.10654204828532653,
+        0.09915469303175198,
+        0.08596246917411084,
+        0.08529356692378795,
+        0.07868537271355355,
+        0.06631556159537193
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7822450833048761,
+        "mean": 0.5561035142480205,
+        "minimum": 0.41684537266644356,
+        "pair_count": 45,
+        "standard_deviation": 0.08854708520464424
+      },
+      "davies_bouldin": 1.1628310692229322,
+      "eligible": false,
+      "family": "gmm",
+      "k": 10,
+      "label_mapping": {
+        "0": 7,
+        "1": 6,
+        "2": 5,
+        "3": 2,
+        "4": 9,
+        "5": 1,
+        "6": 3,
+        "7": 8,
+        "8": 0,
+        "9": 4
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.06631556159537193,
+      "silhouette": 0.24222546258968009,
+      "spatial_stability": {
+        "maximum": 0.6197457880035702,
+        "mean": 0.5770102496612755,
+        "minimum": 0.511438038523402,
+        "pair_count": 10,
+        "standard_deviation": 0.03872133394123852
+      },
+      "temporal_stability": {
+        "maximum": 0.6226973992565059,
+        "mean": 0.5458211188039501,
+        "minimum": 0.44148187085795987,
+        "pair_count": 10,
+        "standard_deviation": 0.061857492434501775
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2025766938668973,
+        0.18960308027066186,
+        0.14524252811321253,
+        0.1261404825586417,
+        0.10694669950903006,
+        0.09396752315892565,
+        0.07039905823749225,
+        0.041615613998559904,
+        0.01406863635317223,
+        0.009439683933406495
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.5967028331578343,
+        "mean": 0.4521797337384434,
+        "minimum": 0.3436902835597382,
+        "pair_count": 45,
+        "standard_deviation": 0.05183300823656271
+      },
+      "davies_bouldin": 1.087156768303455,
+      "eligible": false,
+      "family": "birch",
+      "k": 10,
+      "label_mapping": {
+        "0": 4,
+        "1": 2,
+        "2": 0,
+        "3": 7,
+        "4": 3,
+        "5": 5,
+        "6": 6,
+        "7": 1,
+        "8": 8,
+        "9": 9
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.009439683933406495,
+      "silhouette": 0.22208948254688304,
+      "spatial_stability": {
+        "maximum": 0.5178584458479576,
+        "mean": 0.44525756866032673,
+        "minimum": 0.3551333931196909,
+        "pair_count": 10,
+        "standard_deviation": 0.055845112900965097
+      },
+      "temporal_stability": {
+        "maximum": 0.580072184926071,
+        "mean": 0.45243806360115946,
+        "minimum": 0.39574249628944647,
+        "pair_count": 10,
+        "standard_deviation": 0.05449695742775098
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1784995929470455,
+        0.15708451398936646,
+        0.13405778267222956,
+        0.1337575761521373,
+        0.09448107974543216,
+        0.07999441237734337,
+        0.07557780009288596,
+        0.0628408963043821,
+        0.04335560826360623,
+        0.04035073745557133
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7023900352724347,
+        "mean": 0.5599702547264704,
+        "minimum": 0.40158972224181366,
+        "pair_count": 45,
+        "standard_deviation": 0.06987856924380356
+      },
+      "davies_bouldin": 1.1133268153118352,
+      "eligible": false,
+      "family": "ward",
+      "k": 10,
+      "label_mapping": {
+        "0": 4,
+        "1": 3,
+        "2": 0,
+        "3": 8,
+        "4": 2,
+        "5": 9,
+        "6": 1,
+        "7": 6,
+        "8": 7,
+        "9": 5
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.04035073745557133,
+      "silhouette": 0.26113788831535606,
+      "spatial_stability": {
+        "maximum": 0.7027707031920294,
+        "mean": 0.5851650748585204,
+        "minimum": 0.4661730385004634,
+        "pair_count": 10,
+        "standard_deviation": 0.06673287988030525
+      },
+      "temporal_stability": {
+        "maximum": 0.6597438067218877,
+        "mean": 0.5518844007154604,
+        "minimum": 0.41565772960316255,
+        "pair_count": 10,
+        "standard_deviation": 0.07114439279020135
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.12440094887119262,
+        0.12385653043827013,
+        0.11964711305833425,
+        0.11689491029093195,
+        0.09055809302647302,
+        0.0903695147068738,
+        0.08443022904176303,
+        0.06904623746561879,
+        0.06622246295778461,
+        0.06435451732908212,
+        0.050219442813675665
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.863397834555219,
+        "mean": 0.6423059646213111,
+        "minimum": 0.48033556534275396,
+        "pair_count": 45,
+        "standard_deviation": 0.11357235137576577
+      },
+      "davies_bouldin": 1.0915911152444153,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 11,
+      "label_mapping": {
+        "0": 5,
+        "1": 3,
+        "2": 4,
+        "3": 10,
+        "4": 8,
+        "5": 7,
+        "6": 6,
+        "7": 0,
+        "8": 9,
+        "9": 2,
+        "10": 1
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.050219442813675665,
+      "silhouette": 0.275975781699354,
+      "spatial_stability": {
+        "maximum": 0.8804575601810158,
+        "mean": 0.7144731826147088,
+        "minimum": 0.6057677985577965,
+        "pair_count": 10,
+        "standard_deviation": 0.10218422330694181
+      },
+      "temporal_stability": {
+        "maximum": 0.8244665314061942,
+        "mean": 0.656881416723908,
+        "minimum": 0.5724920291067284,
+        "pair_count": 10,
+        "standard_deviation": 0.08255012851022463
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.13440629640630428,
+        0.11841093922107661,
+        0.11084280985538578,
+        0.10997477797407398,
+        0.09916187230006529,
+        0.09327398973766264,
+        0.08521578786111053,
+        0.07652253143049373,
+        0.06893009519623146,
+        0.06272577559466391,
+        0.04053512442293178
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8217755067891008,
+        "mean": 0.6070813526079465,
+        "minimum": 0.45483687642890613,
+        "pair_count": 45,
+        "standard_deviation": 0.07564229981251491
+      },
+      "davies_bouldin": 1.2834648697099853,
+      "eligible": false,
+      "family": "gmm",
+      "k": 11,
+      "label_mapping": {
+        "0": 7,
+        "1": 6,
+        "2": 4,
+        "3": 9,
+        "4": 3,
+        "5": 8,
+        "6": 5,
+        "7": 1,
+        "8": 0,
+        "9": 2,
+        "10": 10
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.04053512442293178,
+      "silhouette": 0.22741730812682742,
+      "spatial_stability": {
+        "maximum": 0.8338012276788944,
+        "mean": 0.6028835349946584,
+        "minimum": 0.5388760715296165,
+        "pair_count": 10,
+        "standard_deviation": 0.08576907487441093
+      },
+      "temporal_stability": {
+        "maximum": 0.6750804016760152,
+        "mean": 0.5844261220970492,
+        "minimum": 0.4583311346258468,
+        "pair_count": 10,
+        "standard_deviation": 0.07553132679694839
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.11937943093283604,
+        0.11643340738199938,
+        0.11580242726986631,
+        0.11173176642323877,
+        0.10396164290780006,
+        0.10152651478041168,
+        0.08452977211376633,
+        0.06858075581014166,
+        0.06599028504620749,
+        0.06281665411368711,
+        0.04924734322004517
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7295883680914624,
+        "mean": 0.5676429285736677,
+        "minimum": 0.47125178661258493,
+        "pair_count": 45,
+        "standard_deviation": 0.06244377457885386
+      },
+      "davies_bouldin": 1.1177500450562858,
+      "eligible": false,
+      "family": "gmm",
+      "k": 11,
+      "label_mapping": {
+        "0": 4,
+        "1": 5,
+        "2": 9,
+        "3": 8,
+        "4": 2,
+        "5": 7,
+        "6": 0,
+        "7": 6,
+        "8": 1,
+        "9": 3,
+        "10": 10
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.04924734322004517,
+      "silhouette": 0.24815743950345331,
+      "spatial_stability": {
+        "maximum": 0.6385684965867962,
+        "mean": 0.5380045895057316,
+        "minimum": 0.45366347791367284,
+        "pair_count": 10,
+        "standard_deviation": 0.061527517243705636
+      },
+      "temporal_stability": {
+        "maximum": 0.6622046370960931,
+        "mean": 0.5089414577699441,
+        "minimum": 0.41135916320169935,
+        "pair_count": 10,
+        "standard_deviation": 0.0744676278786229
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2025766938668973,
+        0.18960308027066186,
+        0.14524252811321253,
+        0.1261404825586417,
+        0.09396752315892565,
+        0.07415448970968758,
+        0.07039905823749225,
+        0.041615613998559904,
+        0.03279220979934249,
+        0.01406863635317223,
+        0.009439683933406495
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.590899661669624,
+        "mean": 0.45390383257836897,
+        "minimum": 0.34109186285896265,
+        "pair_count": 45,
+        "standard_deviation": 0.05083859423512891
+      },
+      "davies_bouldin": 1.1042192317418882,
+      "eligible": false,
+      "family": "birch",
+      "k": 11,
+      "label_mapping": {
+        "0": 0,
+        "1": 2,
+        "2": 4,
+        "3": 7,
+        "4": 3,
+        "5": 5,
+        "6": 6,
+        "7": 1,
+        "8": 9,
+        "9": 10,
+        "10": 8
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.009439683933406495,
+      "silhouette": 0.2091189368088695,
+      "spatial_stability": {
+        "maximum": 0.5470942885027508,
+        "mean": 0.45778996549902484,
+        "minimum": 0.3526528554843878,
+        "pair_count": 10,
+        "standard_deviation": 0.05949037522051103
+      },
+      "temporal_stability": {
+        "maximum": 0.5720493521341273,
+        "mean": 0.45170009267204525,
+        "minimum": 0.4044389297137045,
+        "pair_count": 10,
+        "standard_deviation": 0.04516790213193266
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1723700897193358,
+        0.15708451398936646,
+        0.13026191486556565,
+        0.12460948615398816,
+        0.07999441237734337,
+        0.07557780009288596,
+        0.0628408963043821,
+        0.060957758702627776,
+        0.05259678207532716,
+        0.04335560826360623,
+        0.04035073745557133
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6899085696183742,
+        "mean": 0.5523430759929735,
+        "minimum": 0.4080587847368365,
+        "pair_count": 45,
+        "standard_deviation": 0.06384417853105763
+      },
+      "davies_bouldin": 1.0777701546710114,
+      "eligible": false,
+      "family": "ward",
+      "k": 11,
+      "label_mapping": {
+        "0": 0,
+        "1": 3,
+        "2": 1,
+        "3": 9,
+        "4": 2,
+        "5": 10,
+        "6": 8,
+        "7": 5,
+        "8": 6,
+        "9": 4,
+        "10": 7
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.04035073745557133,
+      "silhouette": 0.26393159492942186,
+      "spatial_stability": {
+        "maximum": 0.6757954820468796,
+        "mean": 0.5478878785532331,
+        "minimum": 0.4533360980805372,
+        "pair_count": 10,
+        "standard_deviation": 0.06605314938517762
+      },
+      "temporal_stability": {
+        "maximum": 0.6382896128735076,
+        "mean": 0.5361743713097755,
+        "minimum": 0.43396473371692174,
+        "pair_count": 10,
+        "standard_deviation": 0.06558671126533998
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.12107617602448852,
+        0.11922992398503168,
+        0.11670947180353387,
+        0.11289174566163658,
+        0.09019163581868964,
+        0.07445185847593706,
+        0.073092126181016,
+        0.06767067341043478,
+        0.06509067270210343,
+        0.06297278482565112,
+        0.048517970470811723,
+        0.04810496064066558
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9156701583900675,
+        "mean": 0.6667351296898201,
+        "minimum": 0.5319104367065062,
+        "pair_count": 45,
+        "standard_deviation": 0.08172578883689546
+      },
+      "davies_bouldin": 1.0721790656933423,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 12,
+      "label_mapping": {
+        "0": 2,
+        "1": 8,
+        "2": 6,
+        "3": 5,
+        "4": 0,
+        "5": 10,
+        "6": 3,
+        "7": 4,
+        "8": 1,
+        "9": 7,
+        "10": 11,
+        "11": 9
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.04810496064066558,
+      "silhouette": 0.2842049757421172,
+      "spatial_stability": {
+        "maximum": 0.9117221873847938,
+        "mean": 0.679230513257685,
+        "minimum": 0.5260193730207477,
+        "pair_count": 10,
+        "standard_deviation": 0.11102822788805569
+      },
+      "temporal_stability": {
+        "maximum": 0.7799998232665655,
+        "mean": 0.5788627988661103,
+        "minimum": 0.492770100759352,
+        "pair_count": 10,
+        "standard_deviation": 0.08419422342356382
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.11512503342942837,
+        0.1139537422178397,
+        0.11172594786500475,
+        0.10540973695468817,
+        0.10063172677641166,
+        0.09452995385187192,
+        0.07946612341031803,
+        0.07658526363690009,
+        0.05859831928354691,
+        0.05324371268400307,
+        0.04769940464747027,
+        0.04303103524251704
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8056838282115281,
+        "mean": 0.6550551220867703,
+        "minimum": 0.5400871306018563,
+        "pair_count": 45,
+        "standard_deviation": 0.0695370296181849
+      },
+      "davies_bouldin": 1.3261664143468919,
+      "eligible": false,
+      "family": "gmm",
+      "k": 12,
+      "label_mapping": {
+        "0": 4,
+        "1": 7,
+        "2": 6,
+        "3": 10,
+        "4": 9,
+        "5": 5,
+        "6": 2,
+        "7": 0,
+        "8": 1,
+        "9": 8,
+        "10": 3,
+        "11": 11
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.04303103524251704,
+      "silhouette": 0.21468643555402606,
+      "spatial_stability": {
+        "maximum": 0.7829377894836546,
+        "mean": 0.5843089946099275,
+        "minimum": 0.4763132177289642,
+        "pair_count": 10,
+        "standard_deviation": 0.08554723584017469
+      },
+      "temporal_stability": {
+        "maximum": 0.7123502554722418,
+        "mean": 0.6048886555465889,
+        "minimum": 0.5006890256912325,
+        "pair_count": 10,
+        "standard_deviation": 0.05938204888004193
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.13021724359577216,
+        0.12968884252363108,
+        0.10711461908540704,
+        0.09950437363448425,
+        0.096353617215052,
+        0.09027115637884013,
+        0.0726641707640079,
+        0.07114905647802336,
+        0.0659541278307989,
+        0.048742289708061194,
+        0.04827581537211533,
+        0.040064687413806636
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7981199132061074,
+        "mean": 0.5767604685141128,
+        "minimum": 0.44029131170574903,
+        "pair_count": 45,
+        "standard_deviation": 0.07314992843500132
+      },
+      "davies_bouldin": 1.1440957622293662,
+      "eligible": false,
+      "family": "gmm",
+      "k": 12,
+      "label_mapping": {
+        "0": 11,
+        "1": 2,
+        "2": 8,
+        "3": 5,
+        "4": 6,
+        "5": 9,
+        "6": 1,
+        "7": 4,
+        "8": 0,
+        "9": 7,
+        "10": 10,
+        "11": 3
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.040064687413806636,
+      "silhouette": 0.2654520286949481,
+      "spatial_stability": {
+        "maximum": 0.5881135527791485,
+        "mean": 0.5173345505355069,
+        "minimum": 0.4191906617290038,
+        "pair_count": 10,
+        "standard_deviation": 0.04982594244222003
+      },
+      "temporal_stability": {
+        "maximum": 0.5842472564808101,
+        "mean": 0.4934400201360276,
+        "minimum": 0.4208931927781399,
+        "pair_count": 10,
+        "standard_deviation": 0.05727262383539899
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.18960308027066186,
+        0.14524252811321253,
+        0.1261404825586417,
+        0.11162430987369971,
+        0.09396752315892565,
+        0.0909523839931976,
+        0.07415448970968758,
+        0.07039905823749225,
+        0.041615613998559904,
+        0.03279220979934249,
+        0.01406863635317223,
+        0.009439683933406495
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6208472352866788,
+        "mean": 0.458605814493863,
+        "minimum": 0.3701450264000835,
+        "pair_count": 45,
+        "standard_deviation": 0.051618277060152616
+      },
+      "davies_bouldin": 1.180778293501772,
+      "eligible": false,
+      "family": "birch",
+      "k": 12,
+      "label_mapping": {
+        "0": 1,
+        "1": 8,
+        "2": 4,
+        "3": 5,
+        "4": 2,
+        "5": 6,
+        "6": 7,
+        "7": 0,
+        "8": 10,
+        "9": 11,
+        "10": 9,
+        "11": 3
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.009439683933406495,
+      "silhouette": 0.20503624183083177,
+      "spatial_stability": {
+        "maximum": 0.5382665572410008,
+        "mean": 0.4479995088635075,
+        "minimum": 0.35715642382513646,
+        "pair_count": 10,
+        "standard_deviation": 0.05707961799119165
+      },
+      "temporal_stability": {
+        "maximum": 0.5723559541527932,
+        "mean": 0.45217218223363453,
+        "minimum": 0.37661509942680027,
+        "pair_count": 10,
+        "standard_deviation": 0.049849278570207066
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.14970303519658248,
+        0.12460948615398816,
+        0.12075323729705191,
+        0.10425405535936326,
+        0.08790865790282582,
+        0.07927579081143656,
+        0.07557780009288596,
+        0.0628408963043821,
+        0.060957758702627776,
+        0.05041293645967841,
+        0.04335560826360623,
+        0.04035073745557133
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7374665326017552,
+        "mean": 0.55782351370838,
+        "minimum": 0.44314055615199294,
+        "pair_count": 45,
+        "standard_deviation": 0.06661601358041415
+      },
+      "davies_bouldin": 1.0833998311107829,
+      "eligible": false,
+      "family": "ward",
+      "k": 12,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 9,
+        "3": 10,
+        "4": 2,
+        "5": 11,
+        "6": 4,
+        "7": 6,
+        "8": 7,
+        "9": 5,
+        "10": 8,
+        "11": 3
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.04035073745557133,
+      "silhouette": 0.27005765910915186,
+      "spatial_stability": {
+        "maximum": 0.7077456835442097,
+        "mean": 0.5593653566863366,
+        "minimum": 0.46653805099449047,
+        "pair_count": 10,
+        "standard_deviation": 0.09523197065859981
+      },
+      "temporal_stability": {
+        "maximum": 0.6047453967244403,
+        "mean": 0.5472168032133717,
+        "minimum": 0.4761208255215818,
+        "pair_count": 10,
+        "standard_deviation": 0.04153334671501753
+      },
+      "warnings": []
+    }
+  ],
+  "display": {
+    "k": 6,
+    "method": "kmeans",
+    "status": "temporally_confirmed"
+  },
+  "encoding": "direct",
+  "representation": "baseline",
+  "resample_transforms": {
+    "bootstrap": [
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      }
+    ],
+    "spatial": [
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      }
+    ],
+    "temporal": [
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      },
+      {
+        "dropped": [],
+        "explained_variance": 1.0,
+        "family_balanced": false,
+        "input_features": 24,
+        "missing_counts": {},
+        "output_dimensions": 24,
+        "retained_features": 24,
+        "retained_names": [
+          "temp_Jan_c",
+          "precip_Jan_mm",
+          "temp_Feb_c",
+          "precip_Feb_mm",
+          "temp_Mar_c",
+          "precip_Mar_mm",
+          "temp_Apr_c",
+          "precip_Apr_mm",
+          "temp_May_c",
+          "precip_May_mm",
+          "temp_Jun_c",
+          "precip_Jun_mm",
+          "temp_Jul_c",
+          "precip_Jul_mm",
+          "temp_Aug_c",
+          "precip_Aug_mm",
+          "temp_Sep_c",
+          "precip_Sep_mm",
+          "temp_Oct_c",
+          "precip_Oct_mm",
+          "temp_Nov_c",
+          "precip_Nov_mm",
+          "temp_Dec_c",
+          "precip_Dec_mm"
+        ]
+      }
+    ]
+  },
+  "shortlist": [
+    {
+      "criteria": {
+        "corroborated_by_multiple_families": true,
+        "silhouette_retention": true,
+        "stability": true,
+        "strong_single_family_replication": true
+      },
+      "cross_algorithm_ari": 0.7217427764095846,
+      "k": 3,
+      "representative_method": "gmm_diag",
+      "temporal_confirmed": true
+    },
+    {
+      "criteria": {
+        "corroborated_by_multiple_families": true,
+        "silhouette_retention": true,
+        "stability": true,
+        "strong_single_family_replication": true
+      },
+      "cross_algorithm_ari": 0.808266701079471,
+      "k": 4,
+      "representative_method": "kmeans",
+      "temporal_confirmed": true
+    },
+    {
+      "criteria": {
+        "corroborated_by_multiple_families": false,
+        "silhouette_retention": true,
+        "stability": true,
+        "strong_single_family_replication": true
+      },
+      "cross_algorithm_ari": null,
+      "k": 6,
+      "representative_method": "kmeans",
+      "temporal_confirmed": true
+    }
+  ],
+  "transform": {
+    "dropped": [],
+    "explained_variance": 1.0,
+    "family_balanced": false,
+    "input_features": 24,
+    "missing_counts": {},
+    "output_dimensions": 24,
+    "retained_features": 24,
+    "retained_names": [
+      "temp_Jan_c",
+      "precip_Jan_mm",
+      "temp_Feb_c",
+      "precip_Feb_mm",
+      "temp_Mar_c",
+      "precip_Mar_mm",
+      "temp_Apr_c",
+      "precip_Apr_mm",
+      "temp_May_c",
+      "precip_May_mm",
+      "temp_Jun_c",
+      "precip_Jun_mm",
+      "temp_Jul_c",
+      "precip_Jul_mm",
+      "temp_Aug_c",
+      "precip_Aug_mm",
+      "temp_Sep_c",
+      "precip_Sep_mm",
+      "temp_Oct_c",
+      "precip_Oct_mm",
+      "temp_Nov_c",
+      "precip_Nov_mm",
+      "temp_Dec_c",
+      "precip_Dec_mm"
+    ]
+  }
+}

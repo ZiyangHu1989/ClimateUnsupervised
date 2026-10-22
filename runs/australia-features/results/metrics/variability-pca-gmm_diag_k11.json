@@ -1,0 +1,69 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.14280317840893136,
+      0.12773916371231261,
+      0.10737698395426572,
+      0.10356013053123345,
+      0.09613350264042154,
+      0.0949502357626036,
+      0.08882329442269743,
+      0.08403259279687829,
+      0.06477788013634224,
+      0.05436211908808449,
+      0.03544091854622927
+    ],
+    "bootstrap_stability": {
+      "maximum": 0.7915114417098743,
+      "mean": 0.6087510795142826,
+      "minimum": 0.44694834227521024,
+      "pair_count": 45,
+      "standard_deviation": 0.0803929628895891
+    },
+    "davies_bouldin": 1.4293936380212913,
+    "eligible": false,
+    "family": "gmm",
+    "k": 11,
+    "label_mapping": {
+      "0": 1,
+      "1": 5,
+      "2": 0,
+      "3": 9,
+      "4": 6,
+      "5": 3,
+      "6": 4,
+      "7": 8,
+      "8": 10,
+      "9": 2,
+      "10": 7
+    },
+    "method": "gmm_diag",
+    "minimum_cluster_area_fraction": 0.03544091854622927,
+    "silhouette": 0.18594729527493079,
+    "spatial_stability": {
+      "maximum": 0.7566660458636463,
+      "mean": 0.5497053771073946,
+      "minimum": 0.4181277621306366,
+      "pair_count": 10,
+      "standard_deviation": 0.10384727923025872
+    },
+    "temporal_stability": {
+      "maximum": 0.569906304258644,
+      "mean": 0.4932233341279925,
+      "minimum": 0.4448273588663081,
+      "pair_count": 10,
+      "standard_deviation": 0.03565416966035566
+    },
+    "warnings": []
+  }
+}

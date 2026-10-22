@@ -1,0 +1,61 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.20326038310873948,
+      0.19470608743206622,
+      0.17602093675295347,
+      0.1373572555854782,
+      0.12707930262184705,
+      0.09956032523528315,
+      0.06201570926363245
+    ],
+    "bootstrap_stability": {
+      "maximum": 0.8101235062123558,
+      "mean": 0.56044832355955,
+      "minimum": 0.4314651872263753,
+      "pair_count": 45,
+      "standard_deviation": 0.099869182906576
+    },
+    "davies_bouldin": 1.2683608936116957,
+    "eligible": false,
+    "family": "ward",
+    "k": 7,
+    "label_mapping": {
+      "0": 2,
+      "1": 5,
+      "2": 1,
+      "3": 4,
+      "4": 0,
+      "5": 3,
+      "6": 6
+    },
+    "method": "ward",
+    "minimum_cluster_area_fraction": 0.06201570926363245,
+    "silhouette": 0.24331481272866162,
+    "spatial_stability": {
+      "maximum": 0.8423671130619166,
+      "mean": 0.6129987469421408,
+      "minimum": 0.4887821846019956,
+      "pair_count": 10,
+      "standard_deviation": 0.10745605842578916
+    },
+    "temporal_stability": {
+      "maximum": 0.7442493462524884,
+      "mean": 0.5320587576504023,
+      "minimum": 0.4056482563902335,
+      "pair_count": 10,
+      "standard_deviation": 0.10208918958292401
+    },
+    "warnings": []
+  }
+}

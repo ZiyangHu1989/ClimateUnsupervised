@@ -1,0 +1,1257 @@
+{
+  "count": 110,
+  "features": [
+    {
+      "definition": "Mean monthly temperature over sampled years",
+      "family": "temperature",
+      "name": "temp_Jan_c",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Mean monthly precipitation total",
+      "family": "rainfall",
+      "name": "precip_Jan_mm",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Monthly mean minus unweighted 12-month mean",
+      "family": "thermal_seasonality",
+      "name": "temp_anomaly_Jan",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Monthly share of annual climatological rain",
+      "family": "rainfall_seasonality",
+      "name": "rain_fraction_Jan",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Mean monthly temperature over sampled years",
+      "family": "temperature",
+      "name": "temp_Feb_c",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Mean monthly precipitation total",
+      "family": "rainfall",
+      "name": "precip_Feb_mm",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Monthly mean minus unweighted 12-month mean",
+      "family": "thermal_seasonality",
+      "name": "temp_anomaly_Feb",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Monthly share of annual climatological rain",
+      "family": "rainfall_seasonality",
+      "name": "rain_fraction_Feb",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Mean monthly temperature over sampled years",
+      "family": "temperature",
+      "name": "temp_Mar_c",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Mean monthly precipitation total",
+      "family": "rainfall",
+      "name": "precip_Mar_mm",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Monthly mean minus unweighted 12-month mean",
+      "family": "thermal_seasonality",
+      "name": "temp_anomaly_Mar",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Monthly share of annual climatological rain",
+      "family": "rainfall_seasonality",
+      "name": "rain_fraction_Mar",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Mean monthly temperature over sampled years",
+      "family": "temperature",
+      "name": "temp_Apr_c",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Mean monthly precipitation total",
+      "family": "rainfall",
+      "name": "precip_Apr_mm",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Monthly mean minus unweighted 12-month mean",
+      "family": "thermal_seasonality",
+      "name": "temp_anomaly_Apr",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Monthly share of annual climatological rain",
+      "family": "rainfall_seasonality",
+      "name": "rain_fraction_Apr",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Mean monthly temperature over sampled years",
+      "family": "temperature",
+      "name": "temp_May_c",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Mean monthly precipitation total",
+      "family": "rainfall",
+      "name": "precip_May_mm",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Monthly mean minus unweighted 12-month mean",
+      "family": "thermal_seasonality",
+      "name": "temp_anomaly_May",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Monthly share of annual climatological rain",
+      "family": "rainfall_seasonality",
+      "name": "rain_fraction_May",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Mean monthly temperature over sampled years",
+      "family": "temperature",
+      "name": "temp_Jun_c",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Mean monthly precipitation total",
+      "family": "rainfall",
+      "name": "precip_Jun_mm",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Monthly mean minus unweighted 12-month mean",
+      "family": "thermal_seasonality",
+      "name": "temp_anomaly_Jun",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Monthly share of annual climatological rain",
+      "family": "rainfall_seasonality",
+      "name": "rain_fraction_Jun",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Mean monthly temperature over sampled years",
+      "family": "temperature",
+      "name": "temp_Jul_c",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Mean monthly precipitation total",
+      "family": "rainfall",
+      "name": "precip_Jul_mm",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Monthly mean minus unweighted 12-month mean",
+      "family": "thermal_seasonality",
+      "name": "temp_anomaly_Jul",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Monthly share of annual climatological rain",
+      "family": "rainfall_seasonality",
+      "name": "rain_fraction_Jul",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Mean monthly temperature over sampled years",
+      "family": "temperature",
+      "name": "temp_Aug_c",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Mean monthly precipitation total",
+      "family": "rainfall",
+      "name": "precip_Aug_mm",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Monthly mean minus unweighted 12-month mean",
+      "family": "thermal_seasonality",
+      "name": "temp_anomaly_Aug",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Monthly share of annual climatological rain",
+      "family": "rainfall_seasonality",
+      "name": "rain_fraction_Aug",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Mean monthly temperature over sampled years",
+      "family": "temperature",
+      "name": "temp_Sep_c",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Mean monthly precipitation total",
+      "family": "rainfall",
+      "name": "precip_Sep_mm",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Monthly mean minus unweighted 12-month mean",
+      "family": "thermal_seasonality",
+      "name": "temp_anomaly_Sep",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Monthly share of annual climatological rain",
+      "family": "rainfall_seasonality",
+      "name": "rain_fraction_Sep",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Mean monthly temperature over sampled years",
+      "family": "temperature",
+      "name": "temp_Oct_c",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Mean monthly precipitation total",
+      "family": "rainfall",
+      "name": "precip_Oct_mm",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Monthly mean minus unweighted 12-month mean",
+      "family": "thermal_seasonality",
+      "name": "temp_anomaly_Oct",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Monthly share of annual climatological rain",
+      "family": "rainfall_seasonality",
+      "name": "rain_fraction_Oct",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Mean monthly temperature over sampled years",
+      "family": "temperature",
+      "name": "temp_Nov_c",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Mean monthly precipitation total",
+      "family": "rainfall",
+      "name": "precip_Nov_mm",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Monthly mean minus unweighted 12-month mean",
+      "family": "thermal_seasonality",
+      "name": "temp_anomaly_Nov",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Monthly share of annual climatological rain",
+      "family": "rainfall_seasonality",
+      "name": "rain_fraction_Nov",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Mean monthly temperature over sampled years",
+      "family": "temperature",
+      "name": "temp_Dec_c",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Mean monthly precipitation total",
+      "family": "rainfall",
+      "name": "precip_Dec_mm",
+      "representations": [
+        "baseline"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Monthly mean minus unweighted 12-month mean",
+      "family": "thermal_seasonality",
+      "name": "temp_anomaly_Dec",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Monthly share of annual climatological rain",
+      "family": "rainfall_seasonality",
+      "name": "rain_fraction_Dec",
+      "representations": [
+        "profiles"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Mean of day-weighted annual mean temperatures",
+      "family": "temperature",
+      "name": "temperature_mean",
+      "representations": [
+        "profiles",
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Mean annual precipitation",
+      "family": "rainfall",
+      "name": "rainfall_mean",
+      "representations": [
+        "profiles",
+        "summaries",
+        "variability"
+      ],
+      "source": "WorldClim BIO12",
+      "transform": "log1p",
+      "units": "mm/year"
+    },
+    {
+      "definition": "Median annual precipitation",
+      "family": "rainfall",
+      "name": "rainfall_median",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "BOM seasonal rainfall",
+      "transform": "log1p",
+      "units": "mm/year"
+    },
+    {
+      "definition": "Maximum monthly mean; NOT BIO5",
+      "family": "temperature",
+      "name": "temperature_warmest_month_mean",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Minimum monthly mean; NOT BIO6",
+      "family": "temperature",
+      "name": "temperature_coldest_month_mean",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Range of monthly means; NOT BIO7",
+      "family": "thermal_seasonality",
+      "name": "temperature_monthly_range",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Population SD of 12 monthly mean temperatures; BIO4 without x100",
+      "family": "thermal_seasonality",
+      "name": "temperature_seasonality",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "WorldClim BIO4",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Maximum monthly climatological precipitation",
+      "family": "rainfall",
+      "name": "rainfall_wettest_month",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "WorldClim BIO13",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Minimum monthly climatological precipitation",
+      "family": "rainfall",
+      "name": "rainfall_driest_month",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "WorldClim BIO14",
+      "transform": "log1p",
+      "units": "mm/month"
+    },
+    {
+      "definition": "Population SD/mean of monthly precipitation; BIO15 without x100",
+      "family": "rainfall_seasonality",
+      "name": "rainfall_seasonality_cv",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "WorldClim BIO15",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "100 sum(P_month^2)/(sum P_month)^2",
+      "family": "rainfall_seasonality",
+      "name": "rainfall_concentration",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "percent"
+    },
+    {
+      "definition": "Normalized Shannon entropy of monthly fractions; all-zero rain undefined",
+      "family": "rainfall_seasonality",
+      "name": "rainfall_entropy",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "November-April share of mean annual precipitation",
+      "family": "rainfall_seasonality",
+      "name": "warm_half_rainfall_fraction",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "BOM seasonal rainfall (continuous summary)",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "(DJF-JJA)/(DJF+JJA)",
+      "family": "rainfall_seasonality",
+      "name": "summer_winter_rainfall_contrast",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "Unweighted climatological DJF monthly mean",
+      "family": "temperature",
+      "name": "temperature_DJF",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Climatological DJF total",
+      "family": "rainfall",
+      "name": "rainfall_DJF",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/season"
+    },
+    {
+      "definition": "Unweighted climatological MAM monthly mean",
+      "family": "temperature",
+      "name": "temperature_MAM",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Climatological MAM total",
+      "family": "rainfall",
+      "name": "rainfall_MAM",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/season"
+    },
+    {
+      "definition": "Unweighted climatological JJA monthly mean",
+      "family": "temperature",
+      "name": "temperature_JJA",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Climatological JJA total",
+      "family": "rainfall",
+      "name": "rainfall_JJA",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/season"
+    },
+    {
+      "definition": "Unweighted climatological SON monthly mean",
+      "family": "temperature",
+      "name": "temperature_SON",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Climatological SON total",
+      "family": "rainfall",
+      "name": "rainfall_SON",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/season"
+    },
+    {
+      "definition": "Circular three-month quarter; earliest starting month resolves ties",
+      "family": "coupling",
+      "name": "temperature_wettest_quarter",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "WorldClim BIO8",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Circular three-month quarter; earliest starting month resolves ties",
+      "family": "coupling",
+      "name": "temperature_driest_quarter",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "WorldClim BIO9",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Circular three-month quarter; earliest starting month resolves ties",
+      "family": "temperature",
+      "name": "temperature_warmest_quarter",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "WorldClim BIO10",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Circular three-month quarter; earliest starting month resolves ties",
+      "family": "temperature",
+      "name": "temperature_coldest_quarter",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "WorldClim BIO11",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Circular three-month quarter; earliest starting month resolves ties",
+      "family": "rainfall",
+      "name": "rainfall_wettest_quarter",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "WorldClim BIO16",
+      "transform": "log1p",
+      "units": "mm/quarter"
+    },
+    {
+      "definition": "Circular three-month quarter; earliest starting month resolves ties",
+      "family": "rainfall",
+      "name": "rainfall_driest_quarter",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "WorldClim BIO17",
+      "transform": "log1p",
+      "units": "mm/quarter"
+    },
+    {
+      "definition": "Circular three-month quarter; earliest starting month resolves ties",
+      "family": "coupling",
+      "name": "rainfall_warmest_quarter",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "WorldClim BIO18",
+      "transform": "log1p",
+      "units": "mm/quarter"
+    },
+    {
+      "definition": "Circular three-month quarter; earliest starting month resolves ties",
+      "family": "coupling",
+      "name": "rainfall_coldest_quarter",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "WorldClim BIO19",
+      "transform": "log1p",
+      "units": "mm/quarter"
+    },
+    {
+      "definition": "Harmonic 1 signed cos coefficient; Jan phase zero",
+      "family": "thermal_seasonality",
+      "name": "temperature_h1_cos",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Fraction-weighted harmonic 1 cos; magnitude encodes timing strength",
+      "family": "rainfall_seasonality",
+      "name": "rainfall_h1_cos",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Harmonic 1 signed sin coefficient; Jan phase zero",
+      "family": "thermal_seasonality",
+      "name": "temperature_h1_sin",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Fraction-weighted harmonic 1 sin; magnitude encodes timing strength",
+      "family": "rainfall_seasonality",
+      "name": "rainfall_h1_sin",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Harmonic 2 signed cos coefficient; Jan phase zero",
+      "family": "thermal_seasonality",
+      "name": "temperature_h2_cos",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Fraction-weighted harmonic 2 cos; magnitude encodes timing strength",
+      "family": "rainfall_seasonality",
+      "name": "rainfall_h2_cos",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Harmonic 2 signed sin coefficient; Jan phase zero",
+      "family": "thermal_seasonality",
+      "name": "temperature_h2_sin",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Fraction-weighted harmonic 2 sin; magnitude encodes timing strength",
+      "family": "rainfall_seasonality",
+      "name": "rainfall_h2_sin",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "fraction"
+    },
+    {
+      "definition": "Pearson association of 12 climatological monthly means; undefined when either cycle constant",
+      "family": "coupling",
+      "name": "temperature_rainfall_correlation",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "correlation"
+    },
+    {
+      "definition": "First harmonic alignment, weighted by rainfall concentration and thermal first-harmonic strength",
+      "family": "coupling",
+      "name": "seasonal_phase_alignment",
+      "representations": [
+        "summaries",
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "Sample SD of annual mean temperature",
+      "family": "variability",
+      "name": "annual_temperature_sd",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Sample SD of annual rainfall",
+      "family": "variability",
+      "name": "annual_rainfall_sd",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "log1p",
+      "units": "mm/year"
+    },
+    {
+      "definition": "Annual rainfall sample SD/mean",
+      "family": "variability",
+      "name": "annual_rainfall_cv",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "(Mean-median annual rainfall)/mean",
+      "family": "variability",
+      "name": "annual_rainfall_mean_median_gap",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "Annual rainfall quantile divided by annual mean",
+      "family": "variability",
+      "name": "annual_rainfall_q10_relative",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "Annual rainfall quantile divided by annual mean",
+      "family": "variability",
+      "name": "annual_rainfall_q50_relative",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "Annual rainfall quantile divided by annual mean",
+      "family": "variability",
+      "name": "annual_rainfall_q90_relative",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "Sample SD of complete seasonal monthly means",
+      "family": "variability",
+      "name": "temperature_DJF_interannual_sd",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Sample SD/mean of complete seasonal totals",
+      "family": "variability",
+      "name": "rainfall_DJF_interannual_cv",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "Sample SD of complete seasonal monthly means",
+      "family": "variability",
+      "name": "temperature_MAM_interannual_sd",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Sample SD/mean of complete seasonal totals",
+      "family": "variability",
+      "name": "rainfall_MAM_interannual_cv",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "Sample SD of complete seasonal monthly means",
+      "family": "variability",
+      "name": "temperature_JJA_interannual_sd",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Sample SD/mean of complete seasonal totals",
+      "family": "variability",
+      "name": "rainfall_JJA_interannual_cv",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "Sample SD of complete seasonal monthly means",
+      "family": "variability",
+      "name": "temperature_SON_interannual_sd",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "degC"
+    },
+    {
+      "definition": "Sample SD/mean of complete seasonal totals",
+      "family": "variability",
+      "name": "rainfall_SON_interannual_cv",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "Lag-one monthly anomaly correlation; resampling seams excluded",
+      "family": "persistence",
+      "name": "temperature_anomaly_lag1",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "correlation"
+    },
+    {
+      "definition": "Lag-one monthly anomaly correlation; resampling seams excluded",
+      "family": "persistence",
+      "name": "rainfall_anomaly_lag1",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "correlation"
+    },
+    {
+      "definition": "SD of calendar-deseasonalized 3-month totals / mean total; seams excluded",
+      "family": "persistence",
+      "name": "rainfall_3month_anomaly_relative_sd",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "SD of calendar-deseasonalized 6-month totals / mean total; seams excluded",
+      "family": "persistence",
+      "name": "rainfall_6month_anomaly_relative_sd",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "SD of calendar-deseasonalized 12-month totals / mean total; seams excluded",
+      "family": "persistence",
+      "name": "rainfall_12month_anomaly_relative_sd",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "ratio"
+    },
+    {
+      "definition": "Longest run below 50% of calendar-month mean rainfall; seams reset",
+      "family": "persistence",
+      "name": "dry_month_max_run",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "months"
+    },
+    {
+      "definition": "Runs reaching 3 dry months divided by sampled years; seam-censored proxy",
+      "family": "persistence",
+      "name": "dry_month_3plus_events_per_year",
+      "representations": [
+        "variability"
+      ],
+      "source": "project",
+      "transform": "identity",
+      "units": "events/year"
+    }
+  ]
+}

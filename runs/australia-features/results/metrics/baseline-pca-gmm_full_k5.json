@@ -1,0 +1,57 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.25744183665800774,
+      0.22181316061497694,
+      0.19116136917749546,
+      0.16762786423400333,
+      0.16195576931551656
+    ],
+    "bootstrap_stability": {
+      "maximum": 0.8447062802023193,
+      "mean": 0.5237404353442731,
+      "minimum": 0.37081203787080597,
+      "pair_count": 45,
+      "standard_deviation": 0.12734379446866106
+    },
+    "davies_bouldin": 1.6191690571647908,
+    "eligible": false,
+    "family": "gmm",
+    "k": 5,
+    "label_mapping": {
+      "0": 1,
+      "1": 4,
+      "2": 3,
+      "3": 2,
+      "4": 0
+    },
+    "method": "gmm_full",
+    "minimum_cluster_area_fraction": 0.16195576931551656,
+    "silhouette": 0.18088977133834597,
+    "spatial_stability": {
+      "maximum": 0.6744036997882399,
+      "mean": 0.419688601282074,
+      "minimum": 0.2535328846522113,
+      "pair_count": 10,
+      "standard_deviation": 0.11541214109708757
+    },
+    "temporal_stability": {
+      "maximum": 0.6985965374347459,
+      "mean": 0.5059761996892386,
+      "minimum": 0.26687437091021055,
+      "pair_count": 10,
+      "standard_deviation": 0.19287752914049905
+    },
+    "warnings": []
+  }
+}

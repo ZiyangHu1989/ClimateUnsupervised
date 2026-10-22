@@ -1,0 +1,71 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.1262085309405195,
+      0.10878979211110475,
+      0.10854722881139754,
+      0.09583113058873967,
+      0.09549434291522613,
+      0.08624982519482459,
+      0.07998439650843321,
+      0.07724237932930189,
+      0.06904025370490388,
+      0.06047803604550605,
+      0.046355307628535146,
+      0.04577877622150766
+    ],
+    "bootstrap_stability": {
+      "maximum": 0.7409648748587333,
+      "mean": 0.5690313112029443,
+      "minimum": 0.43414234954703407,
+      "pair_count": 45,
+      "standard_deviation": 0.07658317817988151
+    },
+    "davies_bouldin": 1.4131164484804088,
+    "eligible": false,
+    "family": "gmm",
+    "k": 12,
+    "label_mapping": {
+      "0": 7,
+      "1": 6,
+      "2": 0,
+      "3": 2,
+      "4": 1,
+      "5": 10,
+      "6": 5,
+      "7": 9,
+      "8": 3,
+      "9": 4,
+      "10": 11,
+      "11": 8
+    },
+    "method": "gmm_diag",
+    "minimum_cluster_area_fraction": 0.04577877622150766,
+    "silhouette": 0.20219031328159145,
+    "spatial_stability": {
+      "maximum": 0.6297102314778524,
+      "mean": 0.5597443903217055,
+      "minimum": 0.4605256845888083,
+      "pair_count": 10,
+      "standard_deviation": 0.055709972188018035
+    },
+    "temporal_stability": {
+      "maximum": 0.658633597155126,
+      "mean": 0.5126672168896167,
+      "minimum": 0.4325219757492811,
+      "pair_count": 10,
+      "standard_deviation": 0.06395031437210671
+    },
+    "warnings": []
+  }
+}

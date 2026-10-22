@@ -1,0 +1,61 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.2784456045168101,
+      0.24994179988195575,
+      0.11722088616362915,
+      0.11615289044607263,
+      0.11272644284834916,
+      0.09769951550804144,
+      0.02781286063514176
+    ],
+    "bootstrap_stability": {
+      "maximum": 0.637221496290406,
+      "mean": 0.455042976982508,
+      "minimum": 0.3144443495548603,
+      "pair_count": 45,
+      "standard_deviation": 0.07477397841770436
+    },
+    "davies_bouldin": 1.2227671345103073,
+    "eligible": false,
+    "family": "birch",
+    "k": 7,
+    "label_mapping": {
+      "0": 0,
+      "1": 2,
+      "2": 3,
+      "3": 4,
+      "4": 6,
+      "5": 5,
+      "6": 1
+    },
+    "method": "birch",
+    "minimum_cluster_area_fraction": 0.02781286063514176,
+    "silhouette": 0.2582488214613475,
+    "spatial_stability": {
+      "maximum": 0.623162896867533,
+      "mean": 0.4649150027397283,
+      "minimum": 0.3222689767457739,
+      "pair_count": 10,
+      "standard_deviation": 0.0977524617938255
+    },
+    "temporal_stability": {
+      "maximum": 0.6178149497735856,
+      "mean": 0.43189874023396424,
+      "minimum": 0.33849115447532985,
+      "pair_count": 10,
+      "standard_deviation": 0.08130292903957828
+    },
+    "warnings": []
+  }
+}

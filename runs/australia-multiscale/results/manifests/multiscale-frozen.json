@@ -1,0 +1,45 @@
+{
+  "config_sha256": "f1a86c65c564e28e0050c3b09b7d2140b2e17325c3c12a8e119916628f9cabb3",
+  "created_at": "2026-09-20T13:02:22.631768+00:00",
+  "external_labels_used": false,
+  "inputs": {
+    "data/external/ne_50m_admin_0_countries_v5.1.2.geojson": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+    "runs/australia-multiscale/data/processed/climate_features.npz": "ebde5ac9db856a0a7466f928bc2b47aaf7318fc9c8ec5ebfb5d15346a3c3bd86",
+    "runs/australia-multiscale/results/manifests/prepare-region.json": "14d3fc81b7ca3005a11eed54185eec2446bb1402d76c9ece8ae56dcbf4423985",
+    "runs/australia-multiscale/results/metrics/multiscale-internal.json": "1e022e8959fec282bec731a7b066c438cbbfcfae0a673166b2c227ad0d7b931d",
+    "runs/australia-multiscale/results/models/confidence-k3.npy": "a2f5cf6da9e2dfde30e15091ec8848705d4f462a6b0d7997b9136e430b6f6f87",
+    "runs/australia-multiscale/results/models/confidence-k4.npy": "fbb2659c46e91ef24f1d4bab1c0eb4bebde81d07ecbc8e4fdc44d299c61cfd2f",
+    "runs/australia-multiscale/results/models/labels-k3.npy": "885a5b48040387bbded03a47cc810089c458550ed816e3366d55ea702e0a7e7f",
+    "runs/australia-multiscale/results/models/labels-k4.npy": "af8d7f8dc942412be79bf758cce3e40b201e3847f1865e0e438e82bb3554b22e",
+    "runs/australia-multiscale/results/models/model-k3.joblib": "415bfd2a1492643916dd4ff836fdd98eaf8bf9492dc287a3aad0f14ee4f9fec9",
+    "runs/australia-multiscale/results/models/model-k4.joblib": "0e900b520850632d98221648233c69ce4ca0dc0c1a18647f77e07993ed7c14c8",
+    "runs/australia-multiscale/results/models/pca.joblib": "197e1e42cb76449793dee8842288f368fc001445b9a6da52f2164014884e90fa",
+    "runs/australia-multiscale/results/models/pca_features.npy": "0f6e6e34eb744d67137805b57948177dc66da2b44628f9efb1e93e1a5277421e",
+    "runs/australia-multiscale/results/models/scaler.joblib": "397fd3462789afaf8f11d1b27c42649d4d43286c0a8209454e388721043b23ee"
+  },
+  "shortlist": [
+    {
+      "criteria": {
+        "corroborated_by_multiple_families": true,
+        "silhouette_retention": true,
+        "stability": true,
+        "strong_single_family_replication": true
+      },
+      "cross_algorithm_ari": 0.5845671292354228,
+      "k": 3,
+      "representative_method": "gmm_diag"
+    },
+    {
+      "criteria": {
+        "corroborated_by_multiple_families": false,
+        "silhouette_retention": true,
+        "stability": true,
+        "strong_single_family_replication": true
+      },
+      "cross_algorithm_ari": null,
+      "k": 4,
+      "representative_method": "kmeans"
+    }
+  ],
+  "stage": "multiscale-freeze"
+}

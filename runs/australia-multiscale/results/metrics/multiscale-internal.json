@@ -1,0 +1,1827 @@
+{
+  "candidate_count": 50,
+  "candidates": [
+    {
+      "bootstrap_stability": {
+        "maximum": 0.9828335582148796,
+        "mean": 0.8220158708968675,
+        "minimum": 0.6149461688165858,
+        "pair_count": 45,
+        "standard_deviation": 0.10443278828597034
+      },
+      "calinski_harabasz": 2321.1032772614058,
+      "cluster_balance_entropy": 0.9629582987676113,
+      "davies_bouldin": 0.9516595108041982,
+      "eligible": true,
+      "family": "kmeans",
+      "k": 3,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 2
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.2529100419411484,
+      "physical_profile_separation": 5.564348378510028,
+      "silhouette": 0.3551863729953766,
+      "spatial_stability": {
+        "maximum": 0.9615807308048907,
+        "mean": 0.869301092847709,
+        "minimum": 0.7455387214759698,
+        "pair_count": 10,
+        "standard_deviation": 0.0882291249579844
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.9663161865560127,
+        "mean": 0.8840845087572039,
+        "minimum": 0.7648256864815629,
+        "pair_count": 45,
+        "standard_deviation": 0.050680046385192086
+      },
+      "calinski_harabasz": 1901.6964298458918,
+      "cluster_balance_entropy": 0.9797448588908303,
+      "davies_bouldin": 1.080816993119919,
+      "eligible": true,
+      "family": "gmm",
+      "k": 3,
+      "label_mapping": {
+        "0": 2,
+        "1": 0,
+        "2": 1
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.2817812839707572,
+      "physical_profile_separation": 5.148371256489543,
+      "silhouette": 0.3166879415512085,
+      "spatial_stability": {
+        "maximum": 0.953255342521593,
+        "mean": 0.903059631843578,
+        "minimum": 0.8589474936655287,
+        "pair_count": 10,
+        "standard_deviation": 0.03190713589096267
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.9409929580311196,
+        "mean": 0.7150166815570855,
+        "minimum": 0.5027516462177282,
+        "pair_count": 45,
+        "standard_deviation": 0.1288563610499264
+      },
+      "calinski_harabasz": 1254.8032518605328,
+      "cluster_balance_entropy": 0.9946295776260023,
+      "davies_bouldin": 1.4174841863326375,
+      "eligible": false,
+      "family": "gmm",
+      "k": 3,
+      "label_mapping": {
+        "0": 1,
+        "1": 2,
+        "2": 0
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.304969021899666,
+      "physical_profile_separation": 3.9756503592726626,
+      "silhouette": 0.20279690623283386,
+      "spatial_stability": {
+        "maximum": 0.8141346511476735,
+        "mean": 0.6182094085636398,
+        "minimum": 0.44172773944744415,
+        "pair_count": 10,
+        "standard_deviation": 0.13349638516278317
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.6993037453217169,
+        "mean": 0.38371952241934254,
+        "minimum": 0.1421798941510219,
+        "pair_count": 45,
+        "standard_deviation": 0.13334224972495393
+      },
+      "calinski_harabasz": 2030.930245614674,
+      "cluster_balance_entropy": 0.9806247696806423,
+      "davies_bouldin": 0.9985172028302814,
+      "eligible": false,
+      "family": "birch",
+      "k": 3,
+      "label_mapping": {
+        "0": 0,
+        "1": 2,
+        "2": 1
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.24106396867307198,
+      "physical_profile_separation": 5.448461669309029,
+      "silhouette": 0.32218629121780396,
+      "spatial_stability": {
+        "maximum": 0.7820542911009403,
+        "mean": 0.5847376036091486,
+        "minimum": 0.360554397901807,
+        "pair_count": 10,
+        "standard_deviation": 0.1537928100418771
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.9385143767371708,
+        "mean": 0.6438411678131484,
+        "minimum": 0.33159131426837435,
+        "pair_count": 45,
+        "standard_deviation": 0.17080613724206756
+      },
+      "calinski_harabasz": 2278.3276639917035,
+      "cluster_balance_entropy": 0.910171429054323,
+      "davies_bouldin": 0.9495152891021217,
+      "eligible": false,
+      "family": "ward",
+      "k": 3,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.1722582380774419,
+      "physical_profile_separation": 5.655414324958966,
+      "silhouette": 0.3575040102005005,
+      "spatial_stability": {
+        "maximum": 0.8859200451681777,
+        "mean": 0.6947371519760561,
+        "minimum": 0.5456822152211118,
+        "pair_count": 10,
+        "standard_deviation": 0.08788471557811853
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.9787186783430607,
+        "mean": 0.8995488786103922,
+        "minimum": 0.7618447964570767,
+        "pair_count": 45,
+        "standard_deviation": 0.04989780250770063
+      },
+      "calinski_harabasz": 2288.828230945267,
+      "cluster_balance_entropy": 0.9541256749215592,
+      "davies_bouldin": 1.011787541755525,
+      "eligible": true,
+      "family": "kmeans",
+      "k": 4,
+      "label_mapping": {
+        "0": 2,
+        "1": 1,
+        "2": 0,
+        "3": 3
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.137020334471799,
+      "physical_profile_separation": 4.3630767347238955,
+      "silhouette": 0.3302824795246124,
+      "spatial_stability": {
+        "maximum": 0.9821170679516025,
+        "mean": 0.966892916322791,
+        "minimum": 0.946314162802666,
+        "pair_count": 10,
+        "standard_deviation": 0.01183979080217842
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.9306595056825474,
+        "mean": 0.5966619876507278,
+        "minimum": 0.3686460748127358,
+        "pair_count": 45,
+        "standard_deviation": 0.14679282358479845
+      },
+      "calinski_harabasz": 1532.791415357184,
+      "cluster_balance_entropy": 0.9947497141747235,
+      "davies_bouldin": 1.2882929061817585,
+      "eligible": false,
+      "family": "gmm",
+      "k": 4,
+      "label_mapping": {
+        "0": 3,
+        "1": 2,
+        "2": 0,
+        "3": 1
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.20519873043778994,
+      "physical_profile_separation": 3.847653701413511,
+      "silhouette": 0.22366273403167725,
+      "spatial_stability": {
+        "maximum": 0.820185062985046,
+        "mean": 0.5055979161284185,
+        "minimum": 0.3619688617788166,
+        "pair_count": 10,
+        "standard_deviation": 0.1348849124419122
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8433976385365074,
+        "mean": 0.5173886201079725,
+        "minimum": 0.29766854479623583,
+        "pair_count": 45,
+        "standard_deviation": 0.14538907311086458
+      },
+      "calinski_harabasz": 1330.8763077594363,
+      "cluster_balance_entropy": 0.9877142647364052,
+      "davies_bouldin": 1.5595649523534716,
+      "eligible": false,
+      "family": "gmm",
+      "k": 4,
+      "label_mapping": {
+        "0": 2,
+        "1": 3,
+        "2": 1,
+        "3": 0
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.20189344888902755,
+      "physical_profile_separation": 2.9812322526968327,
+      "silhouette": 0.21473924815654755,
+      "spatial_stability": {
+        "maximum": 0.7204390270439257,
+        "mean": 0.478444972202351,
+        "minimum": 0.3175154494454314,
+        "pair_count": 10,
+        "standard_deviation": 0.1207412883825786
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.7089249894501818,
+        "mean": 0.4534328757648291,
+        "minimum": 0.31901393846079507,
+        "pair_count": 45,
+        "standard_deviation": 0.11540179784004691
+      },
+      "calinski_harabasz": 1977.5755572315252,
+      "cluster_balance_entropy": 0.8866506554064124,
+      "davies_bouldin": 0.9822550285613332,
+      "eligible": false,
+      "family": "birch",
+      "k": 4,
+      "label_mapping": {
+        "0": 1,
+        "1": 2,
+        "2": 0,
+        "3": 3
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.050632695906637264,
+      "physical_profile_separation": 4.676850861694947,
+      "silhouette": 0.3124903440475464,
+      "spatial_stability": {
+        "maximum": 0.6531011509934957,
+        "mean": 0.46453198895542525,
+        "minimum": 0.35000922694520675,
+        "pair_count": 10,
+        "standard_deviation": 0.08596724372567519
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.9180895324090115,
+        "mean": 0.6075963788857212,
+        "minimum": 0.41039399456384074,
+        "pair_count": 45,
+        "standard_deviation": 0.13911259869198817
+      },
+      "calinski_harabasz": 2230.763691203749,
+      "cluster_balance_entropy": 0.9644127189341313,
+      "davies_bouldin": 1.0604392765596462,
+      "eligible": false,
+      "family": "ward",
+      "k": 4,
+      "label_mapping": {
+        "0": 0,
+        "1": 2,
+        "2": 3,
+        "3": 1
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.1386049599360323,
+      "physical_profile_separation": 4.115351175978689,
+      "silhouette": 0.3178474009037018,
+      "spatial_stability": {
+        "maximum": 0.923825163214853,
+        "mean": 0.5558701297149695,
+        "minimum": 0.3807826596099405,
+        "pair_count": 10,
+        "standard_deviation": 0.17164257400843191
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.9764896405212725,
+        "mean": 0.6891927873033815,
+        "minimum": 0.5065745358166559,
+        "pair_count": 45,
+        "standard_deviation": 0.14626447870365997
+      },
+      "calinski_harabasz": 2127.9418694127626,
+      "cluster_balance_entropy": 0.9506752979638969,
+      "davies_bouldin": 0.9630025884667923,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 5,
+      "label_mapping": {
+        "0": 4,
+        "1": 1,
+        "2": 0,
+        "3": 2,
+        "4": 3
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.10390150581709592,
+      "physical_profile_separation": 3.983617717501773,
+      "silhouette": 0.34408286213874817,
+      "spatial_stability": {
+        "maximum": 0.9469803480596846,
+        "mean": 0.8234233191638888,
+        "minimum": 0.7360714092592335,
+        "pair_count": 10,
+        "standard_deviation": 0.06327392695128584
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.9272711515249414,
+        "mean": 0.6331999752610616,
+        "minimum": 0.348531608839507,
+        "pair_count": 45,
+        "standard_deviation": 0.1474854879133953
+      },
+      "calinski_harabasz": 1299.2971414247472,
+      "cluster_balance_entropy": 0.9616629932579355,
+      "davies_bouldin": 1.2919287370256332,
+      "eligible": false,
+      "family": "gmm",
+      "k": 5,
+      "label_mapping": {
+        "0": 4,
+        "1": 1,
+        "2": 3,
+        "3": 0,
+        "4": 2
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.1340307421542874,
+      "physical_profile_separation": 2.842478102487007,
+      "silhouette": 0.2114352583885193,
+      "spatial_stability": {
+        "maximum": 0.868812743621934,
+        "mean": 0.5998755910388018,
+        "minimum": 0.4553423397793673,
+        "pair_count": 10,
+        "standard_deviation": 0.1328890025383739
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.9306870421099501,
+        "mean": 0.570349853535056,
+        "minimum": 0.3670830503897398,
+        "pair_count": 45,
+        "standard_deviation": 0.15630082881641305
+      },
+      "calinski_harabasz": 962.2250505914004,
+      "cluster_balance_entropy": 0.9903711894233149,
+      "davies_bouldin": 1.6177363520862245,
+      "eligible": false,
+      "family": "gmm",
+      "k": 5,
+      "label_mapping": {
+        "0": 1,
+        "1": 3,
+        "2": 4,
+        "3": 2,
+        "4": 0
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.16195576931551656,
+      "physical_profile_separation": 2.8515794701790362,
+      "silhouette": 0.17921222746372223,
+      "spatial_stability": {
+        "maximum": 0.6597972186077896,
+        "mean": 0.5488726986663767,
+        "minimum": 0.45447771918473245,
+        "pair_count": 10,
+        "standard_deviation": 0.07352161851730812
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.7254879450371459,
+        "mean": 0.45814924634646154,
+        "minimum": 0.3302985497958534,
+        "pair_count": 45,
+        "standard_deviation": 0.10955803594183981
+      },
+      "calinski_harabasz": 1824.7663156978806,
+      "cluster_balance_entropy": 0.8834671659873293,
+      "davies_bouldin": 0.9738583880685743,
+      "eligible": false,
+      "family": "birch",
+      "k": 5,
+      "label_mapping": {
+        "0": 2,
+        "1": 1,
+        "2": 0,
+        "3": 4,
+        "4": 3
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.050632695906637264,
+      "physical_profile_separation": 4.056259655433365,
+      "silhouette": 0.32185789942741394,
+      "spatial_stability": {
+        "maximum": 0.6917665493879471,
+        "mean": 0.49382825134961383,
+        "minimum": 0.38416711782739205,
+        "pair_count": 10,
+        "standard_deviation": 0.09011002386148956
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8566724202453471,
+        "mean": 0.584196841820386,
+        "minimum": 0.39206041954981724,
+        "pair_count": 45,
+        "standard_deviation": 0.13737048067224794
+      },
+      "calinski_harabasz": 2074.770605535576,
+      "cluster_balance_entropy": 0.9638945602481969,
+      "davies_bouldin": 0.9988861851030805,
+      "eligible": false,
+      "family": "ward",
+      "k": 5,
+      "label_mapping": {
+        "0": 2,
+        "1": 1,
+        "2": 3,
+        "3": 4,
+        "4": 0
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.11128965435972138,
+      "physical_profile_separation": 3.9901285895705105,
+      "silhouette": 0.3320958614349365,
+      "spatial_stability": {
+        "maximum": 0.6760898237810292,
+        "mean": 0.5295482978227268,
+        "minimum": 0.42005681007656526,
+        "pair_count": 10,
+        "standard_deviation": 0.09206374449987151
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.954051782122254,
+        "mean": 0.6461117343394397,
+        "minimum": 0.39495525521679237,
+        "pair_count": 45,
+        "standard_deviation": 0.16052651366427798
+      },
+      "calinski_harabasz": 2134.0386314380794,
+      "cluster_balance_entropy": 0.9548016981512716,
+      "davies_bouldin": 0.9584580514905072,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 6,
+      "label_mapping": {
+        "0": 0,
+        "1": 5,
+        "2": 3,
+        "3": 2,
+        "4": 1,
+        "5": 4
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.06895187032957546,
+      "physical_profile_separation": 3.870683283301216,
+      "silhouette": 0.33377113938331604,
+      "spatial_stability": {
+        "maximum": 0.8619048876412947,
+        "mean": 0.6187663404912247,
+        "minimum": 0.40443135424359705,
+        "pair_count": 10,
+        "standard_deviation": 0.14472333980745217
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8101593439606659,
+        "mean": 0.543044174817939,
+        "minimum": 0.3337658608031513,
+        "pair_count": 45,
+        "standard_deviation": 0.13331625999813426
+      },
+      "calinski_harabasz": 1051.9841690583535,
+      "cluster_balance_entropy": 0.9896901823573501,
+      "davies_bouldin": 1.6068966711562853,
+      "eligible": false,
+      "family": "gmm",
+      "k": 6,
+      "label_mapping": {
+        "0": 1,
+        "1": 5,
+        "2": 2,
+        "3": 4,
+        "4": 3,
+        "5": 0
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.1259218953141029,
+      "physical_profile_separation": 2.759380743470431,
+      "silhouette": 0.17703334987163544,
+      "spatial_stability": {
+        "maximum": 0.7742095846228793,
+        "mean": 0.5715021270705607,
+        "minimum": 0.38903524641437703,
+        "pair_count": 10,
+        "standard_deviation": 0.1409050093314615
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.7508216040450086,
+        "mean": 0.4931728693174386,
+        "minimum": 0.32859340361955913,
+        "pair_count": 45,
+        "standard_deviation": 0.09358333889154839
+      },
+      "calinski_harabasz": 1189.1478379454632,
+      "cluster_balance_entropy": 0.9958574957624434,
+      "davies_bouldin": 1.5780352589535636,
+      "eligible": false,
+      "family": "gmm",
+      "k": 6,
+      "label_mapping": {
+        "0": 3,
+        "1": 5,
+        "2": 4,
+        "3": 2,
+        "4": 0,
+        "5": 1
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.1431014072804184,
+      "physical_profile_separation": 2.932269633068905,
+      "silhouette": 0.19088758528232574,
+      "spatial_stability": {
+        "maximum": 0.7508120413218469,
+        "mean": 0.551271371112188,
+        "minimum": 0.4148032924759731,
+        "pair_count": 10,
+        "standard_deviation": 0.10988027290086402
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.6600441638371135,
+        "mean": 0.4598179719720442,
+        "minimum": 0.3259035104802866,
+        "pair_count": 45,
+        "standard_deviation": 0.0842731579511912
+      },
+      "calinski_harabasz": 1713.1564967654967,
+      "cluster_balance_entropy": 0.8863775020179311,
+      "davies_bouldin": 1.0116294976660989,
+      "eligible": false,
+      "family": "birch",
+      "k": 6,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 3,
+        "3": 5,
+        "4": 4,
+        "5": 2
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.050632695906637264,
+      "physical_profile_separation": 3.639538239179776,
+      "silhouette": 0.27553173899650574,
+      "spatial_stability": {
+        "maximum": 0.6850240375573098,
+        "mean": 0.5287495865000281,
+        "minimum": 0.4209734110789539,
+        "pair_count": 10,
+        "standard_deviation": 0.08943905569755707
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8822446492823065,
+        "mean": 0.6854545539446592,
+        "minimum": 0.45197873105273156,
+        "pair_count": 45,
+        "standard_deviation": 0.12353469915785156
+      },
+      "calinski_harabasz": 1919.3036794913126,
+      "cluster_balance_entropy": 0.9653703756748494,
+      "davies_bouldin": 1.065218780792078,
+      "eligible": false,
+      "family": "ward",
+      "k": 6,
+      "label_mapping": {
+        "0": 3,
+        "1": 1,
+        "2": 2,
+        "3": 5,
+        "4": 0,
+        "5": 4
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.10971386323990687,
+      "physical_profile_separation": 3.459688653711256,
+      "silhouette": 0.29501786828041077,
+      "spatial_stability": {
+        "maximum": 0.8534760624229486,
+        "mean": 0.6283251038716388,
+        "minimum": 0.4563884658095731,
+        "pair_count": 10,
+        "standard_deviation": 0.1251803483481104
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8967565299271777,
+        "mean": 0.6454494094361714,
+        "minimum": 0.42591954619284056,
+        "pair_count": 45,
+        "standard_deviation": 0.12658145717396682
+      },
+      "calinski_harabasz": 2038.6252277577378,
+      "cluster_balance_entropy": 0.9632360543012458,
+      "davies_bouldin": 0.9849016490131207,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 7,
+      "label_mapping": {
+        "0": 4,
+        "1": 5,
+        "2": 0,
+        "3": 3,
+        "4": 6,
+        "5": 1,
+        "6": 2
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.06757637345096745,
+      "physical_profile_separation": 3.152846160011762,
+      "silhouette": 0.32868897914886475,
+      "spatial_stability": {
+        "maximum": 0.8428989249380308,
+        "mean": 0.5873374131597962,
+        "minimum": 0.36302958778466204,
+        "pair_count": 10,
+        "standard_deviation": 0.1440577836943804
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8820303394420764,
+        "mean": 0.5893860240752461,
+        "minimum": 0.3267047334691651,
+        "pair_count": 45,
+        "standard_deviation": 0.12309345785279653
+      },
+      "calinski_harabasz": 1183.0959583054996,
+      "cluster_balance_entropy": 0.9845191090513173,
+      "davies_bouldin": 1.3460686844300174,
+      "eligible": false,
+      "family": "gmm",
+      "k": 7,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 6,
+        "3": 3,
+        "4": 5,
+        "5": 2,
+        "6": 4
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.09865758497585264,
+      "physical_profile_separation": 2.8517562928519085,
+      "silhouette": 0.22817100584506989,
+      "spatial_stability": {
+        "maximum": 0.7241543286826078,
+        "mean": 0.5755338369596157,
+        "minimum": 0.43514702533426936,
+        "pair_count": 10,
+        "standard_deviation": 0.10415144134460823
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.6971879238814715,
+        "mean": 0.5202501051391967,
+        "minimum": 0.3081271614075603,
+        "pair_count": 45,
+        "standard_deviation": 0.09621688601170536
+      },
+      "calinski_harabasz": 1134.7961807407114,
+      "cluster_balance_entropy": 0.9877640928173798,
+      "davies_bouldin": 1.5846672103157222,
+      "eligible": false,
+      "family": "gmm",
+      "k": 7,
+      "label_mapping": {
+        "0": 5,
+        "1": 6,
+        "2": 2,
+        "3": 0,
+        "4": 3,
+        "5": 1,
+        "6": 4
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.10502824367828845,
+      "physical_profile_separation": 2.4121946862505363,
+      "silhouette": 0.2043846994638443,
+      "spatial_stability": {
+        "maximum": 0.7264720232225469,
+        "mean": 0.5379886257920011,
+        "minimum": 0.41773360008671584,
+        "pair_count": 10,
+        "standard_deviation": 0.10459710585828075
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.6529700889698279,
+        "mean": 0.43921354133213103,
+        "minimum": 0.29687902341371986,
+        "pair_count": 45,
+        "standard_deviation": 0.07655521761279024
+      },
+      "calinski_harabasz": 1681.4890976585589,
+      "cluster_balance_entropy": 0.9123512410084672,
+      "davies_bouldin": 1.0733568825106583,
+      "eligible": false,
+      "family": "birch",
+      "k": 7,
+      "label_mapping": {
+        "0": 1,
+        "1": 4,
+        "2": 3,
+        "3": 6,
+        "4": 0,
+        "5": 2,
+        "6": 5
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.050632695906637264,
+      "physical_profile_separation": 3.4348857746942985,
+      "silhouette": 0.2807037830352783,
+      "spatial_stability": {
+        "maximum": 0.6295919317922757,
+        "mean": 0.5013186664713924,
+        "minimum": 0.381896448212119,
+        "pair_count": 10,
+        "standard_deviation": 0.09053938781481664
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8808656791387685,
+        "mean": 0.612144316176546,
+        "minimum": 0.4619803819716428,
+        "pair_count": 45,
+        "standard_deviation": 0.11013152557209856
+      },
+      "calinski_harabasz": 1967.389395066891,
+      "cluster_balance_entropy": 0.9458996939741737,
+      "davies_bouldin": 1.021994354602139,
+      "eligible": false,
+      "family": "ward",
+      "k": 7,
+      "label_mapping": {
+        "0": 1,
+        "1": 4,
+        "2": 2,
+        "3": 5,
+        "4": 0,
+        "5": 3,
+        "6": 6
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.04816610547611354,
+      "physical_profile_separation": 3.459688653711256,
+      "silhouette": 0.29402410984039307,
+      "spatial_stability": {
+        "maximum": 0.6438902238605442,
+        "mean": 0.5636721891660328,
+        "minimum": 0.4761441636563855,
+        "pair_count": 10,
+        "standard_deviation": 0.05561592907771615
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8560485220835847,
+        "mean": 0.6523050211926272,
+        "minimum": 0.44533722330455416,
+        "pair_count": 45,
+        "standard_deviation": 0.10632329485040762
+      },
+      "calinski_harabasz": 2011.588068218775,
+      "cluster_balance_entropy": 0.9741105404690609,
+      "davies_bouldin": 1.0211665450942382,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 8,
+      "label_mapping": {
+        "0": 1,
+        "1": 2,
+        "2": 3,
+        "3": 4,
+        "4": 7,
+        "5": 5,
+        "6": 6,
+        "7": 0
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.06129313259272284,
+      "physical_profile_separation": 3.1072220977969036,
+      "silhouette": 0.3078542649745941,
+      "spatial_stability": {
+        "maximum": 0.9393858541049583,
+        "mean": 0.6555337730995626,
+        "minimum": 0.5158370933575828,
+        "pair_count": 10,
+        "standard_deviation": 0.1740964170793457
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8740058055930305,
+        "mean": 0.6152743258430621,
+        "minimum": 0.43939876636783864,
+        "pair_count": 45,
+        "standard_deviation": 0.08604947189430714
+      },
+      "calinski_harabasz": 1096.771733889011,
+      "cluster_balance_entropy": 0.9906488615686815,
+      "davies_bouldin": 1.334688620449491,
+      "eligible": false,
+      "family": "gmm",
+      "k": 8,
+      "label_mapping": {
+        "0": 7,
+        "1": 5,
+        "2": 3,
+        "3": 4,
+        "4": 6,
+        "5": 2,
+        "6": 0,
+        "7": 1
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.08642326593613882,
+      "physical_profile_separation": 2.603753576414039,
+      "silhouette": 0.1977241188287735,
+      "spatial_stability": {
+        "maximum": 0.7295885676510698,
+        "mean": 0.6199806565482395,
+        "minimum": 0.5435183760877785,
+        "pair_count": 10,
+        "standard_deviation": 0.05317633126399107
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.7695893818756254,
+        "mean": 0.5704094417251852,
+        "minimum": 0.3498855846162646,
+        "pair_count": 45,
+        "standard_deviation": 0.10529283548998888
+      },
+      "calinski_harabasz": 1247.517167354654,
+      "cluster_balance_entropy": 0.9654537649859278,
+      "davies_bouldin": 1.199720119380728,
+      "eligible": false,
+      "family": "gmm",
+      "k": 8,
+      "label_mapping": {
+        "0": 3,
+        "1": 2,
+        "2": 1,
+        "3": 7,
+        "4": 5,
+        "5": 6,
+        "6": 4,
+        "7": 0
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.05875106387322371,
+      "physical_profile_separation": 2.975926956444722,
+      "silhouette": 0.2174372375011444,
+      "spatial_stability": {
+        "maximum": 0.686803845209401,
+        "mean": 0.6243166142568003,
+        "minimum": 0.5848130903724713,
+        "pair_count": 10,
+        "standard_deviation": 0.029073038129750435
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.6191712456324617,
+        "mean": 0.43989768504468696,
+        "minimum": 0.2980689944849012,
+        "pair_count": 45,
+        "standard_deviation": 0.07314799970371212
+      },
+      "calinski_harabasz": 1665.0835004913852,
+      "cluster_balance_entropy": 0.9174060238198386,
+      "davies_bouldin": 1.0989490723245083,
+      "eligible": false,
+      "family": "birch",
+      "k": 8,
+      "label_mapping": {
+        "0": 4,
+        "1": 7,
+        "2": 3,
+        "3": 1,
+        "4": 0,
+        "5": 2,
+        "6": 5,
+        "7": 6
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.050632695906637264,
+      "physical_profile_separation": 3.4348857746942985,
+      "silhouette": 0.25312477350234985,
+      "spatial_stability": {
+        "maximum": 0.5128723487975109,
+        "mean": 0.4633066679438073,
+        "minimum": 0.40451305284167477,
+        "pair_count": 10,
+        "standard_deviation": 0.030480086063524488
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8012135137895198,
+        "mean": 0.5940344377503116,
+        "minimum": 0.4502744976425245,
+        "pair_count": 45,
+        "standard_deviation": 0.09330206378555939
+      },
+      "calinski_harabasz": 1961.7471725807443,
+      "cluster_balance_entropy": 0.9647935826854357,
+      "davies_bouldin": 1.0081139596382769,
+      "eligible": false,
+      "family": "ward",
+      "k": 8,
+      "label_mapping": {
+        "0": 5,
+        "1": 0,
+        "2": 2,
+        "3": 1,
+        "4": 6,
+        "5": 3,
+        "6": 7,
+        "7": 4
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.04816610547611354,
+      "physical_profile_separation": 3.094915979124053,
+      "silhouette": 0.30579227209091187,
+      "spatial_stability": {
+        "maximum": 0.7564725200774581,
+        "mean": 0.5470222176023446,
+        "minimum": 0.43771708847978175,
+        "pair_count": 10,
+        "standard_deviation": 0.10096045326837644
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8232141224975847,
+        "mean": 0.627723580904623,
+        "minimum": 0.45063454662722113,
+        "pair_count": 45,
+        "standard_deviation": 0.09611030354095129
+      },
+      "calinski_harabasz": 1932.6218117169688,
+      "cluster_balance_entropy": 0.9769693663360332,
+      "davies_bouldin": 1.0804908290211526,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 9,
+      "label_mapping": {
+        "0": 5,
+        "1": 8,
+        "2": 6,
+        "3": 7,
+        "4": 1,
+        "5": 2,
+        "6": 0,
+        "7": 4,
+        "8": 3
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.05054051498853259,
+      "physical_profile_separation": 2.7741417596133298,
+      "silhouette": 0.2840827703475952,
+      "spatial_stability": {
+        "maximum": 0.935593262128028,
+        "mean": 0.7006691557117708,
+        "minimum": 0.4766542889546711,
+        "pair_count": 10,
+        "standard_deviation": 0.1455757350177466
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8237653047705752,
+        "mean": 0.5988583465991039,
+        "minimum": 0.4439689185106849,
+        "pair_count": 45,
+        "standard_deviation": 0.08618837072818969
+      },
+      "calinski_harabasz": 1050.058965851644,
+      "cluster_balance_entropy": 0.9916121344701726,
+      "davies_bouldin": 1.2883989399716336,
+      "eligible": false,
+      "family": "gmm",
+      "k": 9,
+      "label_mapping": {
+        "0": 1,
+        "1": 6,
+        "2": 7,
+        "3": 4,
+        "4": 8,
+        "5": 3,
+        "6": 0,
+        "7": 5,
+        "8": 2
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.07558015117694211,
+      "physical_profile_separation": 2.682201472940783,
+      "silhouette": 0.18114802241325378,
+      "spatial_stability": {
+        "maximum": 0.7862895575460855,
+        "mean": 0.573116650358038,
+        "minimum": 0.4726882630779163,
+        "pair_count": 10,
+        "standard_deviation": 0.09402604214476504
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.7060930738042964,
+        "mean": 0.5321346160408541,
+        "minimum": 0.4019132035442783,
+        "pair_count": 45,
+        "standard_deviation": 0.06995888615462531
+      },
+      "calinski_harabasz": 1303.91396940352,
+      "cluster_balance_entropy": 0.9725152271888422,
+      "davies_bouldin": 1.3704158172403216,
+      "eligible": false,
+      "family": "gmm",
+      "k": 9,
+      "label_mapping": {
+        "0": 4,
+        "1": 7,
+        "2": 5,
+        "3": 3,
+        "4": 0,
+        "5": 6,
+        "6": 8,
+        "7": 1,
+        "8": 2
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.05857944276179498,
+      "physical_profile_separation": 1.9006455942215201,
+      "silhouette": 0.2017795890569687,
+      "spatial_stability": {
+        "maximum": 0.6406951676056704,
+        "mean": 0.5252836506803075,
+        "minimum": 0.43875404550675784,
+        "pair_count": 10,
+        "standard_deviation": 0.06823619601796517
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.6236426457688623,
+        "mean": 0.4280604680151816,
+        "minimum": 0.29361525186414966,
+        "pair_count": 45,
+        "standard_deviation": 0.07087813404091109
+      },
+      "calinski_harabasz": 1527.9783778953206,
+      "cluster_balance_entropy": 0.8910508132878681,
+      "davies_bouldin": 1.0843050989139253,
+      "eligible": false,
+      "family": "birch",
+      "k": 9,
+      "label_mapping": {
+        "0": 3,
+        "1": 7,
+        "2": 4,
+        "3": 1,
+        "4": 0,
+        "5": 2,
+        "6": 5,
+        "7": 6,
+        "8": 8
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.02381011069386562,
+      "physical_profile_separation": 3.286841779231261,
+      "silhouette": 0.24186626076698303,
+      "spatial_stability": {
+        "maximum": 0.522105481031491,
+        "mean": 0.4869715500336751,
+        "minimum": 0.4506646690006087,
+        "pair_count": 10,
+        "standard_deviation": 0.024156551828335808
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.829056944966916,
+        "mean": 0.5955116765618701,
+        "minimum": 0.45595184283487833,
+        "pair_count": 45,
+        "standard_deviation": 0.0747562823655285
+      },
+      "calinski_harabasz": 1847.3818871122485,
+      "cluster_balance_entropy": 0.9457079531265945,
+      "davies_bouldin": 1.0206113998888373,
+      "eligible": false,
+      "family": "ward",
+      "k": 9,
+      "label_mapping": {
+        "0": 0,
+        "1": 6,
+        "2": 2,
+        "3": 1,
+        "4": 5,
+        "5": 3,
+        "6": 7,
+        "7": 4,
+        "8": 8
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.033180431352815155,
+      "physical_profile_separation": 3.090191929155639,
+      "silhouette": 0.3032332956790924,
+      "spatial_stability": {
+        "maximum": 0.6913882049664251,
+        "mean": 0.5895143216388251,
+        "minimum": 0.4527172429381969,
+        "pair_count": 10,
+        "standard_deviation": 0.07694172587893369
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.793776867149866,
+        "mean": 0.583032135304016,
+        "minimum": 0.4356786669883901,
+        "pair_count": 45,
+        "standard_deviation": 0.09611865058143317
+      },
+      "calinski_harabasz": 1861.2999389028366,
+      "cluster_balance_entropy": 0.9786320190007258,
+      "davies_bouldin": 1.0343411788515193,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 10,
+      "label_mapping": {
+        "0": 3,
+        "1": 5,
+        "2": 0,
+        "3": 7,
+        "4": 6,
+        "5": 8,
+        "6": 2,
+        "7": 4,
+        "8": 9,
+        "9": 1
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.05088346731419192,
+      "physical_profile_separation": 2.8039370047152268,
+      "silhouette": 0.2981809377670288,
+      "spatial_stability": {
+        "maximum": 0.6516454892861215,
+        "mean": 0.5479694813841036,
+        "minimum": 0.43277593483545335,
+        "pair_count": 10,
+        "standard_deviation": 0.07327438759308155
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.7759878470449343,
+        "mean": 0.6310484223152331,
+        "minimum": 0.4816165543144502,
+        "pair_count": 45,
+        "standard_deviation": 0.07138687456116549
+      },
+      "calinski_harabasz": 1352.6972867258044,
+      "cluster_balance_entropy": 0.9830412044031224,
+      "davies_bouldin": 1.237610048757962,
+      "eligible": false,
+      "family": "gmm",
+      "k": 10,
+      "label_mapping": {
+        "0": 8,
+        "1": 6,
+        "2": 4,
+        "3": 5,
+        "4": 9,
+        "5": 3,
+        "6": 7,
+        "7": 1,
+        "8": 2,
+        "9": 0
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.045549157626956695,
+      "physical_profile_separation": 2.6122482848104327,
+      "silhouette": 0.20849932730197906,
+      "spatial_stability": {
+        "maximum": 0.6213004756599915,
+        "mean": 0.5256721358884143,
+        "minimum": 0.4134881221106677,
+        "pair_count": 10,
+        "standard_deviation": 0.0576570694627985
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.7198426281656105,
+        "mean": 0.5392789318800759,
+        "minimum": 0.3429284694071727,
+        "pair_count": 45,
+        "standard_deviation": 0.08154728811616603
+      },
+      "calinski_harabasz": 1166.1176237985715,
+      "cluster_balance_entropy": 0.9891609959521115,
+      "davies_bouldin": 1.3679567874463736,
+      "eligible": false,
+      "family": "gmm",
+      "k": 10,
+      "label_mapping": {
+        "0": 3,
+        "1": 6,
+        "2": 4,
+        "3": 2,
+        "4": 5,
+        "5": 0,
+        "6": 8,
+        "7": 1,
+        "8": 9,
+        "9": 7
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.07105652850496864,
+      "physical_profile_separation": 2.1444987343976423,
+      "silhouette": 0.19783423840999603,
+      "spatial_stability": {
+        "maximum": 0.681219367295407,
+        "mean": 0.5353508210709913,
+        "minimum": 0.4100563184744827,
+        "pair_count": 10,
+        "standard_deviation": 0.08698234377802966
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.5516286373670471,
+        "mean": 0.4358103513851316,
+        "minimum": 0.36262708635991187,
+        "pair_count": 45,
+        "standard_deviation": 0.04618600787342015
+      },
+      "calinski_harabasz": 1411.7165709756966,
+      "cluster_balance_entropy": 0.867631379903726,
+      "davies_bouldin": 1.06664527612682,
+      "eligible": false,
+      "family": "birch",
+      "k": 10,
+      "label_mapping": {
+        "0": 7,
+        "1": 1,
+        "2": 4,
+        "3": 6,
+        "4": 0,
+        "5": 2,
+        "6": 5,
+        "7": 3,
+        "8": 8,
+        "9": 9
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.012954032897707416,
+      "physical_profile_separation": 3.286841779231261,
+      "silhouette": 0.23500299453735352,
+      "spatial_stability": {
+        "maximum": 0.5550264103988727,
+        "mean": 0.4759302114891371,
+        "minimum": 0.42225533434975243,
+        "pair_count": 10,
+        "standard_deviation": 0.050611696115103896
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.7381592205221423,
+        "mean": 0.5877820628292368,
+        "minimum": 0.45151332899175584,
+        "pair_count": 45,
+        "standard_deviation": 0.0794210673005061
+      },
+      "calinski_harabasz": 1803.5819558670134,
+      "cluster_balance_entropy": 0.9650621292600832,
+      "davies_bouldin": 1.0715955718121613,
+      "eligible": false,
+      "family": "ward",
+      "k": 10,
+      "label_mapping": {
+        "0": 6,
+        "1": 5,
+        "2": 1,
+        "3": 2,
+        "4": 4,
+        "5": 3,
+        "6": 8,
+        "7": 7,
+        "8": 9,
+        "9": 0
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.033180431352815155,
+      "physical_profile_separation": 2.5619372268248215,
+      "silhouette": 0.2828059792518616,
+      "spatial_stability": {
+        "maximum": 0.659211230149768,
+        "mean": 0.5474852357461585,
+        "minimum": 0.42884772459110443,
+        "pair_count": 10,
+        "standard_deviation": 0.06711434331337511
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8085153905568484,
+        "mean": 0.5783844226444038,
+        "minimum": 0.4166243387683536,
+        "pair_count": 45,
+        "standard_deviation": 0.08965112754910824
+      },
+      "calinski_harabasz": 1809.3322807645268,
+      "cluster_balance_entropy": 0.9835342101069754,
+      "davies_bouldin": 1.0536652622419607,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 11,
+      "label_mapping": {
+        "0": 3,
+        "1": 5,
+        "2": 6,
+        "3": 4,
+        "4": 2,
+        "5": 1,
+        "6": 8,
+        "7": 10,
+        "8": 0,
+        "9": 9,
+        "10": 7
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.050219442813675665,
+      "physical_profile_separation": 2.3043221469032034,
+      "silhouette": 0.29602503776550293,
+      "spatial_stability": {
+        "maximum": 0.8895094933724053,
+        "mean": 0.6248402310841235,
+        "minimum": 0.5082488972883356,
+        "pair_count": 10,
+        "standard_deviation": 0.10833048074172028
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.7828004004447956,
+        "mean": 0.5889908675855299,
+        "minimum": 0.4340800565371248,
+        "pair_count": 45,
+        "standard_deviation": 0.06977292798668193
+      },
+      "calinski_harabasz": 867.9313974883065,
+      "cluster_balance_entropy": 0.9829355250032206,
+      "davies_bouldin": 1.3626045909453752,
+      "eligible": false,
+      "family": "gmm",
+      "k": 11,
+      "label_mapping": {
+        "0": 2,
+        "1": 6,
+        "2": 3,
+        "3": 10,
+        "4": 4,
+        "5": 9,
+        "6": 7,
+        "7": 0,
+        "8": 5,
+        "9": 8,
+        "10": 1
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.049435273871919365,
+      "physical_profile_separation": 2.215002459796664,
+      "silhouette": 0.1690661907196045,
+      "spatial_stability": {
+        "maximum": 0.6330659116599939,
+        "mean": 0.5596377109626894,
+        "minimum": 0.5069548314488905,
+        "pair_count": 10,
+        "standard_deviation": 0.04220422777917159
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.6559379798686484,
+        "mean": 0.5101802260019954,
+        "minimum": 0.41270281423181365,
+        "pair_count": 45,
+        "standard_deviation": 0.06074324147915325
+      },
+      "calinski_harabasz": 1181.2474611122293,
+      "cluster_balance_entropy": 0.9830857549914881,
+      "davies_bouldin": 1.4079723201935164,
+      "eligible": false,
+      "family": "gmm",
+      "k": 11,
+      "label_mapping": {
+        "0": 6,
+        "1": 7,
+        "2": 4,
+        "3": 1,
+        "4": 9,
+        "5": 5,
+        "6": 2,
+        "7": 8,
+        "8": 3,
+        "9": 0,
+        "10": 10
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.04373770262140021,
+      "physical_profile_separation": 1.7907581239217651,
+      "silhouette": 0.18748922646045685,
+      "spatial_stability": {
+        "maximum": 0.6994141668193307,
+        "mean": 0.5584397993750475,
+        "minimum": 0.4787521569299396,
+        "pair_count": 10,
+        "standard_deviation": 0.07466137147858903
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.5664578622775812,
+        "mean": 0.43581202016942705,
+        "minimum": 0.3510185880144409,
+        "pair_count": 45,
+        "standard_deviation": 0.045979312265677134
+      },
+      "calinski_harabasz": 1307.4822373347317,
+      "cluster_balance_entropy": 0.8391651144059933,
+      "davies_bouldin": 1.0380850553809973,
+      "eligible": false,
+      "family": "birch",
+      "k": 11,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 4,
+        "3": 6,
+        "4": 7,
+        "5": 2,
+        "6": 5,
+        "7": 3,
+        "8": 8,
+        "9": 9,
+        "10": 10
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.004182640474794798,
+      "physical_profile_separation": 3.286841779231261,
+      "silhouette": 0.23242665827274323,
+      "spatial_stability": {
+        "maximum": 0.5519591243471637,
+        "mean": 0.4671652994210861,
+        "minimum": 0.410370180024318,
+        "pair_count": 10,
+        "standard_deviation": 0.04924751428516933
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.7289859492014082,
+        "mean": 0.5781394546672012,
+        "minimum": 0.4307674828206136,
+        "pair_count": 45,
+        "standard_deviation": 0.07765688418942567
+      },
+      "calinski_harabasz": 1734.2454708513744,
+      "cluster_balance_entropy": 0.9590859131041041,
+      "davies_bouldin": 1.0535729087904768,
+      "eligible": false,
+      "family": "ward",
+      "k": 11,
+      "label_mapping": {
+        "0": 1,
+        "1": 5,
+        "2": 3,
+        "3": 2,
+        "4": 4,
+        "5": 8,
+        "6": 9,
+        "7": 6,
+        "8": 10,
+        "9": 0,
+        "10": 7
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.031831070775254586,
+      "physical_profile_separation": 2.579111078638493,
+      "silhouette": 0.2868579626083374,
+      "spatial_stability": {
+        "maximum": 0.6342455422588555,
+        "mean": 0.5500038442445989,
+        "minimum": 0.4460984789819608,
+        "pair_count": 10,
+        "standard_deviation": 0.06467552323755833
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8416292579766353,
+        "mean": 0.5768588040501266,
+        "minimum": 0.42000441408235306,
+        "pair_count": 45,
+        "standard_deviation": 0.08479256565169471
+      },
+      "calinski_harabasz": 1773.2229207312428,
+      "cluster_balance_entropy": 0.9778165518484516,
+      "davies_bouldin": 1.0464429091152398,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 12,
+      "label_mapping": {
+        "0": 9,
+        "1": 2,
+        "2": 1,
+        "3": 7,
+        "4": 11,
+        "5": 4,
+        "6": 6,
+        "7": 0,
+        "8": 5,
+        "9": 10,
+        "10": 3,
+        "11": 8
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.0421176365639802,
+      "physical_profile_separation": 2.3155381824765517,
+      "silhouette": 0.2962785065174103,
+      "spatial_stability": {
+        "maximum": 0.7343305571681453,
+        "mean": 0.6241540474846407,
+        "minimum": 0.520300054438387,
+        "pair_count": 10,
+        "standard_deviation": 0.06258031259526228
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.8372067108230441,
+        "mean": 0.5720976461154142,
+        "minimum": 0.4489910553262596,
+        "pair_count": 45,
+        "standard_deviation": 0.07452341534778723
+      },
+      "calinski_harabasz": 1133.0594972549022,
+      "cluster_balance_entropy": 0.9793330972277489,
+      "davies_bouldin": 1.3596370661489365,
+      "eligible": false,
+      "family": "gmm",
+      "k": 12,
+      "label_mapping": {
+        "0": 1,
+        "1": 9,
+        "2": 5,
+        "3": 0,
+        "4": 8,
+        "5": 7,
+        "6": 6,
+        "7": 4,
+        "8": 3,
+        "9": 11,
+        "10": 2,
+        "11": 10
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.046507714701566866,
+      "physical_profile_separation": 2.001047388136799,
+      "silhouette": 0.19307361543178558,
+      "spatial_stability": {
+        "maximum": 0.6374032023612165,
+        "mean": 0.5659719297629935,
+        "minimum": 0.4765015553805343,
+        "pair_count": 10,
+        "standard_deviation": 0.05888969664826253
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.6562511302644635,
+        "mean": 0.4981240303289098,
+        "minimum": 0.38641273354699396,
+        "pair_count": 45,
+        "standard_deviation": 0.05958622673059207
+      },
+      "calinski_harabasz": 1096.0053530982489,
+      "cluster_balance_entropy": 0.9794439363914057,
+      "davies_bouldin": 1.3898514096582462,
+      "eligible": false,
+      "family": "gmm",
+      "k": 12,
+      "label_mapping": {
+        "0": 1,
+        "1": 11,
+        "2": 6,
+        "3": 7,
+        "4": 5,
+        "5": 0,
+        "6": 8,
+        "7": 3,
+        "8": 4,
+        "9": 2,
+        "10": 9,
+        "11": 10
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.051367429423518504,
+      "physical_profile_separation": 2.261469331621904,
+      "silhouette": 0.19250397384166718,
+      "spatial_stability": {
+        "maximum": 0.5989983376267484,
+        "mean": 0.5433228215378193,
+        "minimum": 0.4879321815118451,
+        "pair_count": 10,
+        "standard_deviation": 0.03350415721737187
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.5597282923188642,
+        "mean": 0.4442008233894704,
+        "minimum": 0.34888935948791694,
+        "pair_count": 45,
+        "standard_deviation": 0.04615533507652425
+      },
+      "calinski_harabasz": 1239.0925444920442,
+      "cluster_balance_entropy": 0.8423397800432016,
+      "davies_bouldin": 1.1058322513652559,
+      "eligible": false,
+      "family": "birch",
+      "k": 12,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 4,
+        "3": 6,
+        "4": 7,
+        "5": 2,
+        "6": 5,
+        "7": 3,
+        "8": 9,
+        "9": 10,
+        "10": 11,
+        "11": 8
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.004182640474794798,
+      "physical_profile_separation": 2.443225686593252,
+      "silhouette": 0.2214234322309494,
+      "spatial_stability": {
+        "maximum": 0.53870271939894,
+        "mean": 0.45900932848995823,
+        "minimum": 0.37224654821200925,
+        "pair_count": 10,
+        "standard_deviation": 0.04744741230827278
+      }
+    },
+    {
+      "bootstrap_stability": {
+        "maximum": 0.721410489423813,
+        "mean": 0.5619894962004055,
+        "minimum": 0.43138681073193885,
+        "pair_count": 45,
+        "standard_deviation": 0.0687317448648521
+      },
+      "calinski_harabasz": 1709.7113571400776,
+      "cluster_balance_entropy": 0.9627469091936061,
+      "davies_bouldin": 1.037834902841077,
+      "eligible": false,
+      "family": "ward",
+      "k": 12,
+      "label_mapping": {
+        "0": 5,
+        "1": 1,
+        "2": 3,
+        "3": 6,
+        "4": 2,
+        "5": 9,
+        "6": 10,
+        "7": 8,
+        "8": 11,
+        "9": 0,
+        "10": 7,
+        "11": 4
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.031831070775254586,
+      "physical_profile_separation": 2.579111078638493,
+      "silhouette": 0.28725355863571167,
+      "spatial_stability": {
+        "maximum": 0.6224001792282342,
+        "mean": 0.5554558873312928,
+        "minimum": 0.48763218781714235,
+        "pair_count": 10,
+        "standard_deviation": 0.045987846855197294
+      }
+    }
+  ],
+  "cross_algorithm_agreement": {
+    "3": 0.5845671292354228
+  },
+  "cross_algorithm_pairs": [
+    {
+      "ari": 0.5845671292354228,
+      "k": 3,
+      "left": "kmeans",
+      "right": "gmm_diag"
+    }
+  ],
+  "pca_components": 8,
+  "pca_explained_variance": 0.9906598541396938,
+  "selection_policy": {
+    "external_labels_used": false,
+    "k2_role": "macro_diagnostic_only",
+    "minimum_cluster_area_fraction": 0.02,
+    "minimum_cross_algorithm_ari": 0.55,
+    "minimum_spatial_stability_ari": 0.8,
+    "minimum_stability_ari": 0.8,
+    "silhouette_retention_ratio": 0.8,
+    "strong_single_family_stability_ari": 0.85
+  },
+  "shortlist": [
+    {
+      "criteria": {
+        "corroborated_by_multiple_families": true,
+        "silhouette_retention": true,
+        "stability": true,
+        "strong_single_family_replication": true
+      },
+      "cross_algorithm_ari": 0.5845671292354228,
+      "k": 3,
+      "representative_method": "gmm_diag"
+    },
+    {
+      "criteria": {
+        "corroborated_by_multiple_families": false,
+        "silhouette_retention": true,
+        "stability": true,
+        "strong_single_family_replication": true
+      },
+      "cross_algorithm_ari": null,
+      "k": 4,
+      "representative_method": "kmeans"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "config_sha256": "b1ef353834820653a0097992cb9863cfcbb67f711205a10edf85fffe70996140",
+  "created_at": "2026-09-20T12:32:29.452184+00:00",
+  "inputs": {
+    "runs/australia/data/processed/climate_features.npz": "ebde5ac9db856a0a7466f928bc2b47aaf7318fc9c8ec5ebfb5d15346a3c3bd86"
+  },
+  "metrics": "/home/sichenghe/Projects/TheAleph/ClimateUnsupervised/runs/australia/results/metrics/internal.json",
+  "pca_components": 8,
+  "random_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "selected_gmm_k": 2,
+  "selected_kmeans_k": 2,
+  "spatial_stability_folds": 5,
+  "stability_kind": "area_bootstrap",
+  "stage": "fit"
+}

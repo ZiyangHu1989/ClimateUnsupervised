@@ -1,0 +1,58 @@
+{
+  "gmm": {
+    "area_bootstrap": {
+      "maximum": 0.9937872137580143,
+      "mean": 0.9719352909914829,
+      "minimum": 0.9236460109011889,
+      "pair_count": 45,
+      "standard_deviation": 0.016833685516871054
+    },
+    "evaluation_sample_size": 2770,
+    "random_seed": {
+      "maximum": 1.0,
+      "mean": 0.9942387567415425,
+      "minimum": 0.987654478731877,
+      "pair_count": 45,
+      "standard_deviation": 0.00622862385989583
+    },
+    "run_count": 10,
+    "spatial_block_degrees": 2.0,
+    "spatial_block_holdout": {
+      "maximum": 0.9843617680298286,
+      "mean": 0.9575934135193528,
+      "minimum": 0.9221980334532289,
+      "pair_count": 10,
+      "standard_deviation": 0.019187805519168138
+    },
+    "spatial_folds": 5,
+    "training_sample_size": 2770
+  },
+  "kmeans": {
+    "area_bootstrap": {
+      "maximum": 0.9971129545633194,
+      "mean": 0.9295339296498141,
+      "minimum": 0.7950477562814626,
+      "pair_count": 45,
+      "standard_deviation": 0.051183547060947805
+    },
+    "evaluation_sample_size": 2770,
+    "random_seed": {
+      "maximum": 1.0,
+      "mean": 0.99389046944316,
+      "minimum": 0.9841728873044137,
+      "pair_count": 45,
+      "standard_deviation": 0.007109574262309112
+    },
+    "run_count": 10,
+    "spatial_block_degrees": 2.0,
+    "spatial_block_holdout": {
+      "maximum": 0.9784487877440896,
+      "mean": 0.8928853353561129,
+      "minimum": 0.7937601088277237,
+      "pair_count": 10,
+      "standard_deviation": 0.06351361281098905
+    },
+    "spatial_folds": 5,
+    "training_sample_size": 2770
+  }
+}

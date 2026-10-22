@@ -1,0 +1,10 @@
+{
+  "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+  "created_at": "2026-09-20T13:36:21.610690+00:00",
+  "inputs": {
+    "data/external/koppen_geiger_1991_2020.tif": "3b5a7ddda98e501d7045a7dc35951d22b486630aee4ac015dde04e0d1216a9d0",
+    "runs/australia-features/results/manifests/feature-frozen.json": "8ed01359185b534bf9462be3da562b28d5a7ed76af385c28c82c1a7f858acd2c"
+  },
+  "report": "/home/sichenghe/Projects/TheAleph/ClimateUnsupervised/runs/australia-features/results/feature-expansion-report.md",
+  "stage": "feature-evaluate"
+}

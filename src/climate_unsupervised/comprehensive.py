@@ -19,7 +19,7 @@ from sklearn.metrics import (
 from sklearn.mixture import GaussianMixture
 
 from .artifacts import manifest, sha256_file, verify_manifest_inputs, write_json
-from .config import config_hash, project_path
+from .config import config_hash, project_path, run_path
 from .evaluate import (
     koppen_primary_groups,
     sample_raster,
@@ -343,22 +343,22 @@ def _stability_experiments(
 
 
 def run_comprehensive_evaluation(config: dict) -> Path:
-    frozen_path = project_path("results", "manifests", "frozen-model.json")
+    frozen_path = run_path(config, "results", "manifests", "frozen-model.json")
     frozen = json.loads(frozen_path.read_text(encoding="utf-8"))
     verify_manifest_inputs(frozen)
-    protected = [project_path("results", "models", name) for name in (
+    protected = [run_path(config, "results", "models", name) for name in (
         "kmeans.joblib", "kmeans_labels.npy", "gmm.joblib", "gmm_labels.npy"
     )]
     hashes_before = {str(path): sha256_file(path) for path in protected}
-    feature_path = project_path("data", "processed", "climate_features.npz")
+    feature_path = run_path(config, "data", "processed", "climate_features.npz")
     reference_path = project_path("data", "external", "koppen_geiger_1991_2020.tif")
     with np.load(feature_path) as data:
         features = data["features"].astype(np.float64)
         latitude, longitude = data["latitude"], data["longitude"]
         weights = data["area_weights"].astype(np.float64)
-    reduced = np.load(project_path("results", "models", "pca_features.npy"))
-    labels = {method: np.load(project_path("results", "models", f"{method}_labels.npy")) for method in METHODS}
-    internal = json.loads(project_path("results", "metrics", "internal.json").read_text(encoding="utf-8"))
+    reduced = np.load(run_path(config, "results", "models", "pca_features.npy"))
+    labels = {method: np.load(run_path(config, "results", "models", f"{method}_labels.npy")) for method in METHODS}
+    internal = json.loads(run_path(config, "results", "metrics", "internal.json").read_text(encoding="utf-8"))
     selected = {method: internal[method]["selected"] for method in METHODS}
     seed = int(config["project"]["random_seed"])
     common_idx = area_sample(weights, int(config["features"]["metric_sample_max"]), seed + 1)
@@ -375,7 +375,7 @@ def run_comprehensive_evaluation(config: dict) -> Path:
             "calinski_harabasz": float(calinski_harabasz_score(reduced[common_idx], sample_labels)),
         })
 
-    gmm = joblib.load(project_path("results", "models", "gmm.joblib"))
+    gmm = joblib.load(run_path(config, "results", "models", "gmm.joblib"))
     probabilities = gmm.predict_proba(reduced)
     confidence = probabilities.max(axis=1)
     entropy = predictive_entropy(probabilities)
@@ -429,9 +429,10 @@ def run_comprehensive_evaluation(config: dict) -> Path:
             subdivision_rows.extend(_subdivision_rows(
                 summary_rows, labels[method][valid], references[level][valid], weights[valid], method, level
             ))
-    regional_rows = _regional_rows(latitude, longitude, valid, labels, references, strongest, weights)
+    regional_rows = ([] if config.get("region") else
+                     _regional_rows(latitude, longitude, valid, labels, references, strongest, weights))
 
-    metrics_dir = project_path("results", "metrics")
+    metrics_dir = run_path(config, "results", "metrics")
     write_json(metrics_dir / "evaluation-summary.json", {
         "methodology": {"external_labels_used_for_model_selection": False,
                         "common_internal_representation": "saved PCA coordinates",
@@ -451,18 +452,19 @@ def run_comprehensive_evaluation(config: dict) -> Path:
     _write_csv(metrics_dir / "cluster-profiles.csv", profile_rows)
     _write_csv(metrics_dir / "cluster-summary.csv", summary_rows)
     _write_csv(metrics_dir / "climate-subdivisions.csv", subdivision_rows)
-    _write_csv(metrics_dir / "regional-correspondence.csv", regional_rows)
+    if regional_rows:
+        _write_csv(metrics_dir / "regional-correspondence.csv", regional_rows)
 
     from .evaluation_plots import create_evaluation_figures
     figures = create_evaluation_figures(config, internal_rows, confidence, entropy, latitude, longitude,
                                         labels, references, valid, overlap_rows, profile_rows)
-    report_path = _write_report(internal_rows, uncertainty, stability, external, alignment,
+    report_path = _write_report(config, internal_rows, uncertainty, stability, external, alignment,
                                 summary_rows, subdivision_rows, regional_rows, figures)
     hashes_after = {str(path): sha256_file(path) for path in protected}
     if hashes_before != hashes_after:
         raise RuntimeError("Comprehensive evaluation modified a frozen model or assignment")
     verify_manifest_inputs(frozen)
-    write_json(project_path("results", "manifests", "comprehensive-evaluate.json"), manifest(
+    write_json(run_path(config, "results", "manifests", "comprehensive-evaluate.json"), manifest(
         "comprehensive-evaluate", config_hash(config), [frozen_path, feature_path, reference_path],
         report=str(report_path), figures=len(figures), frozen_artifacts_unchanged=True,
     ))
@@ -470,13 +472,17 @@ def run_comprehensive_evaluation(config: dict) -> Path:
 
 
 def _write_report(
-    internal_rows: list[dict[str, Any]], uncertainty: dict[str, Any], stability: dict[str, Any],
+    config: dict[str, Any], internal_rows: list[dict[str, Any]], uncertainty: dict[str, Any], stability: dict[str, Any],
     external: dict[str, Any], alignment: dict[str, Any], summaries: list[dict[str, Any]],
     subdivisions: list[dict[str, Any]], regions: list[dict[str, Any]], figures: list[Path],
 ) -> Path:
     quality = {row["method"]: row for row in internal_rows}
+    region_name = config.get("region", {}).get("name", "global")
+    region_adjective = config.get("region", {}).get(
+        "adjective", {"Australia": "Australian"}.get(region_name, region_name)
+    )
     lines = [
-        "# Comprehensive evaluation of global climate clusters", "",
+        f"# Comprehensive evaluation of {region_adjective} climate clusters", "",
         "## Methodology", "",
         "The frozen K-means and GMM assignments were evaluated in their common saved PCA representation. "
         "Köppen–Geiger labels were loaded only after frozen-input verification and were never used for model selection. "
@@ -500,7 +506,12 @@ def _write_report(
                      f"{bootstrap['mean']:.3f}±{bootstrap['standard_deviation']:.3f} | "
                      f"{spatial['mean']:.3f}±{spatial['standard_deviation']:.3f} |")
     lines += ["", f"For GMM, {uncertainty['fraction_maximum_posterior_below_0.8']:.1%} of cells have maximum posterior below 0.8. "
-              "Normalized entropy is reported in `evaluation-summary.json`.", "",
+              "Normalized entropy is reported in `evaluation-summary.json`.", ""]
+    if config.get("region"):
+        lines += ["For regional interpretation, GMM is the more robust saved partition because its bootstrap and spatial-block "
+                  "stability are higher. K-means remains the stronger silhouette baseline. This comparison uses internal "
+                  "diagnostics only; Köppen agreement did not determine the recommendation.", ""]
+    lines += [
               "## RQ2 — Agreement with Köppen–Geiger", "",
               "| Method | Level | ARI | NMI / V-measure | Area ARI | Area NMI / V-measure |", "|---|---|---:|---:|---:|---:|"]
     for method in METHODS:
@@ -511,9 +522,14 @@ def _write_report(
                          f"{result['area_weighted']['nmi']:.3f} |")
     lines += ["", "NMI uses arithmetic-mean normalization; with this convention it equals V-measure, so the two are not independent signals. "
               "Full contingency, Jaccard, precision, recall, and F1 matrices are stored in `class-overlap.csv`.", "",
-              "## RQ3 — Geographic agreement and disagreement", "",
-              "Regional correspondence is computed after mapping each learned cluster to its strongest Jaccard-overlap class; raw IDs are never compared. "
-              "The named geographic windows are diagnostics rather than exact topographic or biome masks. See `regional-correspondence.csv` and the maps.", "",
+              "## RQ3 — Geographic agreement and disagreement", ""]
+    if regions:
+        lines += ["Regional correspondence is computed after mapping each learned cluster to its strongest Jaccard-overlap class; raw IDs are never compared. "
+                  "The named geographic windows are diagnostics rather than exact topographic or biome masks. See `regional-correspondence.csv` and the maps.", ""]
+    else:
+        lines += [f"Geographic maps show assignments and Köppen correspondence across {region_name}. "
+                  "No informal subregional windows are used in this regional analysis.", ""]
+    lines += [
               "## RQ4 — Physical interpretation and subdivisions", "",
               f"Monthly physical-variable profiles cover {len(summaries)} learned clusters and include weighted dispersion and quantile bands.", "",
               "| Method | Cluster | Area | Mean temperature | Temperature range | Annual precipitation |", "|---|---:|---:|---:|---:|---:|"]
@@ -531,20 +547,27 @@ def _write_report(
         lines.append(f"| {row['method'].upper()} | {row['level']} | {row['reference_class']} | "
                      f"{row['largest_cluster']} vs {row['second_cluster']} | "
                      f"{row['temperature_mean_difference_c']:.1f} °C | {row['annual_precipitation_difference_mm']:.0f} mm |")
-    lines += ["", "### Regional correspondence for primary groups", "",
-              "| Method | Diagnostic region | Area-weighted correspondence |", "|---|---|---:|"]
-    for row in regions:
-        if row["level"] == "primary_groups_5":
-            lines.append(f"| {row['method'].upper()} | {row['region']} | {row['area_weighted_correspondence']:.1%} |")
+    if regions:
+        lines += ["", "### Regional correspondence for primary groups", "",
+                  "| Method | Diagnostic region | Area-weighted correspondence |", "|---|---|---:|"]
+        for row in regions:
+            if row["level"] == "primary_groups_5":
+                lines.append(f"| {row['method'].upper()} | {row['region']} | {row['area_weighted_correspondence']:.1%} |")
+    raw_config_path = Path(config.get("_path", "configs/default.yaml"))
+    try:
+        config_reference = str(raw_config_path.resolve().relative_to(project_path().resolve()))
+    except ValueError:
+        config_reference = str(raw_config_path)
     lines += ["",
               "## Limitations and future work", "",
               "- Köppen is a development benchmark, not an untouched confirmatory test.",
               "- Spatial block stability exposes geographic sampling sensitivity that ordinary seed repeats may understate.",
               "- The Köppen raster has no confidence band, so reference-confidence analysis cannot be performed.",
-              "- Named regional windows do not replace elevation, terrain, or formal biome masks.",
               "- Temporal stability and a genuinely unseen external reference remain future confirmatory work.", "",
-              "## Reproduction", "", "```bash", "climate-unsupervised evaluate-full", "```", "",
-              f"Generated {len(figures)} evaluation figures under `results/figures/evaluation/`.", ""]
-    path = project_path("results", "evaluation-report.md")
+              "## Reproduction", "", "```bash",
+              f"climate-unsupervised evaluate-full --config {config_reference}",
+              "```", "",
+              f"Generated {len(figures)} evaluation figures for this run.", ""]
+    path = run_path(config, "results", "evaluation-report.md")
     path.write_text("\n".join(lines), encoding="utf-8")
     return path

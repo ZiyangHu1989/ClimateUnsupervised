@@ -1,0 +1,63 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.16060650188659156,
+      0.14589777023745518,
+      0.1385201900646489,
+      0.1340185895368842,
+      0.1155048845797135,
+      0.11401906706527469,
+      0.10009336201973922,
+      0.09133963460969272
+    ],
+    "bootstrap_stability": {
+      "maximum": 0.8661494714512036,
+      "mean": 0.6058293870362916,
+      "minimum": 0.43284248836732875,
+      "pair_count": 45,
+      "standard_deviation": 0.08879077246744954
+    },
+    "davies_bouldin": 1.384923234971036,
+    "eligible": false,
+    "family": "gmm",
+    "k": 8,
+    "label_mapping": {
+      "0": 2,
+      "1": 4,
+      "2": 6,
+      "3": 0,
+      "4": 5,
+      "5": 1,
+      "6": 7,
+      "7": 3
+    },
+    "method": "gmm_full",
+    "minimum_cluster_area_fraction": 0.09133963460969272,
+    "silhouette": 0.2083626172758079,
+    "spatial_stability": {
+      "maximum": 0.7990807737453851,
+      "mean": 0.6305988252263315,
+      "minimum": 0.480530356376777,
+      "pair_count": 10,
+      "standard_deviation": 0.09466716765665013
+    },
+    "temporal_stability": {
+      "maximum": 0.6564559070886433,
+      "mean": 0.5446972788534252,
+      "minimum": 0.40244154993806697,
+      "pair_count": 10,
+      "standard_deviation": 0.0895622302028162
+    },
+    "warnings": []
+  }
+}

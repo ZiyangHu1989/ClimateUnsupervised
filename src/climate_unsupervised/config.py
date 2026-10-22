@@ -28,3 +28,12 @@ def config_hash(config: dict[str, Any]) -> str:
 
 def project_path(*parts: str) -> Path:
     return PROJECT_ROOT.joinpath(*parts)
+
+
+def run_path(config: dict[str, Any], *parts: str) -> Path:
+    """Resolve an artifact inside the configured run without escaping the project."""
+    raw_root = str(config.get("run", {}).get("output_root", "."))
+    root = Path(raw_root)
+    if root.is_absolute() or ".." in root.parts:
+        raise ValueError("run.output_root must be a project-relative path without '..'")
+    return PROJECT_ROOT.joinpath(root, *parts)

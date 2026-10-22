@@ -1,0 +1,5444 @@
+{
+  "area_sensitivity": {
+    "0.0": [
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": true,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.6525552786739347,
+        "k": 3,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": null,
+        "k": 4,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      }
+    ],
+    "0.005": [
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": true,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.6525552786739347,
+        "k": 3,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": null,
+        "k": 4,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      }
+    ],
+    "0.01": [
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": true,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.6525552786739347,
+        "k": 3,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": null,
+        "k": 4,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      }
+    ],
+    "0.02": [
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": true,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.6525552786739347,
+        "k": 3,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": null,
+        "k": 4,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "area_shares": [
+        0.42427440468862193,
+        0.3139623887945987,
+        0.26176320651677937
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9867629838668204,
+        "mean": 0.9401910671101609,
+        "minimum": 0.8415003684161099,
+        "pair_count": 45,
+        "standard_deviation": 0.03532516779910371
+      },
+      "davies_bouldin": 1.1662260979832493,
+      "eligible": true,
+      "family": "kmeans",
+      "k": 3,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.26176320651677937,
+      "silhouette": 0.3019493065850515,
+      "spatial_stability": {
+        "maximum": 0.9931947913962189,
+        "mean": 0.9693549848231179,
+        "minimum": 0.9429636557876234,
+        "pair_count": 10,
+        "standard_deviation": 0.017443952275525025
+      },
+      "temporal_stability": {
+        "maximum": 0.9238782044690248,
+        "mean": 0.8595928946430142,
+        "minimum": 0.7872336621252122,
+        "pair_count": 10,
+        "standard_deviation": 0.03499218804876016
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.45905389005393593,
+        0.3234436544519257,
+        0.21750245549413835
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9108340039409331,
+        "mean": 0.7837529816251187,
+        "minimum": 0.6356777655005428,
+        "pair_count": 45,
+        "standard_deviation": 0.07515215936332181
+      },
+      "davies_bouldin": 1.4246820051061555,
+      "eligible": false,
+      "family": "gmm",
+      "k": 3,
+      "label_mapping": {
+        "0": 2,
+        "1": 0,
+        "2": 1
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.21750245549413835,
+      "silhouette": 0.2390684966451565,
+      "spatial_stability": {
+        "maximum": 0.8542472544229346,
+        "mean": 0.7273646535772793,
+        "minimum": 0.6195009996975919,
+        "pair_count": 10,
+        "standard_deviation": 0.0931506891760951
+      },
+      "temporal_stability": {
+        "maximum": 0.6770630984380672,
+        "mean": 0.5399898024964964,
+        "minimum": 0.3446203744522672,
+        "pair_count": 10,
+        "standard_deviation": 0.09871248224524481
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.3413334254855004,
+        0.3383242208513012,
+        0.3203423536631984
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9459580814843701,
+        "mean": 0.83598645237317,
+        "minimum": 0.7447970891414281,
+        "pair_count": 45,
+        "standard_deviation": 0.05600990240465376
+      },
+      "davies_bouldin": 1.2533567265376215,
+      "eligible": true,
+      "family": "gmm",
+      "k": 3,
+      "label_mapping": {
+        "0": 2,
+        "1": 1,
+        "2": 0
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.3203423536631984,
+      "silhouette": 0.2633161649940046,
+      "spatial_stability": {
+        "maximum": 0.8955499369987466,
+        "mean": 0.7975812448081506,
+        "minimum": 0.6911491043773167,
+        "pair_count": 10,
+        "standard_deviation": 0.06933435956047032
+      },
+      "temporal_stability": {
+        "maximum": 0.8022616530305643,
+        "mean": 0.7207008793555725,
+        "minimum": 0.6090865808444716,
+        "pair_count": 10,
+        "standard_deviation": 0.05077444198386991
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.5165714853886434,
+        0.3613482991501793,
+        0.12208021546117728
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7252265999559908,
+        "mean": 0.44214008139344013,
+        "minimum": 0.24180289731423868,
+        "pair_count": 45,
+        "standard_deviation": 0.1413393679471587
+      },
+      "davies_bouldin": 1.1520659021167268,
+      "eligible": false,
+      "family": "birch",
+      "k": 3,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.12208021546117728,
+      "silhouette": 0.262004495840652,
+      "spatial_stability": {
+        "maximum": 0.7222127886127663,
+        "mean": 0.4975234445012172,
+        "minimum": 0.3746721305642341,
+        "pair_count": 10,
+        "standard_deviation": 0.11602435664896316
+      },
+      "temporal_stability": {
+        "maximum": 0.7119376944744688,
+        "mean": 0.48614987146466576,
+        "minimum": 0.26508389201608323,
+        "pair_count": 10,
+        "standard_deviation": 0.14237329546329316
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.42474101945628695,
+        0.34611658375365256,
+        0.2291423967900605
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9539647180299685,
+        "mean": 0.554648199553108,
+        "minimum": 0.27376327175736626,
+        "pair_count": 45,
+        "standard_deviation": 0.2275517515382487
+      },
+      "davies_bouldin": 1.1614125163160365,
+      "eligible": false,
+      "family": "ward",
+      "k": 3,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 2
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.2291423967900605,
+      "silhouette": 0.29139140159430427,
+      "spatial_stability": {
+        "maximum": 0.9066521425762089,
+        "mean": 0.5095186311430411,
+        "minimum": 0.28053778086227976,
+        "pair_count": 10,
+        "standard_deviation": 0.19646331951929222
+      },
+      "temporal_stability": {
+        "maximum": 0.8950438155680464,
+        "mean": 0.5141575548178937,
+        "minimum": 0.2651335786708952,
+        "pair_count": 10,
+        "standard_deviation": 0.21343572269250644
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.3576049613597144,
+        0.2681676717590089,
+        0.2050987865167187,
+        0.169128580364558
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9808198212535684,
+        "mean": 0.9112405289838774,
+        "minimum": 0.7325762073048967,
+        "pair_count": 45,
+        "standard_deviation": 0.06886197161635746
+      },
+      "davies_bouldin": 1.2406877127453009,
+      "eligible": true,
+      "family": "kmeans",
+      "k": 4,
+      "label_mapping": {
+        "0": 2,
+        "1": 0,
+        "2": 3,
+        "3": 1
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.169128580364558,
+      "silhouette": 0.26041141285837976,
+      "spatial_stability": {
+        "maximum": 0.9881437528754085,
+        "mean": 0.9369116441965193,
+        "minimum": 0.8596193835651842,
+        "pair_count": 10,
+        "standard_deviation": 0.05966958906137599
+      },
+      "temporal_stability": {
+        "maximum": 0.8821144501551471,
+        "mean": 0.8465342854187288,
+        "minimum": 0.7901871925605711,
+        "pair_count": 10,
+        "standard_deviation": 0.033713804911103214
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.3687483796077662,
+        0.30899497781613416,
+        0.19044573091467942,
+        0.1318109116614202
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8646118171964375,
+        "mean": 0.6128968670002984,
+        "minimum": 0.36563858510705793,
+        "pair_count": 45,
+        "standard_deviation": 0.12387827054143782
+      },
+      "davies_bouldin": 1.514474334287162,
+      "eligible": false,
+      "family": "gmm",
+      "k": 4,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 3,
+        "3": 2
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.1318109116614202,
+      "silhouette": 0.2538201110989448,
+      "spatial_stability": {
+        "maximum": 0.7441215005161556,
+        "mean": 0.6169826920848676,
+        "minimum": 0.4916309157080385,
+        "pair_count": 10,
+        "standard_deviation": 0.08118870402909621
+      },
+      "temporal_stability": {
+        "maximum": 0.6372431527478529,
+        "mean": 0.40094607300035473,
+        "minimum": 0.2935213878514041,
+        "pair_count": 10,
+        "standard_deviation": 0.09529014114600835
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.34813410538076006,
+        0.2754243432969582,
+        0.18875663511113866,
+        0.18768491621114305
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.886855703732763,
+        "mean": 0.5944168124227877,
+        "minimum": 0.3491990152835795,
+        "pair_count": 45,
+        "standard_deviation": 0.16992922029905497
+      },
+      "davies_bouldin": 1.5575738479843693,
+      "eligible": false,
+      "family": "gmm",
+      "k": 4,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 3,
+        "3": 2
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.18768491621114305,
+      "silhouette": 0.24377898022495076,
+      "spatial_stability": {
+        "maximum": 0.7895416519815946,
+        "mean": 0.622765283957972,
+        "minimum": 0.49651511547699473,
+        "pair_count": 10,
+        "standard_deviation": 0.09331263890607551
+      },
+      "temporal_stability": {
+        "maximum": 0.6898220394661644,
+        "mean": 0.5439129671933951,
+        "minimum": 0.40096208902470354,
+        "pair_count": 10,
+        "standard_deviation": 0.10142306916407991
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.3613482991501793,
+        0.33220015945481846,
+        0.18437132593382496,
+        0.12208021546117728
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6853806177376184,
+        "mean": 0.45101951759945796,
+        "minimum": 0.25292623487647664,
+        "pair_count": 45,
+        "standard_deviation": 0.11048774584651717
+      },
+      "davies_bouldin": 1.2941281073388233,
+      "eligible": false,
+      "family": "birch",
+      "k": 4,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 3,
+        "3": 2
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.12208021546117728,
+      "silhouette": 0.22128427662655145,
+      "spatial_stability": {
+        "maximum": 0.6008039584788109,
+        "mean": 0.45526697729508714,
+        "minimum": 0.36153064285158565,
+        "pair_count": 10,
+        "standard_deviation": 0.06916157437125303
+      },
+      "temporal_stability": {
+        "maximum": 0.5233656772631256,
+        "mean": 0.4266918322985697,
+        "minimum": 0.30861356356466585,
+        "pair_count": 10,
+        "standard_deviation": 0.06959468480350127
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.3860646606802203,
+        0.27507816390084755,
+        0.22802020014709376,
+        0.11083697527183839
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9189135198681111,
+        "mean": 0.5772347050554777,
+        "minimum": 0.332392007586959,
+        "pair_count": 45,
+        "standard_deviation": 0.17923831382962738
+      },
+      "davies_bouldin": 1.289597466963592,
+      "eligible": false,
+      "family": "ward",
+      "k": 4,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.11083697527183839,
+      "silhouette": 0.25219539972869576,
+      "spatial_stability": {
+        "maximum": 0.896342194557303,
+        "mean": 0.5572117882850013,
+        "minimum": 0.389222081894151,
+        "pair_count": 10,
+        "standard_deviation": 0.16009775867402992
+      },
+      "temporal_stability": {
+        "maximum": 0.7981113202782835,
+        "mean": 0.6374041162746438,
+        "minimum": 0.47921402838811367,
+        "pair_count": 10,
+        "standard_deviation": 0.11586533531399971
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.24430878263006459,
+        0.24085931763688623,
+        0.22859463922962286,
+        0.15506581372088243,
+        0.1311714467825439
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9619273963798246,
+        "mean": 0.7534412177361877,
+        "minimum": 0.5356603867750017,
+        "pair_count": 45,
+        "standard_deviation": 0.15147770647008973
+      },
+      "davies_bouldin": 1.3697162762911037,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 5,
+      "label_mapping": {
+        "0": 4,
+        "1": 0,
+        "2": 1,
+        "3": 3,
+        "4": 2
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.1311714467825439,
+      "silhouette": 0.23104801632660119,
+      "spatial_stability": {
+        "maximum": 0.9371980093422491,
+        "mean": 0.784247425067438,
+        "minimum": 0.5826848855338559,
+        "pair_count": 10,
+        "standard_deviation": 0.14296767379898329
+      },
+      "temporal_stability": {
+        "maximum": 0.8036383688910096,
+        "mean": 0.6621004273929052,
+        "minimum": 0.5513876025707746,
+        "pair_count": 10,
+        "standard_deviation": 0.09736428076846633
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.40545932141738017,
+        0.19478668115964165,
+        0.15043601083028793,
+        0.13259520558620524,
+        0.11672278100648499
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8452416682714873,
+        "mean": 0.5681766988145217,
+        "minimum": 0.3523581274994389,
+        "pair_count": 45,
+        "standard_deviation": 0.139103392645287
+      },
+      "davies_bouldin": 1.3415761246656497,
+      "eligible": false,
+      "family": "gmm",
+      "k": 5,
+      "label_mapping": {
+        "0": 3,
+        "1": 2,
+        "2": 1,
+        "3": 0,
+        "4": 4
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.11672278100648499,
+      "silhouette": 0.18630288835683276,
+      "spatial_stability": {
+        "maximum": 0.792144932107306,
+        "mean": 0.46215513430637306,
+        "minimum": 0.2922893027728896,
+        "pair_count": 10,
+        "standard_deviation": 0.16541627806731027
+      },
+      "temporal_stability": {
+        "maximum": 0.6234135611570966,
+        "mean": 0.4375094965332035,
+        "minimum": 0.3153750332148651,
+        "pair_count": 10,
+        "standard_deviation": 0.0939153666276178
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2395487143397836,
+        0.23717436051953308,
+        0.18859865968618997,
+        0.17595153751163875,
+        0.15872672794285458
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.866388068610684,
+        "mean": 0.641549587702486,
+        "minimum": 0.46444674270249575,
+        "pair_count": 45,
+        "standard_deviation": 0.11735310976395946
+      },
+      "davies_bouldin": 1.3967857333240503,
+      "eligible": false,
+      "family": "gmm",
+      "k": 5,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 4,
+        "3": 3,
+        "4": 2
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.15872672794285458,
+      "silhouette": 0.21923011973947246,
+      "spatial_stability": {
+        "maximum": 0.6911783184092551,
+        "mean": 0.5269084936823984,
+        "minimum": 0.3231217641795525,
+        "pair_count": 10,
+        "standard_deviation": 0.13902460718264822
+      },
+      "temporal_stability": {
+        "maximum": 0.7278061323202174,
+        "mean": 0.643290854728633,
+        "minimum": 0.5540600468820962,
+        "pair_count": 10,
+        "standard_deviation": 0.06373926883823636
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.33220015945481846,
+        0.26491167266185284,
+        0.18437132593382496,
+        0.12208021546117728,
+        0.09643662648832645
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6486849155261336,
+        "mean": 0.43715658822390063,
+        "minimum": 0.28830923348967125,
+        "pair_count": 45,
+        "standard_deviation": 0.08876051854712858
+      },
+      "davies_bouldin": 1.4937439725601103,
+      "eligible": false,
+      "family": "birch",
+      "k": 5,
+      "label_mapping": {
+        "0": 4,
+        "1": 0,
+        "2": 3,
+        "3": 2,
+        "4": 1
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.09643662648832645,
+      "silhouette": 0.19078940467218763,
+      "spatial_stability": {
+        "maximum": 0.5164756675775961,
+        "mean": 0.44738503219838677,
+        "minimum": 0.3703074284484429,
+        "pair_count": 10,
+        "standard_deviation": 0.05274445844407851
+      },
+      "temporal_stability": {
+        "maximum": 0.5633541565196183,
+        "mean": 0.41521634329518253,
+        "minimum": 0.35258356369486127,
+        "pair_count": 10,
+        "standard_deviation": 0.07632306756553087
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2541197459970743,
+        0.23857390449806457,
+        0.2170532689875584,
+        0.17941610524546436,
+        0.11083697527183839
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8873624563565516,
+        "mean": 0.5714763054077633,
+        "minimum": 0.3289185120629973,
+        "pair_count": 45,
+        "standard_deviation": 0.14799486393283123
+      },
+      "davies_bouldin": 1.3508266062776952,
+      "eligible": false,
+      "family": "ward",
+      "k": 5,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 3,
+        "3": 4,
+        "4": 2
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.11083697527183839,
+      "silhouette": 0.22878599010268894,
+      "spatial_stability": {
+        "maximum": 0.8775182506308226,
+        "mean": 0.6454067258645957,
+        "minimum": 0.414153810450768,
+        "pair_count": 10,
+        "standard_deviation": 0.16979811889318044
+      },
+      "temporal_stability": {
+        "maximum": 0.7581925395557508,
+        "mean": 0.6233681130620659,
+        "minimum": 0.5341618893292914,
+        "pair_count": 10,
+        "standard_deviation": 0.07006932120267807
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.23906602421267684,
+        0.19835863538331547,
+        0.1743344068014992,
+        0.15969110645881363,
+        0.1177338187720043,
+        0.11081600837169059
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9090382525196568,
+        "mean": 0.6936875327668435,
+        "minimum": 0.5585591016285597,
+        "pair_count": 45,
+        "standard_deviation": 0.10096106602812917
+      },
+      "davies_bouldin": 1.308367302994179,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 6,
+      "label_mapping": {
+        "0": 2,
+        "1": 3,
+        "2": 0,
+        "3": 4,
+        "4": 5,
+        "5": 1
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.11081600837169059,
+      "silhouette": 0.23742945014482197,
+      "spatial_stability": {
+        "maximum": 0.9370129447725987,
+        "mean": 0.8542396631005286,
+        "minimum": 0.7679886338244655,
+        "pair_count": 10,
+        "standard_deviation": 0.06477530990702775
+      },
+      "temporal_stability": {
+        "maximum": 0.7823352731542376,
+        "mean": 0.6158952519773171,
+        "minimum": 0.45568548576353585,
+        "pair_count": 10,
+        "standard_deviation": 0.09513954682266806
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.25198738959316386,
+        0.19901147330211086,
+        0.1898502137638991,
+        0.1210125804693404,
+        0.11920736774379702,
+        0.1189309751276888
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8410730683057414,
+        "mean": 0.5662625852294081,
+        "minimum": 0.29108479690881717,
+        "pair_count": 45,
+        "standard_deviation": 0.11942076530647433
+      },
+      "davies_bouldin": 1.3381512910720172,
+      "eligible": false,
+      "family": "gmm",
+      "k": 6,
+      "label_mapping": {
+        "0": 0,
+        "1": 5,
+        "2": 3,
+        "3": 2,
+        "4": 4,
+        "5": 1
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.1189309751276888,
+      "silhouette": 0.22481937643608246,
+      "spatial_stability": {
+        "maximum": 0.7364333806757187,
+        "mean": 0.5297273286016407,
+        "minimum": 0.3653922938843374,
+        "pair_count": 10,
+        "standard_deviation": 0.11036743349462723
+      },
+      "temporal_stability": {
+        "maximum": 0.516919532833183,
+        "mean": 0.43236569077796727,
+        "minimum": 0.3423855480612524,
+        "pair_count": 10,
+        "standard_deviation": 0.05781599882089551
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.20202573556845732,
+        0.18798426250586797,
+        0.18670515507616273,
+        0.17115481594201334,
+        0.13179335281925844,
+        0.12033667808824018
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7895908763882897,
+        "mean": 0.5910385467203938,
+        "minimum": 0.38028499718238074,
+        "pair_count": 45,
+        "standard_deviation": 0.10882737895102781
+      },
+      "davies_bouldin": 1.361071727344885,
+      "eligible": false,
+      "family": "gmm",
+      "k": 6,
+      "label_mapping": {
+        "0": 5,
+        "1": 4,
+        "2": 2,
+        "3": 3,
+        "4": 0,
+        "5": 1
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.12033667808824018,
+      "silhouette": 0.2220678595653854,
+      "spatial_stability": {
+        "maximum": 0.6998535764848739,
+        "mean": 0.5394627159448142,
+        "minimum": 0.4146678615740621,
+        "pair_count": 10,
+        "standard_deviation": 0.1038794778632145
+      },
+      "temporal_stability": {
+        "maximum": 0.6912113797417294,
+        "mean": 0.5206102842596964,
+        "minimum": 0.3571132899857639,
+        "pair_count": 10,
+        "standard_deviation": 0.10772717191910625
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.33220015945481846,
+        0.26491167266185284,
+        0.18437132593382496,
+        0.12208021546117728,
+        0.06358063695084885,
+        0.03285598953747759
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6758247089015064,
+        "mean": 0.4467425275278559,
+        "minimum": 0.29888475056941455,
+        "pair_count": 45,
+        "standard_deviation": 0.08961173309194026
+      },
+      "davies_bouldin": 1.2991379533267895,
+      "eligible": false,
+      "family": "birch",
+      "k": 6,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 3,
+        "3": 2,
+        "4": 4,
+        "5": 5
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.03285598953747759,
+      "silhouette": 0.18718408086760618,
+      "spatial_stability": {
+        "maximum": 0.5652441745914135,
+        "mean": 0.46638609170972556,
+        "minimum": 0.39763073437765006,
+        "pair_count": 10,
+        "standard_deviation": 0.06413717871500954
+      },
+      "temporal_stability": {
+        "maximum": 0.5145352203458609,
+        "mean": 0.4084311636214589,
+        "minimum": 0.3325556391209348,
+        "pair_count": 10,
+        "standard_deviation": 0.059507932458991115
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2351734901540586,
+        0.21630953967182678,
+        0.17602093675295347,
+        0.14586737149136195,
+        0.12706833669451603,
+        0.09956032523528315
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8381222666805429,
+        "mean": 0.5603349760169756,
+        "minimum": 0.390039478987705,
+        "pair_count": 45,
+        "standard_deviation": 0.10125775297260185
+      },
+      "davies_bouldin": 1.3280131260891894,
+      "eligible": false,
+      "family": "ward",
+      "k": 6,
+      "label_mapping": {
+        "0": 0,
+        "1": 5,
+        "2": 2,
+        "3": 4,
+        "4": 1,
+        "5": 3
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.09956032523528315,
+      "silhouette": 0.23188229257540097,
+      "spatial_stability": {
+        "maximum": 0.7525754512846627,
+        "mean": 0.6372099317505542,
+        "minimum": 0.5436102753873894,
+        "pair_count": 10,
+        "standard_deviation": 0.06204695091848531
+      },
+      "temporal_stability": {
+        "maximum": 0.7381926629136703,
+        "mean": 0.5682173270731055,
+        "minimum": 0.4411013376736655,
+        "pair_count": 10,
+        "standard_deviation": 0.10858884533112007
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1903119859797846,
+        0.18550231098358053,
+        0.16648912182738113,
+        0.12909837041539657,
+        0.11555834305499799,
+        0.1074691043509845,
+        0.1055707633878747
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9237695121721222,
+        "mean": 0.8740571663676937,
+        "minimum": 0.7825878580651762,
+        "pair_count": 45,
+        "standard_deviation": 0.03800298801145793
+      },
+      "davies_bouldin": 1.3044742197559027,
+      "eligible": true,
+      "family": "kmeans",
+      "k": 7,
+      "label_mapping": {
+        "0": 4,
+        "1": 6,
+        "2": 3,
+        "3": 5,
+        "4": 2,
+        "5": 0,
+        "6": 1
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.1055707633878747,
+      "silhouette": 0.24139494149567123,
+      "spatial_stability": {
+        "maximum": 0.9657123120845652,
+        "mean": 0.7535767830242353,
+        "minimum": 0.49683384811527803,
+        "pair_count": 10,
+        "standard_deviation": 0.20468642932177433
+      },
+      "temporal_stability": {
+        "maximum": 0.8477300546842251,
+        "mean": 0.699726977706734,
+        "minimum": 0.5528150388911928,
+        "pair_count": 10,
+        "standard_deviation": 0.1260532816567796
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.19682606419730503,
+        0.1966710455988424,
+        0.13041444814694994,
+        0.12413184224669906,
+        0.11770472348213465,
+        0.11720093325497401,
+        0.11705094307309488
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8738171142341399,
+        "mean": 0.7096992670572324,
+        "minimum": 0.5326499361065332,
+        "pair_count": 45,
+        "standard_deviation": 0.08357249197147676
+      },
+      "davies_bouldin": 1.387371722721751,
+      "eligible": false,
+      "family": "gmm",
+      "k": 7,
+      "label_mapping": {
+        "0": 0,
+        "1": 5,
+        "2": 4,
+        "3": 3,
+        "4": 2,
+        "5": 1,
+        "6": 6
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.11705094307309488,
+      "silhouette": 0.2222690507108313,
+      "spatial_stability": {
+        "maximum": 0.8378262224810367,
+        "mean": 0.6647910388615706,
+        "minimum": 0.5100385278445699,
+        "pair_count": 10,
+        "standard_deviation": 0.10815564366690207
+      },
+      "temporal_stability": {
+        "maximum": 0.5743910785405033,
+        "mean": 0.501777013910127,
+        "minimum": 0.3928741915419645,
+        "pair_count": 10,
+        "standard_deviation": 0.06573913861367282
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.17660078206024116,
+        0.16768904912072174,
+        0.14742058453034682,
+        0.14431543699368318,
+        0.13898015036298111,
+        0.11934344355691807,
+        0.10565055337510791
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8506138950965483,
+        "mean": 0.7690518446423869,
+        "minimum": 0.5997163832248804,
+        "pair_count": 45,
+        "standard_deviation": 0.06566263428852037
+      },
+      "davies_bouldin": 1.403054954540871,
+      "eligible": false,
+      "family": "gmm",
+      "k": 7,
+      "label_mapping": {
+        "0": 5,
+        "1": 3,
+        "2": 4,
+        "3": 6,
+        "4": 2,
+        "5": 0,
+        "6": 1
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.10565055337510791,
+      "silhouette": 0.211310696564219,
+      "spatial_stability": {
+        "maximum": 0.76770281852831,
+        "mean": 0.7101257435560047,
+        "minimum": 0.6181971776652655,
+        "pair_count": 10,
+        "standard_deviation": 0.049235321755911485
+      },
+      "temporal_stability": {
+        "maximum": 0.6821457539942162,
+        "mean": 0.516689646153081,
+        "minimum": 0.4042852352964387,
+        "pair_count": 10,
+        "standard_deviation": 0.0850405715512425
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.3037697369643139,
+        0.26491167266185284,
+        0.18437132593382496,
+        0.12208021546117728,
+        0.06358063695084885,
+        0.03285598953747759,
+        0.028430422490504526
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6476944248559643,
+        "mean": 0.4366388258731885,
+        "minimum": 0.31458188165252754,
+        "pair_count": 45,
+        "standard_deviation": 0.07347497044672945
+      },
+      "davies_bouldin": 1.26117402769447,
+      "eligible": false,
+      "family": "birch",
+      "k": 7,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 3,
+        "3": 2,
+        "4": 4,
+        "5": 5,
+        "6": 6
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.028430422490504526,
+      "silhouette": 0.19002808905543092,
+      "spatial_stability": {
+        "maximum": 0.5994647846570054,
+        "mean": 0.4456239212926215,
+        "minimum": 0.367336215314155,
+        "pair_count": 10,
+        "standard_deviation": 0.07723621395782855
+      },
+      "temporal_stability": {
+        "maximum": 0.579852711736444,
+        "mean": 0.426707066810895,
+        "minimum": 0.3288148816308759,
+        "pair_count": 10,
+        "standard_deviation": 0.07939862943579072
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.20326038310873948,
+        0.19470608743206622,
+        0.17602093675295347,
+        0.1373572555854782,
+        0.12707930262184705,
+        0.09956032523528315,
+        0.06201570926363245
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8101235062123558,
+        "mean": 0.56044832355955,
+        "minimum": 0.4314651872263753,
+        "pair_count": 45,
+        "standard_deviation": 0.099869182906576
+      },
+      "davies_bouldin": 1.2683608936116957,
+      "eligible": false,
+      "family": "ward",
+      "k": 7,
+      "label_mapping": {
+        "0": 2,
+        "1": 5,
+        "2": 1,
+        "3": 4,
+        "4": 0,
+        "5": 3,
+        "6": 6
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.06201570926363245,
+      "silhouette": 0.24331481272866162,
+      "spatial_stability": {
+        "maximum": 0.8423671130619166,
+        "mean": 0.6129987469421408,
+        "minimum": 0.4887821846019956,
+        "pair_count": 10,
+        "standard_deviation": 0.10745605842578916
+      },
+      "temporal_stability": {
+        "maximum": 0.7442493462524884,
+        "mean": 0.5320587576504023,
+        "minimum": 0.4056482563902335,
+        "pair_count": 10,
+        "standard_deviation": 0.10208918958292401
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.18807206298745163,
+        0.17146965907515951,
+        0.13416815988918931,
+        0.1290883830893234,
+        0.10856083644076156,
+        0.10590550498685725,
+        0.09533149935085362,
+        0.06740389418040368
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9169397669608158,
+        "mean": 0.7637356157184298,
+        "minimum": 0.5232985571547043,
+        "pair_count": 45,
+        "standard_deviation": 0.1051323751610058
+      },
+      "davies_bouldin": 1.3063099729498662,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 8,
+      "label_mapping": {
+        "0": 2,
+        "1": 5,
+        "2": 3,
+        "3": 4,
+        "4": 1,
+        "5": 6,
+        "6": 7,
+        "7": 0
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.06740389418040368,
+      "silhouette": 0.23560021705200956,
+      "spatial_stability": {
+        "maximum": 0.9292532254066026,
+        "mean": 0.7939102892100967,
+        "minimum": 0.6263173907918241,
+        "pair_count": 10,
+        "standard_deviation": 0.12489343011749122
+      },
+      "temporal_stability": {
+        "maximum": 0.7958951070727778,
+        "mean": 0.6072141321227253,
+        "minimum": 0.5049769008342413,
+        "pair_count": 10,
+        "standard_deviation": 0.12053093306948966
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1936120668458512,
+        0.1898901453130094,
+        0.12851377851600193,
+        0.12242177195080807,
+        0.1218608308191489,
+        0.11514594161013705,
+        0.07851231929469342,
+        0.05004314565034999
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8750374415413665,
+        "mean": 0.6414486947707404,
+        "minimum": 0.47856852990944665,
+        "pair_count": 45,
+        "standard_deviation": 0.09826877721792204
+      },
+      "davies_bouldin": 1.3745810674514392,
+      "eligible": false,
+      "family": "gmm",
+      "k": 8,
+      "label_mapping": {
+        "0": 7,
+        "1": 0,
+        "2": 5,
+        "3": 6,
+        "4": 3,
+        "5": 1,
+        "6": 4,
+        "7": 2
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.05004314565034999,
+      "silhouette": 0.22354830358006159,
+      "spatial_stability": {
+        "maximum": 0.7216495783148726,
+        "mean": 0.6132381629269906,
+        "minimum": 0.5225979668090617,
+        "pair_count": 10,
+        "standard_deviation": 0.07251399434479833
+      },
+      "temporal_stability": {
+        "maximum": 0.6129895087342099,
+        "mean": 0.49272596909295024,
+        "minimum": 0.39752815288545523,
+        "pair_count": 10,
+        "standard_deviation": 0.08040262970303132
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.15138174659705741,
+        0.13346827914642884,
+        0.13161205270686377,
+        0.13075454275319615,
+        0.12898973945304942,
+        0.11773861923030701,
+        0.10740736641076004,
+        0.09864765370233737
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8152323774198239,
+        "mean": 0.6296126209911768,
+        "minimum": 0.5159687133458889,
+        "pair_count": 45,
+        "standard_deviation": 0.07396028688638337
+      },
+      "davies_bouldin": 1.3997527502657532,
+      "eligible": false,
+      "family": "gmm",
+      "k": 8,
+      "label_mapping": {
+        "0": 3,
+        "1": 5,
+        "2": 2,
+        "3": 1,
+        "4": 4,
+        "5": 6,
+        "6": 0,
+        "7": 7
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.09864765370233737,
+      "silhouette": 0.20782943768246803,
+      "spatial_stability": {
+        "maximum": 0.688689921191112,
+        "mean": 0.5758947031350611,
+        "minimum": 0.44992821296467467,
+        "pair_count": 10,
+        "standard_deviation": 0.0812271359824888
+      },
+      "temporal_stability": {
+        "maximum": 0.6681388571868068,
+        "mean": 0.5810735437918438,
+        "minimum": 0.5106444278178923,
+        "pair_count": 10,
+        "standard_deviation": 0.0481580867792102
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.3037697369643139,
+        0.18936751030238613,
+        0.18437132593382496,
+        0.12208021546117728,
+        0.0755441623594667,
+        0.06358063695084885,
+        0.03285598953747759,
+        0.028430422490504526
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6006629341809866,
+        "mean": 0.43850164417893506,
+        "minimum": 0.323650710615433,
+        "pair_count": 45,
+        "standard_deviation": 0.061123047303697366
+      },
+      "davies_bouldin": 1.2894256967563336,
+      "eligible": false,
+      "family": "birch",
+      "k": 8,
+      "label_mapping": {
+        "0": 3,
+        "1": 0,
+        "2": 1,
+        "3": 2,
+        "4": 5,
+        "5": 6,
+        "6": 7,
+        "7": 4
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.028430422490504526,
+      "silhouette": 0.1956068602010827,
+      "spatial_stability": {
+        "maximum": 0.6247088918409185,
+        "mean": 0.46145245050493244,
+        "minimum": 0.33183107664256706,
+        "pair_count": 10,
+        "standard_deviation": 0.0944459173880147
+      },
+      "temporal_stability": {
+        "maximum": 0.5751557786518435,
+        "mean": 0.4288696264932296,
+        "minimum": 0.34193591267220924,
+        "pair_count": 10,
+        "standard_deviation": 0.07744845027447056
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.19470608743206622,
+        0.19066944058937177,
+        0.1373572555854782,
+        0.12281771001702035,
+        0.11954267635536668,
+        0.09956032523528315,
+        0.07333079552178118,
+        0.06201570926363245
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7782322308657504,
+        "mean": 0.5490897523021028,
+        "minimum": 0.4291045724732996,
+        "pair_count": 45,
+        "standard_deviation": 0.07783830064027088
+      },
+      "davies_bouldin": 1.3214238134665524,
+      "eligible": false,
+      "family": "ward",
+      "k": 8,
+      "label_mapping": {
+        "0": 5,
+        "1": 4,
+        "2": 0,
+        "3": 6,
+        "4": 1,
+        "5": 2,
+        "6": 7,
+        "7": 3
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.06201570926363245,
+      "silhouette": 0.23520053883245232,
+      "spatial_stability": {
+        "maximum": 0.8449246691323073,
+        "mean": 0.6017726126925049,
+        "minimum": 0.4446448642622246,
+        "pair_count": 10,
+        "standard_deviation": 0.13833708233146733
+      },
+      "temporal_stability": {
+        "maximum": 0.594353524208813,
+        "mean": 0.5210776028838959,
+        "minimum": 0.39864344286921866,
+        "pair_count": 10,
+        "standard_deviation": 0.06693542298667411
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1763904278865192,
+        0.17236885118124826,
+        0.1422931348257914,
+        0.12064492554357054,
+        0.10408745206907094,
+        0.08706099988896318,
+        0.08659280683215155,
+        0.056022212726365254,
+        0.05453918904631968
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9250594697450361,
+        "mean": 0.6845372326922688,
+        "minimum": 0.4411684647669711,
+        "pair_count": 45,
+        "standard_deviation": 0.11515650912335933
+      },
+      "davies_bouldin": 1.2750509064301543,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 9,
+      "label_mapping": {
+        "0": 0,
+        "1": 2,
+        "2": 7,
+        "3": 1,
+        "4": 3,
+        "5": 5,
+        "6": 4,
+        "7": 6,
+        "8": 8
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.05453918904631968,
+      "silhouette": 0.2501770978875544,
+      "spatial_stability": {
+        "maximum": 0.9020025190108903,
+        "mean": 0.6181865964877213,
+        "minimum": 0.5037969643802898,
+        "pair_count": 10,
+        "standard_deviation": 0.11360962121816111
+      },
+      "temporal_stability": {
+        "maximum": 0.8106928349402595,
+        "mean": 0.5957044583922688,
+        "minimum": 0.4677647778050366,
+        "pair_count": 10,
+        "standard_deviation": 0.09826746131816308
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1660066652085512,
+        0.14915765690264868,
+        0.1330763365728532,
+        0.1182245764070577,
+        0.1131233656904903,
+        0.10327800899773708,
+        0.09402408602812459,
+        0.0679670228754551,
+        0.05514228131708218
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7989695219032267,
+        "mean": 0.6500203227118111,
+        "minimum": 0.5440921190366977,
+        "pair_count": 45,
+        "standard_deviation": 0.058286297382055645
+      },
+      "davies_bouldin": 1.3663596321353682,
+      "eligible": false,
+      "family": "gmm",
+      "k": 9,
+      "label_mapping": {
+        "0": 5,
+        "1": 1,
+        "2": 4,
+        "3": 8,
+        "4": 6,
+        "5": 7,
+        "6": 0,
+        "7": 2,
+        "8": 3
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.05514228131708218,
+      "silhouette": 0.2021558275462337,
+      "spatial_stability": {
+        "maximum": 0.7346103715930744,
+        "mean": 0.5814179228134504,
+        "minimum": 0.4807352826124993,
+        "pair_count": 10,
+        "standard_deviation": 0.07268102364082887
+      },
+      "temporal_stability": {
+        "maximum": 0.5995886755422318,
+        "mean": 0.555971613973985,
+        "minimum": 0.5179207512190149,
+        "pair_count": 10,
+        "standard_deviation": 0.029751105519365672
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.15444895810852807,
+        0.14118031299114797,
+        0.14045921997114005,
+        0.13647016955851377,
+        0.11618612990120135,
+        0.09868752814174768,
+        0.07155362301022819,
+        0.07077155408127653,
+        0.07024250423621639
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7971057355109122,
+        "mean": 0.5689021040900794,
+        "minimum": 0.44837973785843505,
+        "pair_count": 45,
+        "standard_deviation": 0.0674865004010022
+      },
+      "davies_bouldin": 1.3404408263202743,
+      "eligible": false,
+      "family": "gmm",
+      "k": 9,
+      "label_mapping": {
+        "0": 6,
+        "1": 5,
+        "2": 2,
+        "3": 0,
+        "4": 4,
+        "5": 8,
+        "6": 3,
+        "7": 1,
+        "8": 7
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.07024250423621639,
+      "silhouette": 0.21119492660293426,
+      "spatial_stability": {
+        "maximum": 0.7158338825775733,
+        "mean": 0.5992153358267938,
+        "minimum": 0.49057153637083667,
+        "pair_count": 10,
+        "standard_deviation": 0.07479188870151478
+      },
+      "temporal_stability": {
+        "maximum": 0.6318058238602309,
+        "mean": 0.5488454520163086,
+        "minimum": 0.46296134985238796,
+        "pair_count": 10,
+        "standard_deviation": 0.05318435454556362
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.3037697369643139,
+        0.18936751030238613,
+        0.18437132593382496,
+        0.07910229007730749,
+        0.0755441623594667,
+        0.06358063695084885,
+        0.04297792538386981,
+        0.03285598953747759,
+        0.028430422490504526
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.5782732294083631,
+        "mean": 0.4377186167207835,
+        "minimum": 0.32793030716672383,
+        "pair_count": 45,
+        "standard_deviation": 0.05789324735752313
+      },
+      "davies_bouldin": 1.3445864290691023,
+      "eligible": false,
+      "family": "birch",
+      "k": 9,
+      "label_mapping": {
+        "0": 0,
+        "1": 2,
+        "2": 1,
+        "3": 6,
+        "4": 5,
+        "5": 7,
+        "6": 8,
+        "7": 4,
+        "8": 3
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.028430422490504526,
+      "silhouette": 0.18197837647991705,
+      "spatial_stability": {
+        "maximum": 0.618891161099469,
+        "mean": 0.4433396017619078,
+        "minimum": 0.3657194027190858,
+        "pair_count": 10,
+        "standard_deviation": 0.07981550732027662
+      },
+      "temporal_stability": {
+        "maximum": 0.5304548928762501,
+        "mean": 0.42061584334617236,
+        "minimum": 0.35611658739338703,
+        "pair_count": 10,
+        "standard_deviation": 0.05879059282941339
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.19470608743206622,
+        0.19066944058937177,
+        0.13579425100794446,
+        0.12281771001702035,
+        0.11315918317886574,
+        0.07333079552178118,
+        0.06130030345195118,
+        0.05722596302999665,
+        0.05099626577100246
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6918131945671444,
+        "mean": 0.5419170391330912,
+        "minimum": 0.41899062814575355,
+        "pair_count": 45,
+        "standard_deviation": 0.07043468120802057
+      },
+      "davies_bouldin": 1.3117385056284696,
+      "eligible": false,
+      "family": "ward",
+      "k": 9,
+      "label_mapping": {
+        "0": 4,
+        "1": 5,
+        "2": 0,
+        "3": 3,
+        "4": 1,
+        "5": 2,
+        "6": 6,
+        "7": 8,
+        "8": 7
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.05099626577100246,
+      "silhouette": 0.2365748722385267,
+      "spatial_stability": {
+        "maximum": 0.6896330816805473,
+        "mean": 0.5527548122378806,
+        "minimum": 0.4236531541834928,
+        "pair_count": 10,
+        "standard_deviation": 0.09126272321292964
+      },
+      "temporal_stability": {
+        "maximum": 0.6188341765265389,
+        "mean": 0.5165565672045003,
+        "minimum": 0.4219045347116455,
+        "pair_count": 10,
+        "standard_deviation": 0.057177624009324926
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.14027486354077104,
+        0.13537408547894889,
+        0.1302116427607612,
+        0.1227210950124325,
+        0.10026411961424449,
+        0.08908500297448653,
+        0.08396293513236922,
+        0.08386041555662099,
+        0.058701362360873977,
+        0.05554447756849116
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8406809205177038,
+        "mean": 0.6219203319412109,
+        "minimum": 0.45511643076124186,
+        "pair_count": 45,
+        "standard_deviation": 0.09623418127045094
+      },
+      "davies_bouldin": 1.3100027269302186,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 10,
+      "label_mapping": {
+        "0": 5,
+        "1": 3,
+        "2": 6,
+        "3": 2,
+        "4": 1,
+        "5": 9,
+        "6": 0,
+        "7": 8,
+        "8": 4,
+        "9": 7
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.05554447756849116,
+      "silhouette": 0.23231820132913011,
+      "spatial_stability": {
+        "maximum": 0.850218213110567,
+        "mean": 0.6681048001669908,
+        "minimum": 0.5272561662941575,
+        "pair_count": 10,
+        "standard_deviation": 0.10312249741879465
+      },
+      "temporal_stability": {
+        "maximum": 0.7472228906143688,
+        "mean": 0.5513897268959632,
+        "minimum": 0.4765966201641999,
+        "pair_count": 10,
+        "standard_deviation": 0.07883279057535358
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.15360454739497262,
+        0.11558379168510184,
+        0.11161950799786553,
+        0.10761347769656526,
+        0.10497211056138381,
+        0.0961487271205933,
+        0.09534547645138564,
+        0.08924118068122258,
+        0.06964044878160577,
+        0.05623073162930364
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8266678449573526,
+        "mean": 0.6259351420923324,
+        "minimum": 0.47909171188990807,
+        "pair_count": 45,
+        "standard_deviation": 0.08688299654578285
+      },
+      "davies_bouldin": 1.4154810011458159,
+      "eligible": false,
+      "family": "gmm",
+      "k": 10,
+      "label_mapping": {
+        "0": 7,
+        "1": 2,
+        "2": 4,
+        "3": 0,
+        "4": 9,
+        "5": 3,
+        "6": 8,
+        "7": 6,
+        "8": 1,
+        "9": 5
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.05623073162930364,
+      "silhouette": 0.18693626379866896,
+      "spatial_stability": {
+        "maximum": 0.726916374259284,
+        "mean": 0.6512090294709258,
+        "minimum": 0.5690268025992904,
+        "pair_count": 10,
+        "standard_deviation": 0.04870205365999719
+      },
+      "temporal_stability": {
+        "maximum": 0.5640639670849893,
+        "mean": 0.48465820821659006,
+        "minimum": 0.39957246550707803,
+        "pair_count": 10,
+        "standard_deviation": 0.05861554210956933
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1511766796715546,
+        0.14884073391447586,
+        0.13527287358799267,
+        0.1187976163860281,
+        0.0956183112316914,
+        0.08593275764246801,
+        0.08404383843440165,
+        0.06580561168943862,
+        0.06418915039051526,
+        0.05032242705143384
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.800641670602089,
+        "mean": 0.5541455142379509,
+        "minimum": 0.41766727097890766,
+        "pair_count": 45,
+        "standard_deviation": 0.08098728169311827
+      },
+      "davies_bouldin": 1.3216629045211037,
+      "eligible": false,
+      "family": "gmm",
+      "k": 10,
+      "label_mapping": {
+        "0": 3,
+        "1": 5,
+        "2": 6,
+        "3": 0,
+        "4": 1,
+        "5": 4,
+        "6": 8,
+        "7": 9,
+        "8": 7,
+        "9": 2
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.05032242705143384,
+      "silhouette": 0.22438756273589958,
+      "spatial_stability": {
+        "maximum": 0.6977141021207011,
+        "mean": 0.5116045899846822,
+        "minimum": 0.40669471733327833,
+        "pair_count": 10,
+        "standard_deviation": 0.08269396947885874
+      },
+      "temporal_stability": {
+        "maximum": 0.6296206238011088,
+        "mean": 0.5288915270403767,
+        "minimum": 0.44143391465861453,
+        "pair_count": 10,
+        "standard_deviation": 0.07280410540435667
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.18936751030238613,
+        0.18437132593382496,
+        0.1598859771525465,
+        0.14388375981176743,
+        0.07910229007730749,
+        0.0755441623594667,
+        0.06358063695084885,
+        0.04297792538386981,
+        0.03285598953747759,
+        0.028430422490504526
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.5489613844009587,
+        "mean": 0.4363456701198975,
+        "minimum": 0.3360375777665332,
+        "pair_count": 45,
+        "standard_deviation": 0.05043989220141711
+      },
+      "davies_bouldin": 1.4291736496980891,
+      "eligible": false,
+      "family": "birch",
+      "k": 10,
+      "label_mapping": {
+        "0": 1,
+        "1": 7,
+        "2": 0,
+        "3": 5,
+        "4": 6,
+        "5": 8,
+        "6": 9,
+        "7": 2,
+        "8": 4,
+        "9": 3
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.028430422490504526,
+      "silhouette": 0.1734238633779919,
+      "spatial_stability": {
+        "maximum": 0.5908054989576027,
+        "mean": 0.4530842864908486,
+        "minimum": 0.3686256898436099,
+        "pair_count": 10,
+        "standard_deviation": 0.06609811542948393
+      },
+      "temporal_stability": {
+        "maximum": 0.4733070191050655,
+        "mean": 0.4200538580708734,
+        "minimum": 0.36421456168042304,
+        "pair_count": 10,
+        "standard_deviation": 0.04088291642495507
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.18992985433370524,
+        0.1865414397539635,
+        0.12731127873941067,
+        0.12281771001702035,
+        0.08347939434222601,
+        0.06993966973291262,
+        0.06130030345195118,
+        0.05722596302999665,
+        0.05482585705972645,
+        0.04662852953908735
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7855357929869157,
+        "mean": 0.5664023031925722,
+        "minimum": 0.4350143713082944,
+        "pair_count": 45,
+        "standard_deviation": 0.07201509763445223
+      },
+      "davies_bouldin": 1.2989213600978688,
+      "eligible": false,
+      "family": "ward",
+      "k": 10,
+      "label_mapping": {
+        "0": 5,
+        "1": 0,
+        "2": 1,
+        "3": 3,
+        "4": 4,
+        "5": 2,
+        "6": 6,
+        "7": 9,
+        "8": 7,
+        "9": 8
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.04662852953908735,
+      "silhouette": 0.23910755568845776,
+      "spatial_stability": {
+        "maximum": 0.666232339969076,
+        "mean": 0.5661995693658961,
+        "minimum": 0.4727801367925252,
+        "pair_count": 10,
+        "standard_deviation": 0.06590997372595991
+      },
+      "temporal_stability": {
+        "maximum": 0.6424895975087318,
+        "mean": 0.5193999465728003,
+        "minimum": 0.4241936446904254,
+        "pair_count": 10,
+        "standard_deviation": 0.06804225160952063
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.14720825381321365,
+        0.12261793942154843,
+        0.11888029559070415,
+        0.11823138079836269,
+        0.08811022439053764,
+        0.0832079588096347,
+        0.08188666220773606,
+        0.07205768518719703,
+        0.05966901554270532,
+        0.05470399992813586,
+        0.053426584310224456
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8466453143469453,
+        "mean": 0.6539524028713788,
+        "minimum": 0.4841121538235839,
+        "pair_count": 45,
+        "standard_deviation": 0.08359954315820994
+      },
+      "davies_bouldin": 1.2989467362644496,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 11,
+      "label_mapping": {
+        "0": 0,
+        "1": 5,
+        "2": 2,
+        "3": 8,
+        "4": 9,
+        "5": 10,
+        "6": 7,
+        "7": 3,
+        "8": 4,
+        "9": 1,
+        "10": 6
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.053426584310224456,
+      "silhouette": 0.236033234278706,
+      "spatial_stability": {
+        "maximum": 0.84590968322082,
+        "mean": 0.6929468768651814,
+        "minimum": 0.5483257495604434,
+        "pair_count": 10,
+        "standard_deviation": 0.0939309627789235
+      },
+      "temporal_stability": {
+        "maximum": 0.7283414436014266,
+        "mean": 0.6319796576668614,
+        "minimum": 0.5235371497089812,
+        "pair_count": 10,
+        "standard_deviation": 0.06597592048382261
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.14280317840893136,
+        0.12773916371231261,
+        0.10737698395426572,
+        0.10356013053123345,
+        0.09613350264042154,
+        0.0949502357626036,
+        0.08882329442269743,
+        0.08403259279687829,
+        0.06477788013634224,
+        0.05436211908808449,
+        0.03544091854622927
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7915114417098743,
+        "mean": 0.6087510795142826,
+        "minimum": 0.44694834227521024,
+        "pair_count": 45,
+        "standard_deviation": 0.0803929628895891
+      },
+      "davies_bouldin": 1.4293936380212913,
+      "eligible": false,
+      "family": "gmm",
+      "k": 11,
+      "label_mapping": {
+        "0": 1,
+        "1": 5,
+        "2": 0,
+        "3": 9,
+        "4": 6,
+        "5": 3,
+        "6": 4,
+        "7": 8,
+        "8": 10,
+        "9": 2,
+        "10": 7
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.03544091854622927,
+      "silhouette": 0.18594729527493079,
+      "spatial_stability": {
+        "maximum": 0.7566660458636463,
+        "mean": 0.5497053771073946,
+        "minimum": 0.4181277621306366,
+        "pair_count": 10,
+        "standard_deviation": 0.10384727923025872
+      },
+      "temporal_stability": {
+        "maximum": 0.569906304258644,
+        "mean": 0.4932233341279925,
+        "minimum": 0.4448273588663081,
+        "pair_count": 10,
+        "standard_deviation": 0.03565416966035566
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.13774882818334072,
+        0.1323108032445772,
+        0.1309439120553544,
+        0.12261552553364047,
+        0.11222188100355089,
+        0.07458048268652129,
+        0.06924980199997341,
+        0.06407981748580602,
+        0.05942240821792816,
+        0.048914559183967726,
+        0.0479119804053397
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7644837625497987,
+        "mean": 0.6194734647321511,
+        "minimum": 0.4857462562931847,
+        "pair_count": 45,
+        "standard_deviation": 0.06509980665677982
+      },
+      "davies_bouldin": 1.3172411552900865,
+      "eligible": false,
+      "family": "gmm",
+      "k": 11,
+      "label_mapping": {
+        "0": 7,
+        "1": 8,
+        "2": 3,
+        "3": 2,
+        "4": 1,
+        "5": 4,
+        "6": 0,
+        "7": 9,
+        "8": 10,
+        "9": 5,
+        "10": 6
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.0479119804053397,
+      "silhouette": 0.2239776572301281,
+      "spatial_stability": {
+        "maximum": 0.6039803021334325,
+        "mean": 0.5139910790422347,
+        "minimum": 0.42724218836295547,
+        "pair_count": 10,
+        "standard_deviation": 0.06018578181365077
+      },
+      "temporal_stability": {
+        "maximum": 0.5944491433628377,
+        "mean": 0.5090991043312962,
+        "minimum": 0.42174828703478595,
+        "pair_count": 10,
+        "standard_deviation": 0.052977782170264276
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.18936751030238613,
+        0.1598859771525465,
+        0.14388375981176743,
+        0.11418105018804625,
+        0.07910229007730749,
+        0.0755441623594667,
+        0.07019027574577873,
+        0.06358063695084885,
+        0.04297792538386981,
+        0.03285598953747759,
+        0.028430422490504526
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.5550994347130489,
+        "mean": 0.4363550979066911,
+        "minimum": 0.3200560351801533,
+        "pair_count": 45,
+        "standard_deviation": 0.05263694298815343
+      },
+      "davies_bouldin": 1.4159175188400814,
+      "eligible": false,
+      "family": "birch",
+      "k": 11,
+      "label_mapping": {
+        "0": 0,
+        "1": 8,
+        "2": 6,
+        "3": 5,
+        "4": 7,
+        "5": 9,
+        "6": 10,
+        "7": 1,
+        "8": 4,
+        "9": 2,
+        "10": 3
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.028430422490504526,
+      "silhouette": 0.17559471704997243,
+      "spatial_stability": {
+        "maximum": 0.5297049435539665,
+        "mean": 0.4475174538657865,
+        "minimum": 0.3694444140726984,
+        "pair_count": 10,
+        "standard_deviation": 0.05186398631705172
+      },
+      "temporal_stability": {
+        "maximum": 0.4609590845700033,
+        "mean": 0.41777630642504227,
+        "minimum": 0.370989071329633,
+        "pair_count": 10,
+        "standard_deviation": 0.031029492958387205
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1865414397539635,
+        0.1843189568194605,
+        0.12731127873941067,
+        0.1204590796720442,
+        0.07977037729508829,
+        0.06130030345195118,
+        0.05722596302999665,
+        0.05073428615836558,
+        0.04956774319667487,
+        0.04662852953908735,
+        0.03614204234395721
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.766485187286321,
+        "mean": 0.5563919360635879,
+        "minimum": 0.4156253388329803,
+        "pair_count": 45,
+        "standard_deviation": 0.07021826647437528
+      },
+      "davies_bouldin": 1.2106192268381848,
+      "eligible": false,
+      "family": "ward",
+      "k": 11,
+      "label_mapping": {
+        "0": 1,
+        "1": 3,
+        "2": 0,
+        "3": 9,
+        "4": 4,
+        "5": 2,
+        "6": 5,
+        "7": 10,
+        "8": 6,
+        "9": 7,
+        "10": 8
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.03614204234395721,
+      "silhouette": 0.2485022065802542,
+      "spatial_stability": {
+        "maximum": 0.6793727714890557,
+        "mean": 0.5799042212436664,
+        "minimum": 0.4717224992305893,
+        "pair_count": 10,
+        "standard_deviation": 0.06662942733290045
+      },
+      "temporal_stability": {
+        "maximum": 0.6495048218935475,
+        "mean": 0.5413614728090457,
+        "minimum": 0.4426853882078113,
+        "pair_count": 10,
+        "standard_deviation": 0.0674555895889078
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.13821634209842354,
+        0.12070371780535302,
+        0.11887675296333253,
+        0.11694355386831352,
+        0.08811022439053764,
+        0.08594761889822061,
+        0.07129301073883475,
+        0.07014057800550424,
+        0.05362656688671571,
+        0.05086958723047459,
+        0.04353024886121711,
+        0.04174179825307274
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8337927728402091,
+        "mean": 0.6329080056877222,
+        "minimum": 0.45828718287530334,
+        "pair_count": 45,
+        "standard_deviation": 0.08932319585782961
+      },
+      "davies_bouldin": 1.2605316781830973,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 12,
+      "label_mapping": {
+        "0": 2,
+        "1": 3,
+        "2": 5,
+        "3": 1,
+        "4": 9,
+        "5": 10,
+        "6": 11,
+        "7": 4,
+        "8": 8,
+        "9": 0,
+        "10": 7,
+        "11": 6
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.04174179825307274,
+      "silhouette": 0.23543925746992536,
+      "spatial_stability": {
+        "maximum": 0.78486190194184,
+        "mean": 0.6602109606050558,
+        "minimum": 0.517849489258408,
+        "pair_count": 10,
+        "standard_deviation": 0.08832156838413557
+      },
+      "temporal_stability": {
+        "maximum": 0.733897034629396,
+        "mean": 0.5271036425994438,
+        "minimum": 0.4486850382662419,
+        "pair_count": 10,
+        "standard_deviation": 0.08393938724621562
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.14807258658609534,
+        0.11979335495064913,
+        0.10698899377075974,
+        0.10606402668999211,
+        0.09665152144780698,
+        0.09321929087429191,
+        0.07197180719062113,
+        0.06802696927213789,
+        0.05436211908808449,
+        0.05055165361444311,
+        0.047349776853791666,
+        0.03694789966132649
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7568510571168493,
+        "mean": 0.5636688563895227,
+        "minimum": 0.43112293723636885,
+        "pair_count": 45,
+        "standard_deviation": 0.07905930787202291
+      },
+      "davies_bouldin": 1.471393077566182,
+      "eligible": false,
+      "family": "gmm",
+      "k": 12,
+      "label_mapping": {
+        "0": 2,
+        "1": 10,
+        "2": 1,
+        "3": 7,
+        "4": 5,
+        "5": 8,
+        "6": 0,
+        "7": 11,
+        "8": 4,
+        "9": 3,
+        "10": 9,
+        "11": 6
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.03694789966132649,
+      "silhouette": 0.19076296257121142,
+      "spatial_stability": {
+        "maximum": 0.6097850868700726,
+        "mean": 0.5127972725115442,
+        "minimum": 0.4522464565198527,
+        "pair_count": 10,
+        "standard_deviation": 0.054235959496613
+      },
+      "temporal_stability": {
+        "maximum": 0.5155729538803271,
+        "mean": 0.48169266242952846,
+        "minimum": 0.4360822712639665,
+        "pair_count": 10,
+        "standard_deviation": 0.026842651012849984
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1440907205833372,
+        0.10606828096621249,
+        0.10181742399991817,
+        0.09613887236975133,
+        0.09587269162631114,
+        0.0933316963865744,
+        0.07683851743036633,
+        0.07530944447175886,
+        0.06255700266434333,
+        0.05865936472361043,
+        0.05093595720704263,
+        0.038380027570773696
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7923804898997524,
+        "mean": 0.5679743356811593,
+        "minimum": 0.42183080225786834,
+        "pair_count": 45,
+        "standard_deviation": 0.08218121547238087
+      },
+      "davies_bouldin": 1.3730667820362727,
+      "eligible": false,
+      "family": "gmm",
+      "k": 12,
+      "label_mapping": {
+        "0": 2,
+        "1": 10,
+        "2": 0,
+        "3": 7,
+        "4": 1,
+        "5": 8,
+        "6": 4,
+        "7": 11,
+        "8": 6,
+        "9": 3,
+        "10": 9,
+        "11": 5
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.038380027570773696,
+      "silhouette": 0.19975972088188887,
+      "spatial_stability": {
+        "maximum": 0.6076037931131179,
+        "mean": 0.5052096447861989,
+        "minimum": 0.437631868503359,
+        "pair_count": 10,
+        "standard_deviation": 0.05654366749396138
+      },
+      "temporal_stability": {
+        "maximum": 0.5896321274639025,
+        "mean": 0.49600887465766974,
+        "minimum": 0.4440106747350781,
+        "pair_count": 10,
+        "standard_deviation": 0.045002207502119404
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1598859771525465,
+        0.14388375981176743,
+        0.13806112905789025,
+        0.11418105018804625,
+        0.07910229007730749,
+        0.0755441623594667,
+        0.07019027574577873,
+        0.06358063695084885,
+        0.05130638124449588,
+        0.04297792538386981,
+        0.03285598953747759,
+        0.028430422490504526
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.5557784617469782,
+        "mean": 0.44969042539857856,
+        "minimum": 0.33073904841057833,
+        "pair_count": 45,
+        "standard_deviation": 0.05155615700262911
+      },
+      "davies_bouldin": 1.417218053825607,
+      "eligible": false,
+      "family": "birch",
+      "k": 12,
+      "label_mapping": {
+        "0": 9,
+        "1": 7,
+        "2": 6,
+        "3": 5,
+        "4": 2,
+        "5": 8,
+        "6": 11,
+        "7": 0,
+        "8": 4,
+        "9": 1,
+        "10": 3,
+        "11": 10
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.028430422490504526,
+      "silhouette": 0.17275794111489381,
+      "spatial_stability": {
+        "maximum": 0.5402061345617812,
+        "mean": 0.44417633069709284,
+        "minimum": 0.36296670035109363,
+        "pair_count": 10,
+        "standard_deviation": 0.05530410347911142
+      },
+      "temporal_stability": {
+        "maximum": 0.46939977438129443,
+        "mean": 0.4301671366769252,
+        "minimum": 0.3743405343006709,
+        "pair_count": 10,
+        "standard_deviation": 0.029984713046156256
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1839685624295693,
+        0.12731127873941067,
+        0.11664938444656088,
+        0.1119853696502248,
+        0.08830883960175948,
+        0.07977037729508829,
+        0.05722596302999665,
+        0.05133441562017869,
+        0.05073428615836558,
+        0.04956774319667487,
+        0.04662852953908735,
+        0.036515250293083425
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7123960739892639,
+        "mean": 0.5741299932688961,
+        "minimum": 0.467476746544665,
+        "pair_count": 45,
+        "standard_deviation": 0.06038183469482159
+      },
+      "davies_bouldin": 1.2655576727485804,
+      "eligible": false,
+      "family": "ward",
+      "k": 12,
+      "label_mapping": {
+        "0": 0,
+        "1": 2,
+        "2": 7,
+        "3": 10,
+        "4": 5,
+        "5": 1,
+        "6": 3,
+        "7": 11,
+        "8": 6,
+        "9": 8,
+        "10": 9,
+        "11": 4
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.036515250293083425,
+      "silhouette": 0.23981704330289744,
+      "spatial_stability": {
+        "maximum": 0.6708319022945449,
+        "mean": 0.5656596222529606,
+        "minimum": 0.43223491733720626,
+        "pair_count": 10,
+        "standard_deviation": 0.07548942117655481
+      },
+      "temporal_stability": {
+        "maximum": 0.7028412316018615,
+        "mean": 0.5481111821314881,
+        "minimum": 0.45047202594906594,
+        "pair_count": 10,
+        "standard_deviation": 0.07212638855217399
+      },
+      "warnings": []
+    }
+  ],
+  "display": {
+    "k": 4,
+    "method": "kmeans",
+    "status": "temporally_confirmed"
+  },
+  "encoding": "pca",
+  "representation": "variability",
+  "resample_transforms": {
+    "bootstrap": [
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9905834567841632,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 43,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_DJF",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9903753479938938,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9906588216672217,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9906252174767973,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9906436384525199,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9903014532303842,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 43,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_DJF",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.990364773887325,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9905199048113948,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9907383905313996,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9905737573071519,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 43,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_DJF",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      }
+    ],
+    "spatial": [
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9905970391355831,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9906029070678555,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9905492822980827,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.990868023060866,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9905010555822283,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 21,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      }
+    ],
+    "temporal": [
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9912980928530365,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9912643964506472,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 23,
+        "retained_features": 44,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_DJF",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "rainfall_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "rainfall_h2_cos",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9912892295998634,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_MAM",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "rainfall_MAM",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9901619614393546,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 23,
+        "retained_features": 44,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_DJF",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "rainfall_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "rainfall_12month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "rainfall_median",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_seasonality",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_concentration",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "rainfall_entropy",
+            "reason": "correlated_with:rainfall_seasonality_cv"
+          },
+          {
+            "name": "summer_winter_rainfall_contrast",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "temperature_DJF",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "rainfall_DJF",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "temperature_MAM",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "rainfall_MAM",
+            "reason": "correlated_with:rainfall_mean"
+          },
+          {
+            "name": "temperature_JJA",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "temperature_SON",
+            "reason": "correlated_with:temperature_mean"
+          },
+          {
+            "name": "temperature_warmest_quarter",
+            "reason": "correlated_with:temperature_warmest_month_mean"
+          },
+          {
+            "name": "temperature_coldest_quarter",
+            "reason": "correlated_with:temperature_coldest_month_mean"
+          },
+          {
+            "name": "rainfall_wettest_quarter",
+            "reason": "correlated_with:rainfall_wettest_month"
+          },
+          {
+            "name": "rainfall_driest_quarter",
+            "reason": "correlated_with:rainfall_driest_month"
+          },
+          {
+            "name": "temperature_h1_cos",
+            "reason": "correlated_with:temperature_monthly_range"
+          },
+          {
+            "name": "rainfall_h1_cos",
+            "reason": "correlated_with:warm_half_rainfall_fraction"
+          },
+          {
+            "name": "annual_rainfall_q50_relative",
+            "reason": "correlated_with:annual_rainfall_mean_median_gap"
+          },
+          {
+            "name": "rainfall_6month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          },
+          {
+            "name": "rainfall_12month_anomaly_relative_sd",
+            "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+          }
+        ],
+        "explained_variance": 0.9908551790354324,
+        "family_balanced": true,
+        "input_features": 62,
+        "missing_counts": {},
+        "output_dimensions": 23,
+        "retained_features": 42,
+        "retained_names": [
+          "temperature_mean",
+          "rainfall_mean",
+          "temperature_warmest_month_mean",
+          "temperature_coldest_month_mean",
+          "temperature_monthly_range",
+          "rainfall_wettest_month",
+          "rainfall_driest_month",
+          "rainfall_seasonality_cv",
+          "warm_half_rainfall_fraction",
+          "rainfall_JJA",
+          "rainfall_SON",
+          "temperature_wettest_quarter",
+          "temperature_driest_quarter",
+          "rainfall_warmest_quarter",
+          "rainfall_coldest_quarter",
+          "temperature_h1_sin",
+          "rainfall_h1_sin",
+          "temperature_h2_cos",
+          "rainfall_h2_cos",
+          "temperature_h2_sin",
+          "rainfall_h2_sin",
+          "temperature_rainfall_correlation",
+          "seasonal_phase_alignment",
+          "annual_temperature_sd",
+          "annual_rainfall_sd",
+          "annual_rainfall_cv",
+          "annual_rainfall_mean_median_gap",
+          "annual_rainfall_q10_relative",
+          "annual_rainfall_q90_relative",
+          "temperature_DJF_interannual_sd",
+          "rainfall_DJF_interannual_cv",
+          "temperature_MAM_interannual_sd",
+          "rainfall_MAM_interannual_cv",
+          "temperature_JJA_interannual_sd",
+          "rainfall_JJA_interannual_cv",
+          "temperature_SON_interannual_sd",
+          "rainfall_SON_interannual_cv",
+          "temperature_anomaly_lag1",
+          "rainfall_anomaly_lag1",
+          "rainfall_3month_anomaly_relative_sd",
+          "dry_month_max_run",
+          "dry_month_3plus_events_per_year"
+        ]
+      }
+    ]
+  },
+  "shortlist": [
+    {
+      "criteria": {
+        "corroborated_by_multiple_families": true,
+        "silhouette_retention": true,
+        "stability": true,
+        "strong_single_family_replication": true
+      },
+      "cross_algorithm_ari": 0.6525552786739347,
+      "k": 3,
+      "representative_method": "kmeans",
+      "temporal_confirmed": true
+    },
+    {
+      "criteria": {
+        "corroborated_by_multiple_families": false,
+        "silhouette_retention": true,
+        "stability": true,
+        "strong_single_family_replication": true
+      },
+      "cross_algorithm_ari": null,
+      "k": 4,
+      "representative_method": "kmeans",
+      "temporal_confirmed": true
+    }
+  ],
+  "transform": {
+    "dropped": [
+      {
+        "name": "rainfall_median",
+        "reason": "correlated_with:rainfall_mean"
+      },
+      {
+        "name": "temperature_seasonality",
+        "reason": "correlated_with:temperature_monthly_range"
+      },
+      {
+        "name": "rainfall_concentration",
+        "reason": "correlated_with:rainfall_seasonality_cv"
+      },
+      {
+        "name": "rainfall_entropy",
+        "reason": "correlated_with:rainfall_seasonality_cv"
+      },
+      {
+        "name": "summer_winter_rainfall_contrast",
+        "reason": "correlated_with:warm_half_rainfall_fraction"
+      },
+      {
+        "name": "temperature_DJF",
+        "reason": "correlated_with:temperature_warmest_month_mean"
+      },
+      {
+        "name": "rainfall_DJF",
+        "reason": "correlated_with:rainfall_wettest_month"
+      },
+      {
+        "name": "temperature_MAM",
+        "reason": "correlated_with:temperature_mean"
+      },
+      {
+        "name": "temperature_JJA",
+        "reason": "correlated_with:temperature_coldest_month_mean"
+      },
+      {
+        "name": "temperature_SON",
+        "reason": "correlated_with:temperature_mean"
+      },
+      {
+        "name": "temperature_warmest_quarter",
+        "reason": "correlated_with:temperature_warmest_month_mean"
+      },
+      {
+        "name": "temperature_coldest_quarter",
+        "reason": "correlated_with:temperature_coldest_month_mean"
+      },
+      {
+        "name": "rainfall_wettest_quarter",
+        "reason": "correlated_with:rainfall_wettest_month"
+      },
+      {
+        "name": "rainfall_driest_quarter",
+        "reason": "correlated_with:rainfall_driest_month"
+      },
+      {
+        "name": "temperature_h1_cos",
+        "reason": "correlated_with:temperature_monthly_range"
+      },
+      {
+        "name": "rainfall_h1_cos",
+        "reason": "correlated_with:warm_half_rainfall_fraction"
+      },
+      {
+        "name": "rainfall_h2_cos",
+        "reason": "correlated_with:rainfall_seasonality_cv"
+      },
+      {
+        "name": "annual_rainfall_q50_relative",
+        "reason": "correlated_with:annual_rainfall_mean_median_gap"
+      },
+      {
+        "name": "rainfall_6month_anomaly_relative_sd",
+        "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+      },
+      {
+        "name": "rainfall_12month_anomaly_relative_sd",
+        "reason": "correlated_with:rainfall_3month_anomaly_relative_sd"
+      }
+    ],
+    "explained_variance": 0.9905120117573434,
+    "family_balanced": true,
+    "input_features": 62,
+    "missing_counts": {},
+    "output_dimensions": 21,
+    "retained_features": 42,
+    "retained_names": [
+      "temperature_mean",
+      "rainfall_mean",
+      "temperature_warmest_month_mean",
+      "temperature_coldest_month_mean",
+      "temperature_monthly_range",
+      "rainfall_wettest_month",
+      "rainfall_driest_month",
+      "rainfall_seasonality_cv",
+      "warm_half_rainfall_fraction",
+      "rainfall_MAM",
+      "rainfall_JJA",
+      "rainfall_SON",
+      "temperature_wettest_quarter",
+      "temperature_driest_quarter",
+      "rainfall_warmest_quarter",
+      "rainfall_coldest_quarter",
+      "temperature_h1_sin",
+      "rainfall_h1_sin",
+      "temperature_h2_cos",
+      "temperature_h2_sin",
+      "rainfall_h2_sin",
+      "temperature_rainfall_correlation",
+      "seasonal_phase_alignment",
+      "annual_temperature_sd",
+      "annual_rainfall_sd",
+      "annual_rainfall_cv",
+      "annual_rainfall_mean_median_gap",
+      "annual_rainfall_q10_relative",
+      "annual_rainfall_q90_relative",
+      "temperature_DJF_interannual_sd",
+      "rainfall_DJF_interannual_cv",
+      "temperature_MAM_interannual_sd",
+      "rainfall_MAM_interannual_cv",
+      "temperature_JJA_interannual_sd",
+      "rainfall_JJA_interannual_cv",
+      "temperature_SON_interannual_sd",
+      "rainfall_SON_interannual_cv",
+      "temperature_anomaly_lag1",
+      "rainfall_anomaly_lag1",
+      "rainfall_3month_anomaly_relative_sd",
+      "dry_month_max_run",
+      "dry_month_3plus_events_per_year"
+    ]
+  }
+}

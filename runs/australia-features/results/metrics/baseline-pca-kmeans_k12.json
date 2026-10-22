@@ -1,0 +1,71 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.12050381326517037,
+      0.12013684629865558,
+      0.1193217394443032,
+      0.1122229379054029,
+      0.09165022466791635,
+      0.07479050729618997,
+      0.07058237323872561,
+      0.06585924901394762,
+      0.06398130937995591,
+      0.0632814647722349,
+      0.04918199497132797,
+      0.04848753974616963
+    ],
+    "bootstrap_stability": {
+      "maximum": 0.8487423311786572,
+      "mean": 0.6463500068641697,
+      "minimum": 0.5097515879154967,
+      "pair_count": 45,
+      "standard_deviation": 0.09235004178195444
+    },
+    "davies_bouldin": 1.0357210252757838,
+    "eligible": false,
+    "family": "kmeans",
+    "k": 12,
+    "label_mapping": {
+      "0": 3,
+      "1": 5,
+      "2": 1,
+      "3": 2,
+      "4": 10,
+      "5": 6,
+      "6": 4,
+      "7": 11,
+      "8": 0,
+      "9": 7,
+      "10": 9,
+      "11": 8
+    },
+    "method": "kmeans",
+    "minimum_cluster_area_fraction": 0.04848753974616963,
+    "silhouette": 0.2949352504303392,
+    "spatial_stability": {
+      "maximum": 0.872078855046728,
+      "mean": 0.7144552958805214,
+      "minimum": 0.6031600126175604,
+      "pair_count": 10,
+      "standard_deviation": 0.09670326865128281
+    },
+    "temporal_stability": {
+      "maximum": 0.8799785863978314,
+      "mean": 0.6474331079620267,
+      "minimum": 0.5519468228243245,
+      "pair_count": 10,
+      "standard_deviation": 0.12266940668317008
+    },
+    "warnings": []
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.22131149457073376,
+      0.19429335553419158,
+      0.1864673553068622,
+      0.12403986540507383,
+      0.11213164299251752,
+      0.09198246610177907,
+      0.036828818536868986,
+      0.03294500155197304
+    ],
+    "bootstrap_stability": {
+      "maximum": 0.6660455351116927,
+      "mean": 0.48530899308155323,
+      "minimum": 0.35967604719127955,
+      "pair_count": 45,
+      "standard_deviation": 0.07182585534992207
+    },
+    "davies_bouldin": 1.1630929313031335,
+    "eligible": false,
+    "family": "birch",
+    "k": 8,
+    "label_mapping": {
+      "0": 1,
+      "1": 5,
+      "2": 3,
+      "3": 6,
+      "4": 7,
+      "5": 0,
+      "6": 4,
+      "7": 2
+    },
+    "method": "birch",
+    "minimum_cluster_area_fraction": 0.03294500155197304,
+    "silhouette": 0.21578563818273588,
+    "spatial_stability": {
+      "maximum": 0.5990481182152609,
+      "mean": 0.524594639901369,
+      "minimum": 0.4562507975585124,
+      "pair_count": 10,
+      "standard_deviation": 0.049639793764649484
+    },
+    "temporal_stability": {
+      "maximum": 0.4950709112891667,
+      "mean": 0.4217140927429962,
+      "minimum": 0.3539903998169777,
+      "pair_count": 10,
+      "standard_deviation": 0.04420314642827859
+    },
+    "warnings": []
+  }
+}

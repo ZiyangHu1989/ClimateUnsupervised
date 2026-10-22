@@ -1,0 +1,24 @@
+{
+  "boundary_sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+  "boundary_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_50m_admin_0_countries.geojson",
+  "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+  "country": "Australia",
+  "created_at": "2026-09-20T13:24:17.579789+00:00",
+  "inputs": {
+    "data/external/ne_50m_admin_0_countries_v5.1.2.geojson": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+    "data/processed/climate_features.npz": "1336c3b96d80cad7938fb2db79722dc9e64f397ffe2e780e0127e433d7c9aecc"
+  },
+  "latitude_range": [
+    -43.20000076293945,
+    -11.199999809265137
+  ],
+  "locations": 2770,
+  "longitude_range": [
+    113.19999694824219,
+    153.1999969482422
+  ],
+  "output": "/home/sichenghe/Projects/TheAleph/ClimateUnsupervised/runs/australia-features/data/processed/climate_features.npz",
+  "polygon_components_retained": 2,
+  "region_name": "Australia",
+  "stage": "prepare-region"
+}

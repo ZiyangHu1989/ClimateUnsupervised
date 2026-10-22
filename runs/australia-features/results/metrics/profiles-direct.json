@@ -1,0 +1,3701 @@
+{
+  "area_sensitivity": {
+    "0.0": [
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.5205529975378155,
+        "k": 3,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.45778883991055613,
+        "k": 4,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      }
+    ],
+    "0.005": [
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.5205529975378155,
+        "k": 3,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.45778883991055613,
+        "k": 4,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      }
+    ],
+    "0.01": [
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.5205529975378155,
+        "k": 3,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.45778883991055613,
+        "k": 4,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      }
+    ],
+    "0.02": [
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.5205529975378155,
+        "k": 3,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      },
+      {
+        "criteria": {
+          "corroborated_by_multiple_families": false,
+          "silhouette_retention": true,
+          "stability": true,
+          "strong_single_family_replication": true
+        },
+        "cross_algorithm_ari": 0.45778883991055613,
+        "k": 4,
+        "representative_method": "kmeans",
+        "temporal_confirmed": true
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "area_shares": [
+        0.46979910285815374,
+        0.28442144185549284,
+        0.24577945528635342
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9900548061857468,
+        "mean": 0.9104362946587948,
+        "minimum": 0.7782674578761475,
+        "pair_count": 45,
+        "standard_deviation": 0.05310588256694813
+      },
+      "davies_bouldin": 1.0563587085315127,
+      "eligible": true,
+      "family": "kmeans",
+      "k": 3,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 2
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.24577945528635342,
+      "silhouette": 0.34918264769804014,
+      "spatial_stability": {
+        "maximum": 0.9875241155405657,
+        "mean": 0.9333390020338174,
+        "minimum": 0.8691676098103274,
+        "pair_count": 10,
+        "standard_deviation": 0.042271920334582824
+      },
+      "temporal_stability": {
+        "maximum": 0.9443236746465343,
+        "mean": 0.8849170693538231,
+        "minimum": 0.8035107506543981,
+        "pair_count": 10,
+        "standard_deviation": 0.04491857162928588
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.37815346241492637,
+        0.36510526117194453,
+        0.2567412764131291
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9739214247978322,
+        "mean": 0.8224505041579047,
+        "minimum": 0.6333073326520128,
+        "pair_count": 45,
+        "standard_deviation": 0.11304706563866779
+      },
+      "davies_bouldin": 1.2604029301634394,
+      "eligible": true,
+      "family": "gmm",
+      "k": 3,
+      "label_mapping": {
+        "0": 2,
+        "1": 1,
+        "2": 0
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.2567412764131291,
+      "silhouette": 0.27082991800724704,
+      "spatial_stability": {
+        "maximum": 0.9471183220850563,
+        "mean": 0.8847758099992242,
+        "minimum": 0.7924285981008176,
+        "pair_count": 10,
+        "standard_deviation": 0.05746432882175304
+      },
+      "temporal_stability": {
+        "maximum": 0.9111807686329859,
+        "mean": 0.8068870925514607,
+        "minimum": 0.7296617346659753,
+        "pair_count": 10,
+        "standard_deviation": 0.05628280637438045
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.4045884357569122,
+        0.32821224729593484,
+        0.2671993169471529
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.906449771994295,
+        "mean": 0.7739032035220588,
+        "minimum": 0.6049879235315747,
+        "pair_count": 45,
+        "standard_deviation": 0.069581252995897
+      },
+      "davies_bouldin": 1.1420687249242907,
+      "eligible": false,
+      "family": "gmm",
+      "k": 3,
+      "label_mapping": {
+        "0": 2,
+        "1": 1,
+        "2": 0
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.2671993169471529,
+      "silhouette": 0.3060593974875963,
+      "spatial_stability": {
+        "maximum": 0.8799263433049586,
+        "mean": 0.7838785567754905,
+        "minimum": 0.6588025220838918,
+        "pair_count": 10,
+        "standard_deviation": 0.061880581907124144
+      },
+      "temporal_stability": {
+        "maximum": 0.8319557411223722,
+        "mean": 0.7547349891015684,
+        "minimum": 0.636837702088353,
+        "pair_count": 10,
+        "standard_deviation": 0.06505865352895084
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.5528554944220865,
+        0.2528511500437219,
+        0.19429335553419158
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7586817436845882,
+        "mean": 0.4355308829783299,
+        "minimum": 0.17405071858632248,
+        "pair_count": 45,
+        "standard_deviation": 0.13879995836497416
+      },
+      "davies_bouldin": 1.1326258291374127,
+      "eligible": false,
+      "family": "birch",
+      "k": 3,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 2
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.19429335553419158,
+      "silhouette": 0.3012148546446518,
+      "spatial_stability": {
+        "maximum": 0.7808180245805749,
+        "mean": 0.5355663874294078,
+        "minimum": 0.3627690801954375,
+        "pair_count": 10,
+        "standard_deviation": 0.14458722755978337
+      },
+      "temporal_stability": {
+        "maximum": 0.6180661327058197,
+        "mean": 0.40602822255337595,
+        "minimum": 0.14726499695545678,
+        "pair_count": 10,
+        "standard_deviation": 0.15241403995089903
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.38547007270930417,
+        0.3426955795248174,
+        0.2718343477658785
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9204108089283359,
+        "mean": 0.6093677699378569,
+        "minimum": 0.27075970043471,
+        "pair_count": 45,
+        "standard_deviation": 0.19196097822784394
+      },
+      "davies_bouldin": 1.0957440190386516,
+      "eligible": false,
+      "family": "ward",
+      "k": 3,
+      "label_mapping": {
+        "0": 1,
+        "1": 2,
+        "2": 0
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.2718343477658785,
+      "silhouette": 0.33615843209141544,
+      "spatial_stability": {
+        "maximum": 0.8330261190982637,
+        "mean": 0.598903495631219,
+        "minimum": 0.29016648725833727,
+        "pair_count": 10,
+        "standard_deviation": 0.16373754487800196
+      },
+      "temporal_stability": {
+        "maximum": 0.8033720903491592,
+        "mean": 0.6343348050192267,
+        "minimum": 0.44987957188422784,
+        "pair_count": 10,
+        "standard_deviation": 0.11101891509108203
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.37316912699969684,
+        0.25868090242764136,
+        0.1906763550676121,
+        0.1774736155050497
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9916095090369356,
+        "mean": 0.8824003560782417,
+        "minimum": 0.7393214270620644,
+        "pair_count": 45,
+        "standard_deviation": 0.06043936382339268
+      },
+      "davies_bouldin": 1.060027492477524,
+      "eligible": true,
+      "family": "kmeans",
+      "k": 4,
+      "label_mapping": {
+        "0": 1,
+        "1": 2,
+        "2": 3,
+        "3": 0
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.1774736155050497,
+      "silhouette": 0.3088770214970612,
+      "spatial_stability": {
+        "maximum": 0.9785259949843919,
+        "mean": 0.9172464524272581,
+        "minimum": 0.8404603581141074,
+        "pair_count": 10,
+        "standard_deviation": 0.04608419525384279
+      },
+      "temporal_stability": {
+        "maximum": 0.929140942330656,
+        "mean": 0.8774033057514344,
+        "minimum": 0.8209258290198413,
+        "pair_count": 10,
+        "standard_deviation": 0.03589758374744067
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2761740642298927,
+        0.26655592161390573,
+        0.23069906704413953,
+        0.226570947112062
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9670933388258969,
+        "mean": 0.8634955815690523,
+        "minimum": 0.7556492617685348,
+        "pair_count": 45,
+        "standard_deviation": 0.05138882908058512
+      },
+      "davies_bouldin": 1.328997076437489,
+      "eligible": true,
+      "family": "gmm",
+      "k": 4,
+      "label_mapping": {
+        "0": 1,
+        "1": 3,
+        "2": 0,
+        "3": 2
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.226570947112062,
+      "silhouette": 0.22358875481704013,
+      "spatial_stability": {
+        "maximum": 0.9227922855747809,
+        "mean": 0.8272034936227739,
+        "minimum": 0.7046958328635886,
+        "pair_count": 10,
+        "standard_deviation": 0.06644153876678274
+      },
+      "temporal_stability": {
+        "maximum": 0.8479701225323348,
+        "mean": 0.8176561125269639,
+        "minimum": 0.7747625710441671,
+        "pair_count": 10,
+        "standard_deviation": 0.02340592959729899
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.26976388881052155,
+        0.26203558300195384,
+        0.24428197535611376,
+        0.22391855283141088
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8481695034969982,
+        "mean": 0.6025104774375621,
+        "minimum": 0.34086234323464615,
+        "pair_count": 45,
+        "standard_deviation": 0.17125105505376428
+      },
+      "davies_bouldin": 1.2002043093940682,
+      "eligible": false,
+      "family": "gmm",
+      "k": 4,
+      "label_mapping": {
+        "0": 0,
+        "1": 3,
+        "2": 2,
+        "3": 1
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.22391855283141088,
+      "silhouette": 0.2619810597154134,
+      "spatial_stability": {
+        "maximum": 0.8162524451349139,
+        "mean": 0.638464197598748,
+        "minimum": 0.4301981586861458,
+        "pair_count": 10,
+        "standard_deviation": 0.17292503938032447
+      },
+      "temporal_stability": {
+        "maximum": 0.720357683371349,
+        "mean": 0.5532261922347088,
+        "minimum": 0.36797896121635304,
+        "pair_count": 10,
+        "standard_deviation": 0.15634296917203924
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.5528554944220865,
+        0.2160223315068529,
+        0.19429335553419158,
+        0.036828818536868986
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6342844653235754,
+        "mean": 0.4045534682714905,
+        "minimum": 0.18286778248515512,
+        "pair_count": 45,
+        "standard_deviation": 0.11361857701533708
+      },
+      "davies_bouldin": 1.2010539547224643,
+      "eligible": false,
+      "family": "birch",
+      "k": 4,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.036828818536868986,
+      "silhouette": 0.2578610588679856,
+      "spatial_stability": {
+        "maximum": 0.7712250526209584,
+        "mean": 0.5237829439643756,
+        "minimum": 0.3976759154674918,
+        "pair_count": 10,
+        "standard_deviation": 0.10581002254743183
+      },
+      "temporal_stability": {
+        "maximum": 0.5401415031036402,
+        "mean": 0.4265555328497327,
+        "minimum": 0.23456066784106433,
+        "pair_count": 10,
+        "standard_deviation": 0.10139223877143337
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.346932806829945,
+        0.2733081791147448,
+        0.23078965753998926,
+        0.14896935651532095
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8927626022777843,
+        "mean": 0.6996692823850749,
+        "minimum": 0.4379492881871843,
+        "pair_count": 45,
+        "standard_deviation": 0.11854847433274796
+      },
+      "davies_bouldin": 1.073667807540678,
+      "eligible": false,
+      "family": "ward",
+      "k": 4,
+      "label_mapping": {
+        "0": 1,
+        "1": 2,
+        "2": 0,
+        "3": 3
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.14896935651532095,
+      "silhouette": 0.30074501296069267,
+      "spatial_stability": {
+        "maximum": 0.857698054713228,
+        "mean": 0.64931092710105,
+        "minimum": 0.45767344930863535,
+        "pair_count": 10,
+        "standard_deviation": 0.11059146594607305
+      },
+      "temporal_stability": {
+        "maximum": 0.7832905856970634,
+        "mean": 0.6534889885327939,
+        "minimum": 0.5228602983907304,
+        "pair_count": 10,
+        "standard_deviation": 0.08880017817387889
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2974374709724633,
+        0.23380992396508823,
+        0.20127380319032925,
+        0.174403852460963,
+        0.0930749494111562
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.958456789542234,
+        "mean": 0.7421357457351099,
+        "minimum": 0.4772940664510305,
+        "pair_count": 45,
+        "standard_deviation": 0.13200283939997676
+      },
+      "davies_bouldin": 1.2339928877091384,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 5,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 3,
+        "3": 4,
+        "4": 2
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.0930749494111562,
+      "silhouette": 0.2778244925567746,
+      "spatial_stability": {
+        "maximum": 0.9091327144902724,
+        "mean": 0.7312014947769764,
+        "minimum": 0.531207563530451,
+        "pair_count": 10,
+        "standard_deviation": 0.14362218405208238
+      },
+      "temporal_stability": {
+        "maximum": 0.9248797321482012,
+        "mean": 0.8307159992307176,
+        "minimum": 0.7308367190077408,
+        "pair_count": 10,
+        "standard_deviation": 0.0739440117568205
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.25357595627539675,
+        0.22805465022214788,
+        0.20606913192717077,
+        0.19833354632568528,
+        0.11396671524959932
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9408420804950369,
+        "mean": 0.6294056889509748,
+        "minimum": 0.4611778040752058,
+        "pair_count": 45,
+        "standard_deviation": 0.12155662902841854
+      },
+      "davies_bouldin": 1.3977593245357918,
+      "eligible": false,
+      "family": "gmm",
+      "k": 5,
+      "label_mapping": {
+        "0": 2,
+        "1": 4,
+        "2": 1,
+        "3": 0,
+        "4": 3
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.11396671524959932,
+      "silhouette": 0.2254779462746062,
+      "spatial_stability": {
+        "maximum": 0.6862443980577827,
+        "mean": 0.5613889276717077,
+        "minimum": 0.4618767513838507,
+        "pair_count": 10,
+        "standard_deviation": 0.06655520292212277
+      },
+      "temporal_stability": {
+        "maximum": 0.8528695684013022,
+        "mean": 0.6229656383086328,
+        "minimum": 0.47868752171340406,
+        "pair_count": 10,
+        "standard_deviation": 0.13846602305943587
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2518882176501196,
+        0.2136934390499945,
+        0.20952941280557819,
+        0.1647893338482643,
+        0.16009959664604342
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8779237341170202,
+        "mean": 0.5956619571677397,
+        "minimum": 0.399573542899745,
+        "pair_count": 45,
+        "standard_deviation": 0.12088071379220594
+      },
+      "davies_bouldin": 1.2049402173370232,
+      "eligible": false,
+      "family": "gmm",
+      "k": 5,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.16009959664604342,
+      "silhouette": 0.2572844789987825,
+      "spatial_stability": {
+        "maximum": 0.7571348030986307,
+        "mean": 0.5895225097058859,
+        "minimum": 0.48967016404011604,
+        "pair_count": 10,
+        "standard_deviation": 0.09358297219057136
+      },
+      "temporal_stability": {
+        "maximum": 0.6443415358033792,
+        "mean": 0.5271093509279082,
+        "minimum": 0.4063907399655665,
+        "pair_count": 10,
+        "standard_deviation": 0.07679650148687314
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.5199104928701135,
+        0.2160223315068529,
+        0.19429335553419158,
+        0.036828818536868986,
+        0.03294500155197304
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6575760033393658,
+        "mean": 0.4074573899025132,
+        "minimum": 0.18796124682193244,
+        "pair_count": 45,
+        "standard_deviation": 0.1018658471528173
+      },
+      "davies_bouldin": 1.1651502777674179,
+      "eligible": false,
+      "family": "birch",
+      "k": 5,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.03294500155197304,
+      "silhouette": 0.25305936161921366,
+      "spatial_stability": {
+        "maximum": 0.7747282293540668,
+        "mean": 0.4876654972806126,
+        "minimum": 0.2859956039608163,
+        "pair_count": 10,
+        "standard_deviation": 0.1439953135530357
+      },
+      "temporal_stability": {
+        "maximum": 0.4716094798781229,
+        "mean": 0.38880235207266073,
+        "minimum": 0.3099442205551038,
+        "pair_count": 10,
+        "standard_deviation": 0.05065599434047485
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.3185485665536229,
+        0.22631324522497961,
+        0.19366432349471058,
+        0.14252532184320627,
+        0.11894854288348064
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8849826941541339,
+        "mean": 0.6583287326121707,
+        "minimum": 0.42789998570633797,
+        "pair_count": 45,
+        "standard_deviation": 0.12342597368035273
+      },
+      "davies_bouldin": 1.2148489614084699,
+      "eligible": false,
+      "family": "ward",
+      "k": 5,
+      "label_mapping": {
+        "0": 4,
+        "1": 1,
+        "2": 0,
+        "3": 3,
+        "4": 2
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.11894854288348064,
+      "silhouette": 0.27860700874312316,
+      "spatial_stability": {
+        "maximum": 0.7862025316639967,
+        "mean": 0.5800976197022484,
+        "minimum": 0.44869090231843506,
+        "pair_count": 10,
+        "standard_deviation": 0.11069484513672126
+      },
+      "temporal_stability": {
+        "maximum": 0.7825266969333662,
+        "mean": 0.5693386994362214,
+        "minimum": 0.4476875894147722,
+        "pair_count": 10,
+        "standard_deviation": 0.10702607336613885
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2882964655803566,
+        0.20896034590302648,
+        0.16826451716291477,
+        0.15481160285341586,
+        0.09912815984591951,
+        0.08053890865436678
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9541543290975759,
+        "mean": 0.6407572280287572,
+        "minimum": 0.47513976170373823,
+        "pair_count": 45,
+        "standard_deviation": 0.15098377324023074
+      },
+      "davies_bouldin": 1.0872549917835224,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 6,
+      "label_mapping": {
+        "0": 4,
+        "1": 0,
+        "2": 3,
+        "3": 2,
+        "4": 5,
+        "5": 1
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.08053890865436678,
+      "silhouette": 0.3002069698202414,
+      "spatial_stability": {
+        "maximum": 0.9799752678071981,
+        "mean": 0.8013879211344959,
+        "minimum": 0.6614545883873985,
+        "pair_count": 10,
+        "standard_deviation": 0.1169330028474627
+      },
+      "temporal_stability": {
+        "maximum": 0.9366725531435235,
+        "mean": 0.8224867318806396,
+        "minimum": 0.6860829200780979,
+        "pair_count": 10,
+        "standard_deviation": 0.09253065406343376
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2291665474899109,
+        0.19127707011407716,
+        0.18594857615001303,
+        0.1521398676292624,
+        0.12513949698927965,
+        0.11632844162745688
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8576413193214051,
+        "mean": 0.582579711510014,
+        "minimum": 0.4187875096369734,
+        "pair_count": 45,
+        "standard_deviation": 0.12997510465692996
+      },
+      "davies_bouldin": 1.3906207304137153,
+      "eligible": false,
+      "family": "gmm",
+      "k": 6,
+      "label_mapping": {
+        "0": 0,
+        "1": 3,
+        "2": 1,
+        "3": 5,
+        "4": 4,
+        "5": 2
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.11632844162745688,
+      "silhouette": 0.1890790640438963,
+      "spatial_stability": {
+        "maximum": 0.8172736270941788,
+        "mean": 0.5485663884365908,
+        "minimum": 0.4713977270346633,
+        "pair_count": 10,
+        "standard_deviation": 0.10921031874157576
+      },
+      "temporal_stability": {
+        "maximum": 0.8248927385388714,
+        "mean": 0.6001291774181156,
+        "minimum": 0.3996367848101132,
+        "pair_count": 10,
+        "standard_deviation": 0.15000226780123546
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.23390338529852361,
+        0.18436190641319553,
+        0.1669838881453216,
+        0.14183865150866137,
+        0.1378290701228526,
+        0.13508309851144526
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7837808986347516,
+        "mean": 0.5478998091667231,
+        "minimum": 0.37189064924382337,
+        "pair_count": 45,
+        "standard_deviation": 0.10900615238877445
+      },
+      "davies_bouldin": 1.2912252051711184,
+      "eligible": false,
+      "family": "gmm",
+      "k": 6,
+      "label_mapping": {
+        "0": 0,
+        "1": 5,
+        "2": 1,
+        "3": 2,
+        "4": 4,
+        "5": 3
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.13508309851144526,
+      "silhouette": 0.2230659205890912,
+      "spatial_stability": {
+        "maximum": 0.6909772459413327,
+        "mean": 0.5535625258556308,
+        "minimum": 0.4569883831820997,
+        "pair_count": 10,
+        "standard_deviation": 0.08910131019498631
+      },
+      "temporal_stability": {
+        "maximum": 0.6101292838721271,
+        "mean": 0.4712448347157466,
+        "minimum": 0.36549459333184936,
+        "pair_count": 10,
+        "standard_deviation": 0.09081128763056631
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.5199104928701135,
+        0.19429335553419158,
+        0.12403986540507383,
+        0.09198246610177907,
+        0.036828818536868986,
+        0.03294500155197304
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6709751799958324,
+        "mean": 0.47062990042208797,
+        "minimum": 0.30769112582691643,
+        "pair_count": 45,
+        "standard_deviation": 0.07867421398509954
+      },
+      "davies_bouldin": 1.0580461363312679,
+      "eligible": false,
+      "family": "birch",
+      "k": 6,
+      "label_mapping": {
+        "0": 0,
+        "1": 3,
+        "2": 1,
+        "3": 4,
+        "4": 5,
+        "5": 2
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.03294500155197304,
+      "silhouette": 0.25784551208111567,
+      "spatial_stability": {
+        "maximum": 0.6711125322669901,
+        "mean": 0.4706851723642173,
+        "minimum": 0.3516874207457206,
+        "pair_count": 10,
+        "standard_deviation": 0.08219874160173536
+      },
+      "temporal_stability": {
+        "maximum": 0.5122148262155387,
+        "mean": 0.39703792495360646,
+        "minimum": 0.31689088162070805,
+        "pair_count": 10,
+        "standard_deviation": 0.059634067001291494
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.3152859911435725,
+        0.21137910444910266,
+        0.18205991324970358,
+        0.1341516556664136,
+        0.08955985105322796,
+        0.06756348443797973
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8964389397980456,
+        "mean": 0.6725806109722537,
+        "minimum": 0.4736933632522322,
+        "pair_count": 45,
+        "standard_deviation": 0.10595907715251834
+      },
+      "davies_bouldin": 1.06638239772586,
+      "eligible": false,
+      "family": "ward",
+      "k": 6,
+      "label_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 4,
+        "3": 3,
+        "4": 2,
+        "5": 5
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.06756348443797973,
+      "silhouette": 0.2979455579503845,
+      "spatial_stability": {
+        "maximum": 0.8537881342456312,
+        "mean": 0.6046575555630483,
+        "minimum": 0.41912956486778347,
+        "pair_count": 10,
+        "standard_deviation": 0.14350738177154174
+      },
+      "temporal_stability": {
+        "maximum": 0.6318387471522842,
+        "mean": 0.5737281889106957,
+        "minimum": 0.5058072219329365,
+        "pair_count": 10,
+        "standard_deviation": 0.05358984419101482
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2659764419336329,
+        0.20700281266997475,
+        0.15327563317175033,
+        0.15191841937375436,
+        0.09458388736837982,
+        0.07224756828444748,
+        0.05499523719806035
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.933084509450793,
+        "mean": 0.7028578985568249,
+        "minimum": 0.38784237659474025,
+        "pair_count": 45,
+        "standard_deviation": 0.15982061058173755
+      },
+      "davies_bouldin": 1.006258291884037,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 7,
+      "label_mapping": {
+        "0": 2,
+        "1": 6,
+        "2": 3,
+        "3": 1,
+        "4": 0,
+        "5": 5,
+        "6": 4
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.05499523719806035,
+      "silhouette": 0.3199111813113215,
+      "spatial_stability": {
+        "maximum": 0.9741128789817518,
+        "mean": 0.8222665107630156,
+        "minimum": 0.6732433929452535,
+        "pair_count": 10,
+        "standard_deviation": 0.1250775086389333
+      },
+      "temporal_stability": {
+        "maximum": 0.9238745946187781,
+        "mean": 0.7294821545624453,
+        "minimum": 0.5705250633743113,
+        "pair_count": 10,
+        "standard_deviation": 0.12426073424657459
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2134706681174972,
+        0.17571144679525266,
+        0.1513751640133882,
+        0.12522424362756254,
+        0.11351276420352249,
+        0.11064099289707138,
+        0.1100647203457055
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8727714522878575,
+        "mean": 0.602541048783647,
+        "minimum": 0.44006028839463107,
+        "pair_count": 45,
+        "standard_deviation": 0.10072318575493648
+      },
+      "davies_bouldin": 1.3081506664731974,
+      "eligible": false,
+      "family": "gmm",
+      "k": 7,
+      "label_mapping": {
+        "0": 2,
+        "1": 0,
+        "2": 6,
+        "3": 1,
+        "4": 3,
+        "5": 4,
+        "6": 5
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.1100647203457055,
+      "silhouette": 0.19497973739667956,
+      "spatial_stability": {
+        "maximum": 0.8194170253933315,
+        "mean": 0.5649557865101166,
+        "minimum": 0.40424033328493014,
+        "pair_count": 10,
+        "standard_deviation": 0.13116447551530985
+      },
+      "temporal_stability": {
+        "maximum": 0.7370821975042506,
+        "mean": 0.5395770659952344,
+        "minimum": 0.4616418686538622,
+        "pair_count": 10,
+        "standard_deviation": 0.0933680870598795
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.20117455217786026,
+        0.17138753020905637,
+        0.14802553576148655,
+        0.13384496744764593,
+        0.1320939198488367,
+        0.13145648847891583,
+        0.08201700607619837
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8469002024827439,
+        "mean": 0.6186512843919835,
+        "minimum": 0.44789386245426066,
+        "pair_count": 45,
+        "standard_deviation": 0.10503034621943055
+      },
+      "davies_bouldin": 1.210784740382215,
+      "eligible": false,
+      "family": "gmm",
+      "k": 7,
+      "label_mapping": {
+        "0": 2,
+        "1": 0,
+        "2": 5,
+        "3": 1,
+        "4": 4,
+        "5": 3,
+        "6": 6
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.08201700607619837,
+      "silhouette": 0.23442521219782328,
+      "spatial_stability": {
+        "maximum": 0.7520356629557732,
+        "mean": 0.5753970150446461,
+        "minimum": 0.4781116737821777,
+        "pair_count": 10,
+        "standard_deviation": 0.07815529413432605
+      },
+      "temporal_stability": {
+        "maximum": 0.609640797188752,
+        "mean": 0.5429605700797606,
+        "minimum": 0.4528833993919517,
+        "pair_count": 10,
+        "standard_deviation": 0.04526293379787241
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.407778849877596,
+        0.19429335553419158,
+        0.12403986540507383,
+        0.11213164299251752,
+        0.09198246610177907,
+        0.036828818536868986,
+        0.03294500155197304
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6681559387340498,
+        "mean": 0.5040693541066222,
+        "minimum": 0.3810749480183544,
+        "pair_count": 45,
+        "standard_deviation": 0.06854394616155375
+      },
+      "davies_bouldin": 1.0149239579390572,
+      "eligible": false,
+      "family": "birch",
+      "k": 7,
+      "label_mapping": {
+        "0": 0,
+        "1": 4,
+        "2": 1,
+        "3": 5,
+        "4": 6,
+        "5": 2,
+        "6": 3
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.03294500155197304,
+      "silhouette": 0.24749734728512246,
+      "spatial_stability": {
+        "maximum": 0.5624434722210362,
+        "mean": 0.4963814305104477,
+        "minimum": 0.44009636021501713,
+        "pair_count": 10,
+        "standard_deviation": 0.04514493869841424
+      },
+      "temporal_stability": {
+        "maximum": 0.5032846363441866,
+        "mean": 0.42449126396870546,
+        "minimum": 0.3431267443229667,
+        "pair_count": 10,
+        "standard_deviation": 0.05259061274310659
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2904245797450512,
+        0.2068947727461718,
+        0.1767364442424851,
+        0.1341516556664136,
+        0.08848433734941519,
+        0.06756348443797973,
+        0.03574472581248335
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8598607154458473,
+        "mean": 0.6273955837565982,
+        "minimum": 0.47363001564541785,
+        "pair_count": 45,
+        "standard_deviation": 0.10205100765868601
+      },
+      "davies_bouldin": 1.0042778577712994,
+      "eligible": false,
+      "family": "ward",
+      "k": 7,
+      "label_mapping": {
+        "0": 1,
+        "1": 2,
+        "2": 4,
+        "3": 3,
+        "4": 0,
+        "5": 5,
+        "6": 6
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.03574472581248335,
+      "silhouette": 0.31073942285138273,
+      "spatial_stability": {
+        "maximum": 0.8356746884902262,
+        "mean": 0.6422488910616382,
+        "minimum": 0.4737842553842269,
+        "pair_count": 10,
+        "standard_deviation": 0.1142154445274266
+      },
+      "temporal_stability": {
+        "maximum": 0.6228456294566703,
+        "mean": 0.5587968644610297,
+        "minimum": 0.47054228644348967,
+        "pair_count": 10,
+        "standard_deviation": 0.0501670356688667
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.24229791672163967,
+        0.1729961085674354,
+        0.14672242210001082,
+        0.1183744151293034,
+        0.09874789078813691,
+        0.09544385678719598,
+        0.07192022660816808,
+        0.053497163298109725
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.975038455401408,
+        "mean": 0.8288399021265215,
+        "minimum": 0.6336950638156991,
+        "pair_count": 45,
+        "standard_deviation": 0.07996981753671299
+      },
+      "davies_bouldin": 1.0261968302421438,
+      "eligible": true,
+      "family": "kmeans",
+      "k": 8,
+      "label_mapping": {
+        "0": 2,
+        "1": 4,
+        "2": 1,
+        "3": 5,
+        "4": 3,
+        "5": 7,
+        "6": 6,
+        "7": 0
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.053497163298109725,
+      "silhouette": 0.29525669627809703,
+      "spatial_stability": {
+        "maximum": 0.9481430441940131,
+        "mean": 0.9078038188491444,
+        "minimum": 0.8433716030611849,
+        "pair_count": 10,
+        "standard_deviation": 0.03323353015424304
+      },
+      "temporal_stability": {
+        "maximum": 0.9291073732543906,
+        "mean": 0.8463694368573643,
+        "minimum": 0.7510228979941501,
+        "pair_count": 10,
+        "standard_deviation": 0.06759365019466808
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1751697128305668,
+        0.15452947903745354,
+        0.13300326614127053,
+        0.11950827803222411,
+        0.11497399528335327,
+        0.11229242227068355,
+        0.09558585329289461,
+        0.0949369931115536
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8499834484439683,
+        "mean": 0.6331155199068225,
+        "minimum": 0.4314101443837132,
+        "pair_count": 45,
+        "standard_deviation": 0.1078849798696809
+      },
+      "davies_bouldin": 1.2519926657183225,
+      "eligible": false,
+      "family": "gmm",
+      "k": 8,
+      "label_mapping": {
+        "0": 6,
+        "1": 1,
+        "2": 5,
+        "3": 0,
+        "4": 7,
+        "5": 4,
+        "6": 2,
+        "7": 3
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.0949369931115536,
+      "silhouette": 0.21830396900794305,
+      "spatial_stability": {
+        "maximum": 0.8824740259866416,
+        "mean": 0.596459593236085,
+        "minimum": 0.4928617174271381,
+        "pair_count": 10,
+        "standard_deviation": 0.12677088067316986
+      },
+      "temporal_stability": {
+        "maximum": 0.7325915045400871,
+        "mean": 0.5676888821978194,
+        "minimum": 0.4299638197117485,
+        "pair_count": 10,
+        "standard_deviation": 0.08544466887472776
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.17511107337387136,
+        0.16461350197162347,
+        0.13700294736717847,
+        0.13295460000351525,
+        0.12722644644859077,
+        0.10611787669227318,
+        0.08420188127618593,
+        0.07277167286676159
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7849869163247905,
+        "mean": 0.644621646358212,
+        "minimum": 0.4885858497319818,
+        "pair_count": 45,
+        "standard_deviation": 0.10343135415966175
+      },
+      "davies_bouldin": 1.119959199508921,
+      "eligible": false,
+      "family": "gmm",
+      "k": 8,
+      "label_mapping": {
+        "0": 5,
+        "1": 1,
+        "2": 0,
+        "3": 7,
+        "4": 3,
+        "5": 4,
+        "6": 2,
+        "7": 6
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.07277167286676159,
+      "silhouette": 0.2451559873340668,
+      "spatial_stability": {
+        "maximum": 0.7271323357329614,
+        "mean": 0.5991569581479648,
+        "minimum": 0.4926662508208063,
+        "pair_count": 10,
+        "standard_deviation": 0.08122550802675534
+      },
+      "temporal_stability": {
+        "maximum": 0.6898436195127507,
+        "mean": 0.5703338947381382,
+        "minimum": 0.4837104630180202,
+        "pair_count": 10,
+        "standard_deviation": 0.06318021986152424
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.22131149457073376,
+        0.19429335553419158,
+        0.1864673553068622,
+        0.12403986540507383,
+        0.11213164299251752,
+        0.09198246610177907,
+        0.036828818536868986,
+        0.03294500155197304
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6660455351116927,
+        "mean": 0.48530899308155323,
+        "minimum": 0.35967604719127955,
+        "pair_count": 45,
+        "standard_deviation": 0.07182585534992207
+      },
+      "davies_bouldin": 1.1630929313031335,
+      "eligible": false,
+      "family": "birch",
+      "k": 8,
+      "label_mapping": {
+        "0": 1,
+        "1": 5,
+        "2": 3,
+        "3": 6,
+        "4": 7,
+        "5": 0,
+        "6": 4,
+        "7": 2
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.03294500155197304,
+      "silhouette": 0.21578563818273588,
+      "spatial_stability": {
+        "maximum": 0.5990481182152609,
+        "mean": 0.524594639901369,
+        "minimum": 0.4562507975585124,
+        "pair_count": 10,
+        "standard_deviation": 0.049639793764649484
+      },
+      "temporal_stability": {
+        "maximum": 0.4950709112891667,
+        "mean": 0.4217140927429962,
+        "minimum": 0.3539903998169777,
+        "pair_count": 10,
+        "standard_deviation": 0.04420314642827859
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.2609400248505894,
+        0.1767364442424851,
+        0.15153865320327942,
+        0.11303697728648215,
+        0.10856535577134047,
+        0.08773746058525403,
+        0.06756348443797973,
+        0.03388159962258966
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8244479712164359,
+        "mean": 0.6052727451763681,
+        "minimum": 0.4336145240038642,
+        "pair_count": 45,
+        "standard_deviation": 0.08732134188927872
+      },
+      "davies_bouldin": 1.0415860431933044,
+      "eligible": false,
+      "family": "ward",
+      "k": 8,
+      "label_mapping": {
+        "0": 1,
+        "1": 0,
+        "2": 5,
+        "3": 3,
+        "4": 2,
+        "5": 6,
+        "6": 7,
+        "7": 4
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.03388159962258966,
+      "silhouette": 0.27912583472890146,
+      "spatial_stability": {
+        "maximum": 0.8533893304956248,
+        "mean": 0.5519345208515058,
+        "minimum": 0.4248446221910345,
+        "pair_count": 10,
+        "standard_deviation": 0.13547306988182933
+      },
+      "temporal_stability": {
+        "maximum": 0.5848010427680851,
+        "mean": 0.5121288467607832,
+        "minimum": 0.4649231782836282,
+        "pair_count": 10,
+        "standard_deviation": 0.045455634013939206
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.20615809896507456,
+        0.1634153033699208,
+        0.13958596636039408,
+        0.11295663107431657,
+        0.10416816157773356,
+        0.09341966685180442,
+        0.06461186540992055,
+        0.061793350448376985,
+        0.053890955942458484
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9394750755437663,
+        "mean": 0.6582105143047754,
+        "minimum": 0.49764475047708173,
+        "pair_count": 45,
+        "standard_deviation": 0.13677355388707554
+      },
+      "davies_bouldin": 1.0953122087685372,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 9,
+      "label_mapping": {
+        "0": 7,
+        "1": 3,
+        "2": 0,
+        "3": 4,
+        "4": 6,
+        "5": 5,
+        "6": 1,
+        "7": 8,
+        "8": 2
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.053890955942458484,
+      "silhouette": 0.27900672560522993,
+      "spatial_stability": {
+        "maximum": 0.9313387874258603,
+        "mean": 0.7781917743414954,
+        "minimum": 0.6593759831787103,
+        "pair_count": 10,
+        "standard_deviation": 0.10553165367850609
+      },
+      "temporal_stability": {
+        "maximum": 0.9380109451505608,
+        "mean": 0.8401358963127846,
+        "minimum": 0.7645441505083969,
+        "pair_count": 10,
+        "standard_deviation": 0.055487385890264994
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.17569449328707956,
+        0.1547782488184978,
+        0.14181017378199257,
+        0.10615854245060594,
+        0.10528548371439786,
+        0.08704787527744032,
+        0.08215741905509173,
+        0.07838252194467683,
+        0.0686852416702174
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.820434325488845,
+        "mean": 0.5855544553007513,
+        "minimum": 0.46174787614100454,
+        "pair_count": 45,
+        "standard_deviation": 0.08752544401620398
+      },
+      "davies_bouldin": 1.448434939525383,
+      "eligible": false,
+      "family": "gmm",
+      "k": 9,
+      "label_mapping": {
+        "0": 4,
+        "1": 1,
+        "2": 2,
+        "3": 0,
+        "4": 8,
+        "5": 3,
+        "6": 7,
+        "7": 5,
+        "8": 6
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.0686852416702174,
+      "silhouette": 0.21564723540843253,
+      "spatial_stability": {
+        "maximum": 0.7010056942876154,
+        "mean": 0.6051047492385742,
+        "minimum": 0.5303922782372147,
+        "pair_count": 10,
+        "standard_deviation": 0.05871720486848651
+      },
+      "temporal_stability": {
+        "maximum": 0.7076611476380907,
+        "mean": 0.5358119253527774,
+        "minimum": 0.46601114897509205,
+        "pair_count": 10,
+        "standard_deviation": 0.06780124854080247
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.16567762309515938,
+        0.12503446398608328,
+        0.12362668491855454,
+        0.12243891526404212,
+        0.11571711784756473,
+        0.10187530156948861,
+        0.0897337118643758,
+        0.08314177251150856,
+        0.07275440894322298
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8157749738327174,
+        "mean": 0.5862003705008648,
+        "minimum": 0.4862744889353214,
+        "pair_count": 45,
+        "standard_deviation": 0.07242326396289549
+      },
+      "davies_bouldin": 1.1782334966118666,
+      "eligible": false,
+      "family": "gmm",
+      "k": 9,
+      "label_mapping": {
+        "0": 7,
+        "1": 6,
+        "2": 4,
+        "3": 3,
+        "4": 8,
+        "5": 2,
+        "6": 0,
+        "7": 1,
+        "8": 5
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.07275440894322298,
+      "silhouette": 0.23873908194031007,
+      "spatial_stability": {
+        "maximum": 0.6329478699353774,
+        "mean": 0.562456365702445,
+        "minimum": 0.45152208254025705,
+        "pair_count": 10,
+        "standard_deviation": 0.053226684648169355
+      },
+      "temporal_stability": {
+        "maximum": 0.604400675865445,
+        "mean": 0.5114103545917736,
+        "minimum": 0.44629061987907437,
+        "pair_count": 10,
+        "standard_deviation": 0.06179504334262825
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.22131149457073376,
+        0.1864673553068622,
+        0.15621645567950188,
+        0.12403986540507383,
+        0.11213164299251752,
+        0.09198246610177907,
+        0.038076899854689705,
+        0.036828818536868986,
+        0.03294500155197304
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6560658088874857,
+        "mean": 0.4827388807815456,
+        "minimum": 0.3376048024442654,
+        "pair_count": 45,
+        "standard_deviation": 0.0705743755603103
+      },
+      "davies_bouldin": 1.259515993885247,
+      "eligible": false,
+      "family": "birch",
+      "k": 9,
+      "label_mapping": {
+        "0": 5,
+        "1": 8,
+        "2": 3,
+        "3": 7,
+        "4": 6,
+        "5": 0,
+        "6": 4,
+        "7": 1,
+        "8": 2
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.03294500155197304,
+      "silhouette": 0.20328344187937383,
+      "spatial_stability": {
+        "maximum": 0.609347280475931,
+        "mean": 0.5296010965843626,
+        "minimum": 0.45821112803994,
+        "pair_count": 10,
+        "standard_deviation": 0.04939259556224394
+      },
+      "temporal_stability": {
+        "maximum": 0.48450127816392796,
+        "mean": 0.4225059426193538,
+        "minimum": 0.3373184416796695,
+        "pair_count": 10,
+        "standard_deviation": 0.04903803988885068
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.24199781245602073,
+        0.15153865320327942,
+        0.12325846968343959,
+        0.11303697728648215,
+        0.10856535577134047,
+        0.0869203797342419,
+        0.08132245914396186,
+        0.061244401897220885,
+        0.03211549082401301
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.780753684143658,
+        "mean": 0.563092681914551,
+        "minimum": 0.4732659440189618,
+        "pair_count": 45,
+        "standard_deviation": 0.06620019460166363
+      },
+      "davies_bouldin": 1.112577784031951,
+      "eligible": false,
+      "family": "ward",
+      "k": 9,
+      "label_mapping": {
+        "0": 0,
+        "1": 2,
+        "2": 6,
+        "3": 5,
+        "4": 1,
+        "5": 7,
+        "6": 8,
+        "7": 4,
+        "8": 3
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.03211549082401301,
+      "silhouette": 0.26375150514964474,
+      "spatial_stability": {
+        "maximum": 0.7197861714707041,
+        "mean": 0.5202443739613494,
+        "minimum": 0.40907493046356286,
+        "pair_count": 10,
+        "standard_deviation": 0.09993066509303844
+      },
+      "temporal_stability": {
+        "maximum": 0.6153927396273906,
+        "mean": 0.5145235632056805,
+        "minimum": 0.3762751353212847,
+        "pair_count": 10,
+        "standard_deviation": 0.07828350692354805
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.1575875842546972,
+        0.13943291423846665,
+        0.13801261471613183,
+        0.10946519785164613,
+        0.10154440974571302,
+        0.08773466403592764,
+        0.08641128152446118,
+        0.06498571638976208,
+        0.06275658331059857,
+        0.052069033932595724
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.9032131471060161,
+        "mean": 0.6106558447627094,
+        "minimum": 0.43560058324572953,
+        "pair_count": 45,
+        "standard_deviation": 0.09801760545453043
+      },
+      "davies_bouldin": 1.1121156135412456,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 10,
+      "label_mapping": {
+        "0": 4,
+        "1": 9,
+        "2": 7,
+        "3": 0,
+        "4": 3,
+        "5": 5,
+        "6": 6,
+        "7": 2,
+        "8": 8,
+        "9": 1
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.052069033932595724,
+      "silhouette": 0.2656784052619749,
+      "spatial_stability": {
+        "maximum": 0.8998045620053471,
+        "mean": 0.7227043182320102,
+        "minimum": 0.5700074249673391,
+        "pair_count": 10,
+        "standard_deviation": 0.10167545307486896
+      },
+      "temporal_stability": {
+        "maximum": 0.8597938657956743,
+        "mean": 0.665803218390916,
+        "minimum": 0.575515479461647,
+        "pair_count": 10,
+        "standard_deviation": 0.08612097331494993
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.15846732775696995,
+        0.12610672500777448,
+        0.12288923190359127,
+        0.11233996627611334,
+        0.10494417454796928,
+        0.0982841195885963,
+        0.08531582853471094,
+        0.07853488178267694,
+        0.062133533542223125,
+        0.05098421105937439
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8025686509850922,
+        "mean": 0.6133211892426182,
+        "minimum": 0.4469043198083918,
+        "pair_count": 45,
+        "standard_deviation": 0.09532051116224426
+      },
+      "davies_bouldin": 1.4568753589457832,
+      "eligible": false,
+      "family": "gmm",
+      "k": 10,
+      "label_mapping": {
+        "0": 2,
+        "1": 5,
+        "2": 1,
+        "3": 6,
+        "4": 4,
+        "5": 0,
+        "6": 8,
+        "7": 3,
+        "8": 7,
+        "9": 9
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.05098421105937439,
+      "silhouette": 0.19978055907296607,
+      "spatial_stability": {
+        "maximum": 0.7184748779422968,
+        "mean": 0.592994071246387,
+        "minimum": 0.49873076787803894,
+        "pair_count": 10,
+        "standard_deviation": 0.07455216114818276
+      },
+      "temporal_stability": {
+        "maximum": 0.6316781983484393,
+        "mean": 0.5642300773969039,
+        "minimum": 0.5122866438381343,
+        "pair_count": 10,
+        "standard_deviation": 0.03963438582680568
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.14838124440477266,
+        0.12058284105294113,
+        0.10459647812890256,
+        0.1038374705388813,
+        0.1030850136500842,
+        0.10211077627484452,
+        0.09147453805221203,
+        0.08724742932696107,
+        0.07493889468244624,
+        0.06374531388795432
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7029287916685919,
+        "mean": 0.5471025703503,
+        "minimum": 0.4240208039457116,
+        "pair_count": 45,
+        "standard_deviation": 0.06443686565133644
+      },
+      "davies_bouldin": 1.1487742914113845,
+      "eligible": false,
+      "family": "gmm",
+      "k": 10,
+      "label_mapping": {
+        "0": 5,
+        "1": 0,
+        "2": 7,
+        "3": 2,
+        "4": 8,
+        "5": 1,
+        "6": 9,
+        "7": 3,
+        "8": 6,
+        "9": 4
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.06374531388795432,
+      "silhouette": 0.23204415888770263,
+      "spatial_stability": {
+        "maximum": 0.6586039750747014,
+        "mean": 0.5234029965189015,
+        "minimum": 0.460589108784351,
+        "pair_count": 10,
+        "standard_deviation": 0.053497615534798516
+      },
+      "temporal_stability": {
+        "maximum": 0.6219093555001197,
+        "mean": 0.5235579087785229,
+        "minimum": 0.45248289585365226,
+        "pair_count": 10,
+        "standard_deviation": 0.05675661502656803
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.22131149457073376,
+        0.1864673553068622,
+        0.15621645567950188,
+        0.12403986540507383,
+        0.11213164299251752,
+        0.05451394956217222,
+        0.038076899854689705,
+        0.03746851653960686,
+        0.036828818536868986,
+        0.03294500155197304
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6361904891937097,
+        "mean": 0.46476935586899876,
+        "minimum": 0.34637267918309494,
+        "pair_count": 45,
+        "standard_deviation": 0.06523915263572107
+      },
+      "davies_bouldin": 1.2613733328003172,
+      "eligible": false,
+      "family": "birch",
+      "k": 10,
+      "label_mapping": {
+        "0": 3,
+        "1": 9,
+        "2": 0,
+        "3": 8,
+        "4": 6,
+        "5": 7,
+        "6": 4,
+        "7": 1,
+        "8": 2,
+        "9": 5
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.03294500155197304,
+      "silhouette": 0.20264514482131835,
+      "spatial_stability": {
+        "maximum": 0.6110393419832971,
+        "mean": 0.5252132172607763,
+        "minimum": 0.46068376161753033,
+        "pair_count": 10,
+        "standard_deviation": 0.04842062627164969
+      },
+      "temporal_stability": {
+        "maximum": 0.5002601434622314,
+        "mean": 0.4340433342252085,
+        "minimum": 0.3480030586242063,
+        "pair_count": 10,
+        "standard_deviation": 0.04846265706004494
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.16497863895306525,
+        0.14417188218843421,
+        0.12261220425741143,
+        0.11303697728648215,
+        0.10856535577134047,
+        0.09045174549108688,
+        0.0862201087138346,
+        0.08132245914396186,
+        0.061244401897220885,
+        0.02739622629716225
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7782789659877893,
+        "mean": 0.5426765001257678,
+        "minimum": 0.4101242001745627,
+        "pair_count": 45,
+        "standard_deviation": 0.08086513068728589
+      },
+      "davies_bouldin": 1.1429516078953077,
+      "eligible": false,
+      "family": "ward",
+      "k": 10,
+      "label_mapping": {
+        "0": 2,
+        "1": 6,
+        "2": 7,
+        "3": 3,
+        "4": 1,
+        "5": 8,
+        "6": 9,
+        "7": 4,
+        "8": 0,
+        "9": 5
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.02739622629716225,
+      "silhouette": 0.27640615949018194,
+      "spatial_stability": {
+        "maximum": 0.6622175935262715,
+        "mean": 0.5387417833087573,
+        "minimum": 0.4623159536204834,
+        "pair_count": 10,
+        "standard_deviation": 0.056179089527209194
+      },
+      "temporal_stability": {
+        "maximum": 0.6728090622496379,
+        "mean": 0.5385833297391189,
+        "minimum": 0.4066103404621723,
+        "pair_count": 10,
+        "standard_deviation": 0.08516377290388152
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.14744131732156882,
+        0.1343080513846842,
+        0.11142830991193212,
+        0.10844022176348952,
+        0.09922639247014572,
+        0.08451544466672815,
+        0.0763385260674096,
+        0.06504924882872094,
+        0.06227719113051648,
+        0.059258127516906886,
+        0.05171716893789754
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.8014388034750435,
+        "mean": 0.6307547801020718,
+        "minimum": 0.49567358050394583,
+        "pair_count": 45,
+        "standard_deviation": 0.08004441611300024
+      },
+      "davies_bouldin": 1.1075464052773656,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 11,
+      "label_mapping": {
+        "0": 8,
+        "1": 3,
+        "2": 4,
+        "3": 6,
+        "4": 1,
+        "5": 10,
+        "6": 7,
+        "7": 5,
+        "8": 2,
+        "9": 9,
+        "10": 0
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.05171716893789754,
+      "silhouette": 0.2720752014607486,
+      "spatial_stability": {
+        "maximum": 0.9576901113101403,
+        "mean": 0.7269536027986702,
+        "minimum": 0.5415257490718154,
+        "pair_count": 10,
+        "standard_deviation": 0.15348350066511066
+      },
+      "temporal_stability": {
+        "maximum": 0.7749272892364962,
+        "mean": 0.6528900843352805,
+        "minimum": 0.5853015640432907,
+        "pair_count": 10,
+        "standard_deviation": 0.0664697932479376
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.13549006980169437,
+        0.12965839553341604,
+        0.10304123845238598,
+        0.09956187224263364,
+        0.09804174366732837,
+        0.0972461882478883,
+        0.09255102403845596,
+        0.07577399680321609,
+        0.06537840400826679,
+        0.05389198324433136,
+        0.04936508396038307
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7833296045532094,
+        "mean": 0.6160479920603866,
+        "minimum": 0.4605322706108387,
+        "pair_count": 45,
+        "standard_deviation": 0.07180663480304061
+      },
+      "davies_bouldin": 1.312207477414711,
+      "eligible": false,
+      "family": "gmm",
+      "k": 11,
+      "label_mapping": {
+        "0": 6,
+        "1": 10,
+        "2": 1,
+        "3": 2,
+        "4": 5,
+        "5": 7,
+        "6": 9,
+        "7": 4,
+        "8": 0,
+        "9": 8,
+        "10": 3
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.04936508396038307,
+      "silhouette": 0.20658103790568189,
+      "spatial_stability": {
+        "maximum": 0.7438287989335146,
+        "mean": 0.5716318644820684,
+        "minimum": 0.4708616956220923,
+        "pair_count": 10,
+        "standard_deviation": 0.07705237877317792
+      },
+      "temporal_stability": {
+        "maximum": 0.7092876417709226,
+        "mean": 0.5530719646196414,
+        "minimum": 0.46826940047081256,
+        "pair_count": 10,
+        "standard_deviation": 0.07719751065005322
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.11947154947955614,
+        0.11648497734497941,
+        0.11304046722492991,
+        0.10684742163554103,
+        0.09494586683451603,
+        0.0851607662810843,
+        0.08395741473626257,
+        0.08392260727509686,
+        0.08287316111004236,
+        0.070264438565552,
+        0.043031329512439376
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7928569355395441,
+        "mean": 0.5921866652464379,
+        "minimum": 0.47283647642034143,
+        "pair_count": 45,
+        "standard_deviation": 0.0668589856411117
+      },
+      "davies_bouldin": 1.112486999754698,
+      "eligible": false,
+      "family": "gmm",
+      "k": 11,
+      "label_mapping": {
+        "0": 2,
+        "1": 9,
+        "2": 0,
+        "3": 5,
+        "4": 8,
+        "5": 3,
+        "6": 1,
+        "7": 7,
+        "8": 6,
+        "9": 10,
+        "10": 4
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.043031329512439376,
+      "silhouette": 0.25922120776134416,
+      "spatial_stability": {
+        "maximum": 0.6339173870585506,
+        "mean": 0.5553019229755056,
+        "minimum": 0.4961913929787085,
+        "pair_count": 10,
+        "standard_deviation": 0.03681536224758967
+      },
+      "temporal_stability": {
+        "maximum": 0.5625451871449066,
+        "mean": 0.5209704155950285,
+        "minimum": 0.48317878229057715,
+        "pair_count": 10,
+        "standard_deviation": 0.028652299271002275
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.22131149457073376,
+        0.1864673553068622,
+        0.15621645567950188,
+        0.11213164299251752,
+        0.10284625462042124,
+        0.05451394956217222,
+        0.038076899854689705,
+        0.03746851653960686,
+        0.036828818536868986,
+        0.03294500155197304,
+        0.021193610784652598
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.670439026300646,
+        "mean": 0.4656720603923488,
+        "minimum": 0.3474353744283001,
+        "pair_count": 45,
+        "standard_deviation": 0.0727405300704736
+      },
+      "davies_bouldin": 1.2832798109823966,
+      "eligible": false,
+      "family": "birch",
+      "k": 11,
+      "label_mapping": {
+        "0": 9,
+        "1": 8,
+        "2": 0,
+        "3": 4,
+        "4": 6,
+        "5": 7,
+        "6": 3,
+        "7": 1,
+        "8": 2,
+        "9": 5,
+        "10": 10
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.021193610784652598,
+      "silhouette": 0.19262859723741949,
+      "spatial_stability": {
+        "maximum": 0.6121544203747762,
+        "mean": 0.5015537301279648,
+        "minimum": 0.4064884186957714,
+        "pair_count": 10,
+        "standard_deviation": 0.060812050578891025
+      },
+      "temporal_stability": {
+        "maximum": 0.5086056887643541,
+        "mean": 0.4462063751140092,
+        "minimum": 0.38389219131982555,
+        "pair_count": 10,
+        "standard_deviation": 0.04639199242453795
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.14895424820065167,
+        0.14417188218843421,
+        0.11303697728648215,
+        0.10856535577134047,
+        0.08870285071413597,
+        0.08737990660430836,
+        0.08204415072263856,
+        0.07382111235260001,
+        0.0700996854181107,
+        0.05582760444413564,
+        0.02739622629716225
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6939684951876363,
+        "mean": 0.539674916469722,
+        "minimum": 0.39197496918163444,
+        "pair_count": 45,
+        "standard_deviation": 0.07917178874435361
+      },
+      "davies_bouldin": 1.1069022480806066,
+      "eligible": false,
+      "family": "ward",
+      "k": 11,
+      "label_mapping": {
+        "0": 6,
+        "1": 1,
+        "2": 7,
+        "3": 2,
+        "4": 8,
+        "5": 9,
+        "6": 10,
+        "7": 3,
+        "8": 0,
+        "9": 4,
+        "10": 5
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.02739622629716225,
+      "silhouette": 0.2738826581235787,
+      "spatial_stability": {
+        "maximum": 0.6635182888419205,
+        "mean": 0.5339773656810414,
+        "minimum": 0.4450417622818876,
+        "pair_count": 10,
+        "standard_deviation": 0.0661817654424293
+      },
+      "temporal_stability": {
+        "maximum": 0.5845354498433258,
+        "mean": 0.5227607455506045,
+        "minimum": 0.44397441004504834,
+        "pair_count": 10,
+        "standard_deviation": 0.04580613131114949
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.12722713416758627,
+        0.11316022052358868,
+        0.11307958256422625,
+        0.09884572506199471,
+        0.09581741169516841,
+        0.08451544466672815,
+        0.07347870195642861,
+        0.07338175476895815,
+        0.06191246559358972,
+        0.0586338873584619,
+        0.05651650441152361,
+        0.04343116723174552
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7978570711384092,
+        "mean": 0.6180166478855849,
+        "minimum": 0.46927602306750116,
+        "pair_count": 45,
+        "standard_deviation": 0.06906587612307387
+      },
+      "davies_bouldin": 1.1111892499260723,
+      "eligible": false,
+      "family": "kmeans",
+      "k": 12,
+      "label_mapping": {
+        "0": 0,
+        "1": 7,
+        "2": 9,
+        "3": 5,
+        "4": 1,
+        "5": 10,
+        "6": 2,
+        "7": 8,
+        "8": 6,
+        "9": 3,
+        "10": 4,
+        "11": 11
+      },
+      "method": "kmeans",
+      "minimum_cluster_area_fraction": 0.04343116723174552,
+      "silhouette": 0.27814504282742536,
+      "spatial_stability": {
+        "maximum": 0.804120210872232,
+        "mean": 0.6380677702798974,
+        "minimum": 0.5486444641215046,
+        "pair_count": 10,
+        "standard_deviation": 0.07262011250412954
+      },
+      "temporal_stability": {
+        "maximum": 0.7345048369188244,
+        "mean": 0.6562919189102889,
+        "minimum": 0.5934953968547237,
+        "pair_count": 10,
+        "standard_deviation": 0.04456708787385058
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.14108300257925838,
+        0.13642428985515695,
+        0.10116673666856708,
+        0.09344946369962083,
+        0.09147945107212366,
+        0.0828379113790587,
+        0.07039401968195487,
+        0.06500904131746761,
+        0.06256923670571506,
+        0.06041954586208195,
+        0.048662356189760385,
+        0.04650494498923454
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.7964607708270194,
+        "mean": 0.585217855349529,
+        "minimum": 0.4151978522747959,
+        "pair_count": 45,
+        "standard_deviation": 0.08635558049437607
+      },
+      "davies_bouldin": 1.2588653129575442,
+      "eligible": false,
+      "family": "gmm",
+      "k": 12,
+      "label_mapping": {
+        "0": 9,
+        "1": 4,
+        "2": 1,
+        "3": 5,
+        "4": 10,
+        "5": 3,
+        "6": 8,
+        "7": 7,
+        "8": 11,
+        "9": 6,
+        "10": 0,
+        "11": 2
+      },
+      "method": "gmm_diag",
+      "minimum_cluster_area_fraction": 0.04650494498923454,
+      "silhouette": 0.22000633143598164,
+      "spatial_stability": {
+        "maximum": 0.6558865869858631,
+        "mean": 0.5471430451865048,
+        "minimum": 0.43849443349228945,
+        "pair_count": 10,
+        "standard_deviation": 0.07752562339281376
+      },
+      "temporal_stability": {
+        "maximum": 0.6421807850539492,
+        "mean": 0.5360236984627157,
+        "minimum": 0.43252242866775203,
+        "pair_count": 10,
+        "standard_deviation": 0.06887674818883027
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.12259515589475976,
+        0.11769845520603599,
+        0.10222689156308204,
+        0.09924374154167623,
+        0.09562460778634155,
+        0.09054240066481307,
+        0.09049964661834274,
+        0.08640233774180789,
+        0.08044379443118801,
+        0.045999410765901284,
+        0.03623103235067597,
+        0.032492525435375466
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6983987023182446,
+        "mean": 0.5563443176759025,
+        "minimum": 0.40068953528740936,
+        "pair_count": 45,
+        "standard_deviation": 0.061964025693853675
+      },
+      "davies_bouldin": 1.1902026553971556,
+      "eligible": false,
+      "family": "gmm",
+      "k": 12,
+      "label_mapping": {
+        "0": 0,
+        "1": 10,
+        "2": 3,
+        "3": 1,
+        "4": 7,
+        "5": 11,
+        "6": 4,
+        "7": 5,
+        "8": 6,
+        "9": 8,
+        "10": 2,
+        "11": 9
+      },
+      "method": "gmm_full",
+      "minimum_cluster_area_fraction": 0.032492525435375466,
+      "silhouette": 0.24214398701143788,
+      "spatial_stability": {
+        "maximum": 0.6465352788309676,
+        "mean": 0.547962474907626,
+        "minimum": 0.49295386060460405,
+        "pair_count": 10,
+        "standard_deviation": 0.05336533720795011
+      },
+      "temporal_stability": {
+        "maximum": 0.6287263487034627,
+        "mean": 0.523879046673296,
+        "minimum": 0.42407394486954564,
+        "pair_count": 10,
+        "standard_deviation": 0.06211130580643806
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.22131149457073376,
+        0.1864673553068622,
+        0.15621645567950188,
+        0.11213164299251752,
+        0.10284625462042124,
+        0.05451394956217222,
+        0.038076899854689705,
+        0.03746851653960686,
+        0.036828818536868986,
+        0.022110501083454186,
+        0.021193610784652598,
+        0.010834500468518849
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.6789623623724728,
+        "mean": 0.46868737726725446,
+        "minimum": 0.35122528042150747,
+        "pair_count": 45,
+        "standard_deviation": 0.07472288795592369
+      },
+      "davies_bouldin": 1.2793067744041622,
+      "eligible": false,
+      "family": "birch",
+      "k": 12,
+      "label_mapping": {
+        "0": 8,
+        "1": 4,
+        "2": 0,
+        "3": 9,
+        "4": 6,
+        "5": 7,
+        "6": 3,
+        "7": 1,
+        "8": 2,
+        "9": 5,
+        "10": 10,
+        "11": 11
+      },
+      "method": "birch",
+      "minimum_cluster_area_fraction": 0.010834500468518849,
+      "silhouette": 0.18789614578732872,
+      "spatial_stability": {
+        "maximum": 0.6166154048556788,
+        "mean": 0.44377614106840924,
+        "minimum": 0.3561460038610005,
+        "pair_count": 10,
+        "standard_deviation": 0.07177581877505461
+      },
+      "temporal_stability": {
+        "maximum": 0.5030628642374609,
+        "mean": 0.46693284811546115,
+        "minimum": 0.396807031318245,
+        "pair_count": 10,
+        "standard_deviation": 0.03582540214041101
+      },
+      "warnings": []
+    },
+    {
+      "area_shares": [
+        0.14895424820065167,
+        0.14417188218843421,
+        0.11303697728648215,
+        0.10856535577134047,
+        0.08870285071413597,
+        0.08047234889676376,
+        0.07618223567893483,
+        0.07382111235260001,
+        0.06977234374183129,
+        0.054841748524492744,
+        0.027397902035590796,
+        0.014080994608742067
+      ],
+      "bootstrap_stability": {
+        "maximum": 0.74813607758709,
+        "mean": 0.5369128733658173,
+        "minimum": 0.40149069224074563,
+        "pair_count": 45,
+        "standard_deviation": 0.07631525829871069
+      },
+      "davies_bouldin": 1.1178386403252762,
+      "eligible": false,
+      "family": "ward",
+      "k": 12,
+      "label_mapping": {
+        "0": 1,
+        "1": 8,
+        "2": 7,
+        "3": 2,
+        "4": 4,
+        "5": 9,
+        "6": 10,
+        "7": 3,
+        "8": 0,
+        "9": 6,
+        "10": 5,
+        "11": 11
+      },
+      "method": "ward",
+      "minimum_cluster_area_fraction": 0.014080994608742067,
+      "silhouette": 0.26374204891349046,
+      "spatial_stability": {
+        "maximum": 0.6307831784457041,
+        "mean": 0.5210898885864175,
+        "minimum": 0.4201648542596805,
+        "pair_count": 10,
+        "standard_deviation": 0.07073712492096876
+      },
+      "temporal_stability": {
+        "maximum": 0.572263358634231,
+        "mean": 0.5161996066509904,
+        "minimum": 0.47282728478332153,
+        "pair_count": 10,
+        "standard_deviation": 0.035052811935921635
+      },
+      "warnings": []
+    }
+  ],
+  "display": {
+    "k": 4,
+    "method": "kmeans",
+    "status": "temporally_confirmed"
+  },
+  "encoding": "direct",
+  "representation": "profiles",
+  "resample_transforms": {
+    "bootstrap": [
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      }
+    ],
+    "spatial": [
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      }
+    ],
+    "temporal": [
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Dec",
+            "reason": "correlated_with:temp_anomaly_Jul"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "temp_anomaly_Jul",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      },
+      {
+        "dropped": [
+          {
+            "name": "temp_anomaly_Feb",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          },
+          {
+            "name": "temp_anomaly_Jun",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Jul",
+            "reason": "correlated_with:temp_anomaly_May"
+          },
+          {
+            "name": "temp_anomaly_Aug",
+            "reason": "correlated_with:temp_anomaly_Jan"
+          }
+        ],
+        "explained_variance": 1.0,
+        "family_balanced": true,
+        "input_features": 26,
+        "missing_counts": {},
+        "output_dimensions": 22,
+        "retained_features": 22,
+        "retained_names": [
+          "temp_anomaly_Jan",
+          "rain_fraction_Jan",
+          "rain_fraction_Feb",
+          "temp_anomaly_Mar",
+          "rain_fraction_Mar",
+          "temp_anomaly_Apr",
+          "rain_fraction_Apr",
+          "temp_anomaly_May",
+          "rain_fraction_May",
+          "rain_fraction_Jun",
+          "rain_fraction_Jul",
+          "rain_fraction_Aug",
+          "temp_anomaly_Sep",
+          "rain_fraction_Sep",
+          "temp_anomaly_Oct",
+          "rain_fraction_Oct",
+          "temp_anomaly_Nov",
+          "rain_fraction_Nov",
+          "temp_anomaly_Dec",
+          "rain_fraction_Dec",
+          "temperature_mean",
+          "rainfall_mean"
+        ]
+      }
+    ]
+  },
+  "shortlist": [
+    {
+      "criteria": {
+        "corroborated_by_multiple_families": false,
+        "silhouette_retention": true,
+        "stability": true,
+        "strong_single_family_replication": true
+      },
+      "cross_algorithm_ari": 0.5205529975378155,
+      "k": 3,
+      "representative_method": "kmeans",
+      "temporal_confirmed": true
+    },
+    {
+      "criteria": {
+        "corroborated_by_multiple_families": false,
+        "silhouette_retention": true,
+        "stability": true,
+        "strong_single_family_replication": true
+      },
+      "cross_algorithm_ari": 0.45778883991055613,
+      "k": 4,
+      "representative_method": "kmeans",
+      "temporal_confirmed": true
+    }
+  ],
+  "transform": {
+    "dropped": [
+      {
+        "name": "temp_anomaly_Feb",
+        "reason": "correlated_with:temp_anomaly_Jan"
+      },
+      {
+        "name": "temp_anomaly_Jun",
+        "reason": "correlated_with:temp_anomaly_May"
+      },
+      {
+        "name": "temp_anomaly_Jul",
+        "reason": "correlated_with:temp_anomaly_May"
+      },
+      {
+        "name": "temp_anomaly_Aug",
+        "reason": "correlated_with:temp_anomaly_Jan"
+      }
+    ],
+    "explained_variance": 1.0,
+    "family_balanced": true,
+    "input_features": 26,
+    "missing_counts": {},
+    "output_dimensions": 22,
+    "retained_features": 22,
+    "retained_names": [
+      "temp_anomaly_Jan",
+      "rain_fraction_Jan",
+      "rain_fraction_Feb",
+      "temp_anomaly_Mar",
+      "rain_fraction_Mar",
+      "temp_anomaly_Apr",
+      "rain_fraction_Apr",
+      "temp_anomaly_May",
+      "rain_fraction_May",
+      "rain_fraction_Jun",
+      "rain_fraction_Jul",
+      "rain_fraction_Aug",
+      "temp_anomaly_Sep",
+      "rain_fraction_Sep",
+      "temp_anomaly_Oct",
+      "rain_fraction_Oct",
+      "temp_anomaly_Nov",
+      "rain_fraction_Nov",
+      "temp_anomaly_Dec",
+      "rain_fraction_Dec",
+      "temperature_mean",
+      "rainfall_mean"
+    ]
+  }
+}

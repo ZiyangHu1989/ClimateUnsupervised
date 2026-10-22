@@ -1,0 +1,61 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.25384430483289244,
+      0.22160878496431127,
+      0.14748153283346585,
+      0.11842426978310357,
+      0.11217198070043227,
+      0.09830302140968104,
+      0.04816610547611354
+    ],
+    "bootstrap_stability": {
+      "maximum": 0.8473572941634355,
+      "mean": 0.5614767729537862,
+      "minimum": 0.4347947249396448,
+      "pair_count": 45,
+      "standard_deviation": 0.09644615384724153
+    },
+    "davies_bouldin": 1.015022502811748,
+    "eligible": false,
+    "family": "ward",
+    "k": 7,
+    "label_mapping": {
+      "0": 0,
+      "1": 4,
+      "2": 3,
+      "3": 2,
+      "4": 1,
+      "5": 5,
+      "6": 6
+    },
+    "method": "ward",
+    "minimum_cluster_area_fraction": 0.04816610547611354,
+    "silhouette": 0.2888635151548344,
+    "spatial_stability": {
+      "maximum": 0.6515593313576801,
+      "mean": 0.5525376865271583,
+      "minimum": 0.4247632475380378,
+      "pair_count": 10,
+      "standard_deviation": 0.08504143954955856
+    },
+    "temporal_stability": {
+      "maximum": 0.6807820669377883,
+      "mean": 0.5448622765962101,
+      "minimum": 0.45181987695982984,
+      "pair_count": 10,
+      "standard_deviation": 0.07051805394874947
+    },
+    "warnings": []
+  }
+}

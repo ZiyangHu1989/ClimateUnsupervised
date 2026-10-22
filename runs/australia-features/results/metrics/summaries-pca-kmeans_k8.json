@@ -1,0 +1,63 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.19965800404678305,
+      0.16864187634093142,
+      0.16663775348554305,
+      0.13527288648993163,
+      0.10002936924344268,
+      0.08685456759234537,
+      0.08628644087354619,
+      0.0566191019274766
+    ],
+    "bootstrap_stability": {
+      "maximum": 0.9057752929230244,
+      "mean": 0.6323337140382169,
+      "minimum": 0.4702174200367814,
+      "pair_count": 45,
+      "standard_deviation": 0.1326977801539823
+    },
+    "davies_bouldin": 1.1123895984741763,
+    "eligible": false,
+    "family": "kmeans",
+    "k": 8,
+    "label_mapping": {
+      "0": 5,
+      "1": 1,
+      "2": 0,
+      "3": 4,
+      "4": 6,
+      "5": 2,
+      "6": 3,
+      "7": 7
+    },
+    "method": "kmeans",
+    "minimum_cluster_area_fraction": 0.0566191019274766,
+    "silhouette": 0.28399294467167857,
+    "spatial_stability": {
+      "maximum": 0.9488295749784993,
+      "mean": 0.7020715288929654,
+      "minimum": 0.43191503664828435,
+      "pair_count": 10,
+      "standard_deviation": 0.21498263898338782
+    },
+    "temporal_stability": {
+      "maximum": 0.8044209317902508,
+      "mean": 0.7237163552804866,
+      "minimum": 0.6229746903027109,
+      "pair_count": 10,
+      "standard_deviation": 0.06299467454080478
+    },
+    "warnings": []
+  }
+}

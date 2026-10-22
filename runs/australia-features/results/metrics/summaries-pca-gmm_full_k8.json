@@ -1,0 +1,63 @@
+{
+  "fingerprint": {
+    "config_sha256": "6ef37752d53eb244ba6cf49a2ae6b5d4d56b3cff0f5db7cf8781e0f3e0d7e1e9",
+    "inputs": {
+      "runs/australia-features/data/processed/monthly_series.npz": "ee36c9e4a712c669aca60dc17d168898116545b791b4fbce4fbb49b4f61212d6",
+      "src/climate_unsupervised/feature_engineering.py": "8934d07015252a2202daf93de2cd795bb595b9cd77b7bd36680300c2bc43d2f7",
+      "src/climate_unsupervised/feature_experiment.py": "1744b20cc7c0a1eb992c2b75f6ba4bf14ba3ad95b95def8747a9d938637723ca",
+      "src/climate_unsupervised/modeling.py": "c0c811e2e96cee3646655adaacf607a4ce0886c57e5c7e164bd1d7595abbb1ec",
+      "src/climate_unsupervised/multiscale.py": "423abb904a0fad4a570942aa5e5a56c79819c8750daaad2920038f4e7aee797c"
+    }
+  },
+  "row": {
+    "area_shares": [
+      0.19752580059211536,
+      0.13948991462034405,
+      0.13006311371746196,
+      0.12427261126625042,
+      0.11519585123532702,
+      0.11336322039989997,
+      0.09874250750816733,
+      0.08134698066043386
+    ],
+    "bootstrap_stability": {
+      "maximum": 0.7141522604188351,
+      "mean": 0.5497766308583406,
+      "minimum": 0.37867835594033494,
+      "pair_count": 45,
+      "standard_deviation": 0.07455940034008614
+    },
+    "davies_bouldin": 1.318320117890108,
+    "eligible": false,
+    "family": "gmm",
+    "k": 8,
+    "label_mapping": {
+      "0": 6,
+      "1": 0,
+      "2": 3,
+      "3": 5,
+      "4": 4,
+      "5": 2,
+      "6": 7,
+      "7": 1
+    },
+    "method": "gmm_full",
+    "minimum_cluster_area_fraction": 0.08134698066043386,
+    "silhouette": 0.20606085556513645,
+    "spatial_stability": {
+      "maximum": 0.696361051302555,
+      "mean": 0.5844073965565195,
+      "minimum": 0.5058452188387477,
+      "pair_count": 10,
+      "standard_deviation": 0.0668504768036496
+    },
+    "temporal_stability": {
+      "maximum": 0.549410599010994,
+      "mean": 0.46946240784878157,
+      "minimum": 0.3803419822369131,
+      "pair_count": 10,
+      "standard_deviation": 0.05352316437836445
+    },
+    "warnings": []
+  }
+}
