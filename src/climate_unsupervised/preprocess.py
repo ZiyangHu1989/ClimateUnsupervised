@@ -78,8 +78,10 @@ def aggregate_year(path: Path, year: int, source_resolution: float, target_resol
         temperature = temperature.transpose(time_name, lat_name, lon_name)
         precipitation = precipitation.transpose(time_name, lat_name, lon_name)
         if factor > 1:
-            temperature = temperature.coarsen({lat_name: factor, lon_name: factor}, boundary="trim").mean(skipna=True)
-            precipitation = precipitation.coarsen({lat_name: factor, lon_name: factor}, boundary="trim").mean(skipna=True)
+            # Coarsen reductions skip NaN by default; recent xarray releases no
+            # longer accept an explicit skipna argument here.
+            temperature = temperature.coarsen({lat_name: factor, lon_name: factor}, boundary="trim").mean()
+            precipitation = precipitation.coarsen({lat_name: factor, lon_name: factor}, boundary="trim").mean()
         return {
             "temperature_c": kelvin_to_celsius(temperature.values).astype(np.float32),
             "precipitation_mm": precipitation_m_per_day_to_mm_month(precipitation.values, year).astype(np.float32),

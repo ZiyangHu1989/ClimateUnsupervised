@@ -55,10 +55,11 @@ def make_trials(table, temporal_tables, weights, latitude, longitude, config, pc
 def _agreement_to_reference(reference, labels, weights):
     """Per-cell agreement after optimal area-weighted permutation of cluster IDs."""
     unique_ref,unique_run = np.unique(reference),np.unique(labels)
-    count = np.zeros((len(unique_ref),len(unique_run)))
-    for i,a in enumerate(unique_ref):
-        for j,b in enumerate(unique_run):
-            count[i,j] = weights[(reference==a)&(labels==b)].sum()
+    ref_index = np.searchsorted(unique_ref,reference)
+    run_index = np.searchsorted(unique_run,labels)
+    flat = ref_index*len(unique_run)+run_index
+    count = np.bincount(flat,weights=weights,minlength=len(unique_ref)*len(unique_run)).reshape(
+        len(unique_ref),len(unique_run))
     a,b = linear_sum_assignment(-count)
     mapping = {unique_run[j]:unique_ref[i] for i,j in zip(a,b)}
     return np.array([mapping.get(x,-1) for x in labels])==reference

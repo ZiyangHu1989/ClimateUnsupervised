@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import joblib
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -40,7 +41,7 @@ def visualize(config: dict) -> list[Path]:
     output_dir = run_path(config, "results", "figures")
     outputs: list[Path] = []
 
-    pca = __import__("joblib").load(run_path(config, "results", "models", "pca.joblib"))
+    pca = joblib.load(run_path(config, "results", "models", "pca.joblib"))
     fig, ax = plt.subplots(figsize=(7, 4))
     ax.plot(np.arange(1, len(pca.explained_variance_ratio_) + 1), np.cumsum(pca.explained_variance_ratio_), marker="o")
     ax.set(xlabel="Principal components", ylabel="Cumulative explained variance", title="PCA explained variance", ylim=(0, 1.02))
