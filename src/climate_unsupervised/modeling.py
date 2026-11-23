@@ -15,11 +15,16 @@ from .artifacts import manifest, write_json
 from .config import config_hash, run_path
 
 
-def area_sample(weights: np.ndarray, size: int, seed: int) -> np.ndarray:
-    """Draw a unique area-biased subset for inexpensive metric estimation."""
+def _validated_weights(weights: np.ndarray) -> np.ndarray:
     weights = np.asarray(weights, dtype=np.float64)
     if np.any(weights <= 0) or not np.isfinite(weights).all():
         raise ValueError("Sampling weights must be finite and positive")
+    return weights
+
+
+def area_sample(weights: np.ndarray, size: int, seed: int) -> np.ndarray:
+    """Draw a unique area-biased subset for inexpensive metric estimation."""
+    weights = _validated_weights(weights)
     size = min(int(size), len(weights))
     rng = np.random.default_rng(seed)
     return np.sort(rng.choice(len(weights), size=size, replace=False, p=weights / weights.sum()))
@@ -33,9 +38,7 @@ def area_resample(weights: np.ndarray, size: int, seed: int) -> np.ndarray:
     bootstrap sample is appropriate for estimators that do not accept
     ``sample_weight`` (PCA and GaussianMixture).
     """
-    weights = np.asarray(weights, dtype=np.float64)
-    if np.any(weights <= 0) or not np.isfinite(weights).all():
-        raise ValueError("Sampling weights must be finite and positive")
+    weights = _validated_weights(weights)
     rng = np.random.default_rng(seed)
     return np.sort(rng.choice(len(weights), size=int(size), replace=True, p=weights / weights.sum()))
 
@@ -52,9 +55,13 @@ def transformed_features(features: np.ndarray) -> np.ndarray:
 
 def normalize_labels(labels: np.ndarray, weights: np.ndarray) -> tuple[np.ndarray, dict[int, int]]:
     labels = np.asarray(labels)
-    totals = {int(label): float(weights[labels == label].sum()) for label in np.unique(labels)}
+    unique = np.unique(labels)
+    totals = {int(label): float(weights[labels == label].sum()) for label in unique}
     mapping = {old: new for new, (old, _) in enumerate(sorted(totals.items(), key=lambda item: -item[1]))}
-    return np.asarray([mapping[int(label)] for label in labels], dtype=np.int16), mapping
+    lookup = np.zeros(int(unique.max()) + 1, dtype=np.int16)
+    for old, new in mapping.items():
+        lookup[old] = new
+    return lookup[labels], mapping
 
 
 def _stability(label_runs: list[np.ndarray]) -> float:
@@ -115,13 +122,13 @@ def fit_models(config: dict, force: bool = False) -> Path:
 
     transformed = transformed_features(physical)
     # Scaling can be exactly area weighted. PCA cannot accept sample weights,
-    # so its training bootstrap follows the same area distribution.
+    # so its training bootstrap follows the same area distribution. Passing the
+    # variance target as a float selects the component count in a single fit.
     scaler = StandardScaler().fit(transformed, sample_weight=weights)
     scaled = scaler.transform(transformed)
-    full_pca = PCA(random_state=seed).fit(scaled[train_idx])
-    cumulative = np.cumsum(full_pca.explained_variance_ratio_)
-    components = int(np.searchsorted(cumulative, float(feature_config["pca_variance_target"])) + 1)
-    pca = PCA(n_components=components, random_state=seed).fit(scaled[train_idx])
+    pca = PCA(n_components=float(feature_config["pca_variance_target"]),
+              svd_solver="full", random_state=seed).fit(scaled[train_idx])
+    components = int(pca.n_components_)
     reduced = pca.transform(scaled).astype(np.float32)
 
     models_dir = run_path(config, "results", "models")
@@ -179,7 +186,7 @@ def fit_models(config: dict, force: bool = False) -> Path:
     np.save(models_dir / "kmeans_labels.npy", kmeans_labels)
 
     gmm_rows: list[dict] = []
-    gmm_models: dict[tuple[str, int], tuple[GaussianMixture, np.ndarray, np.ndarray]] = {}
+    gmm_models: dict[tuple[str, int], tuple[GaussianMixture, np.ndarray]] = {}
     sample = reduced[train_idx]
     covariance_types = cluster_config.get("gmm_covariance_types", [cluster_config.get("gmm_covariance_type", "diag")])
     for covariance_type in covariance_types:
@@ -188,7 +195,6 @@ def fit_models(config: dict, force: bool = False) -> Path:
                                     n_init=final_n_init, max_iter=500, random_state=seed, reg_covar=1e-6)
             model.fit(sample)
             labels = model.predict(reduced)
-            probabilities = model.predict_proba(reduced).max(axis=1)
             stability_runs: list[np.ndarray] = []
             for run_seed in seeds:
                 bootstrap_idx = area_resample(weights, stability_size, seed + 2000 + run_seed)
@@ -208,7 +214,7 @@ def fit_models(config: dict, force: bool = False) -> Path:
             }
             row["eligible"] = row["stability_ari"] >= min_stability and row["minimum_cluster_area_fraction"] >= min_area
             gmm_rows.append(row)
-            gmm_models[(covariance_type, k)] = (model, labels, probabilities)
+            gmm_models[(covariance_type, k)] = (model, labels)
 
     eligible_gmm = [row for row in gmm_rows if row["eligible"]]
     if not eligible_gmm:
@@ -218,7 +224,9 @@ def fit_models(config: dict, force: bool = False) -> Path:
     # quality after stability/size safeguards; retain BIC as a diagnostic.
     selected_gmm = max(eligible_gmm, key=lambda row: (row["silhouette"], -row["davies_bouldin"], -row["k"]))
     gmm_key = (selected_gmm["covariance_type"], selected_gmm["k"])
-    gmm_model, gmm_labels_raw, gmm_probabilities = gmm_models[gmm_key]
+    gmm_model, gmm_labels_raw = gmm_models[gmm_key]
+    # Posterior probabilities are only persisted for the selected mixture.
+    gmm_probabilities = gmm_model.predict_proba(reduced).max(axis=1)
     if spatial_folds >= 2:
         selected_gmm["spatial_block_stability_ari"] = _spatial_stability(
             reduced, weights, metric_idx, fold_ids, stability_size, seed + 4000,

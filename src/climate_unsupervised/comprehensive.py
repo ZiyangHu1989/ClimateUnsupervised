@@ -21,10 +21,9 @@ from sklearn.mixture import GaussianMixture
 from .artifacts import manifest, sha256_file, verify_manifest_inputs, write_json
 from .config import config_hash, project_path, run_path
 from .evaluate import (
+    _scores,
     koppen_primary_groups,
     sample_raster,
-    weighted_ari,
-    weighted_information_scores,
 )
 from .modeling import area_resample, area_sample, spatial_block_folds
 
@@ -94,13 +93,16 @@ def overlap_diagnostics(
     weights = np.asarray(weights, dtype=np.float64)
     rows: list[dict[str, Any]] = []
     strongest: dict[int, int] = {}
+    reference_classes = np.unique(reference)
+    class_masks = {int(value): reference == value for value in reference_classes}
+    class_masses = {int(value): float(weights[class_masks[int(value)]].sum()) for value in reference_classes}
     for cluster in np.unique(clusters):
         cluster_mask = clusters == cluster
         cluster_mass = float(weights[cluster_mask].sum())
         best = (-1.0, -1)
-        for climate_class in np.unique(reference):
-            class_mask = reference == climate_class
-            class_mass = float(weights[class_mask].sum())
+        for climate_class in reference_classes:
+            class_mask = class_masks[int(climate_class)]
+            class_mass = class_masses[int(climate_class)]
             intersection = float(weights[cluster_mask & class_mask].sum())
             union = cluster_mass + class_mass - intersection
             precision = intersection / cluster_mass if cluster_mass else 0.0
@@ -214,11 +216,12 @@ def _regional_rows(
     }
     rows = []
     for method in METHODS:
+        clusters = np.unique(labels[method])
         for level in LEVELS:
             reference = references[level]
             mapping = strongest[(method, level)]
-            match = np.asarray([mapping[int(cluster)] == int(climate_class)
-                                for cluster, climate_class in zip(labels[method], reference)])
+            mapped = np.asarray([mapping[int(cluster)] for cluster in clusters])
+            match = mapped[np.searchsorted(clusters, labels[method])] == reference
             for region_name, selector in regions.items():
                 mask = valid & selector(latitude, longitude)
                 if not mask.any():
@@ -275,9 +278,9 @@ def _stability_experiments(
     all_assignments: dict[str, np.ndarray] = {"evaluation_indices": common_idx}
     pair_rows: list[dict[str, Any]] = []
     output: dict[str, Any] = {}
+    fixed_gmm_idx = area_resample(weights, sample_size, int(config["project"]["random_seed"]))
     for method in METHODS:
         random_runs = []
-        fixed_gmm_idx = area_resample(weights, sample_size, int(config["project"]["random_seed"]))
         for run_seed in seeds:
             if method == "kmeans":
                 model = KMeans(n_clusters=int(selected[method]["k"]), n_init=1,
@@ -412,7 +415,6 @@ def run_comprehensive_evaluation(config: dict) -> Path:
             for row in weighted_rows:
                 overlap_rows.append({"method": method, "level": level, "weighting": "area", **row})
             strongest[(method, level)] = mapping
-            from .evaluate import _scores
             external[method][level] = _scores(left, right, selected_weights)
             external[method][level]["strongest_jaccard_match_by_cluster"] = {str(k): v for k, v in mapping.items()}
         external[method]["nmi_convention"] = "arithmetic mean normalization; sklearn default"

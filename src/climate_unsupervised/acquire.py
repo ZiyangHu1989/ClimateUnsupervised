@@ -5,6 +5,8 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
+import numpy as np
+
 from .artifacts import sha256_file, write_json
 from .config import config_hash, project_path
 from .preprocess import aggregate_year
@@ -51,7 +53,6 @@ def download_era5(config: dict, force: bool = False) -> list[Path]:
             interim.parent.mkdir(parents=True, exist_ok=True)
             temporary_interim = interim.with_suffix(".npz.part")
             with temporary_interim.open("wb") as handle:
-                import numpy as np
                 np.savez_compressed(handle, **arrays)
             temporary_interim.replace(interim)
             target.unlink()
